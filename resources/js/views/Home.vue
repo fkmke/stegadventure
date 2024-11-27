@@ -1,9 +1,7 @@
 <script setup>
-
+import TextTemplate from '../components/TextTemplate.vue';
 </script>
 
 <template>
-    <div>
-        This is the homepage.
-    </div>
+    <TextTemplate />
 </template>
