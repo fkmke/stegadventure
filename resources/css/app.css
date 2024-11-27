@@ -1,0 +1,25 @@
+:root {
+    /* Breakpoints and thresholds */
+    --xs: 600px;        /*             < 600px     */
+    --sm: 960px;        /*    600px  > < 960px     */
+    --md: 1280px;       /*    960px  > < 1280px    */
+    --lg: 1920px;       /*    1280px > < 1920px    */
+    --xl: 2560px;       /*    1920px > < 2560px    */
+    --xxl: 4000px;      /*           >   2560px    */
+
+    /* Page width */
+    --sm-page-width: 600px;
+    --md-page-width: 800px;
+
+    /* Margin and padding */
+    --standard-read-margin: 20px;
+    --header-height: 64px;
+
+    /* Object heights */
+    --logo-header-height: 40px;
+    --logo-footer-height: 30px;
+}
+
+body {
+    font-family: "Readex Pro", sans-serif;
+}
