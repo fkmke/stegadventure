@@ -135,13 +135,14 @@ function createGraph() {
 
     // Add text inside each node (centered)
     node.append("text")
-        .attr("x", 0)  // Position text at the center of the circle horizontally
-        .attr("y", 0)  // Position text at the center vertically
-        .attr("text-anchor", "middle")  // Center text horizontally
-        .attr("fill", "black")  // Set text color
-        .attr("font-size", "16px")  // Set font size
-        .attr("dy", ".35em")  // Adjust vertical positioning
-        .text((d) => d.id);  // Display the node's id
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("text-anchor", "middle")
+        .attr("fill", "black")
+        .attr("font-size", "16px")
+        .attr("dy", ".35em")
+        .text((d) => d.id)
+        .style("pointer-events", "none");
 
     // Tooltip div
     const tooltip = d3
