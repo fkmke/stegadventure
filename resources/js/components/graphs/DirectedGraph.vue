@@ -142,12 +142,18 @@ function createGraph() {
 
     // Handle mouse over event to show tooltip
     function handleMouseOver(event, d) {
+        const choicesHtml = d.choices ?
+            "<br>" +
+            d.choices.map((item, i) => `<strong>Answer ${i + 1}:</strong> ${item.text} <strong>&#8594;</strong> ${item.destination_id}`)
+                .join("<br>") : '';
+
         tooltip.style("visibility", "visible")
             .html(`
             <strong>ID:</strong> ${d.id} <br>
             <strong>${d.character}:</strong>
-            "${d.content}"
-        `);;
+            "${d.content}" <br>
+            ${choicesHtml}
+        `);
     }
 
     // Handle mouse out event to hide tooltip

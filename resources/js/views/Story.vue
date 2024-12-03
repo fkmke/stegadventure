@@ -18,7 +18,7 @@ function convertDataToGraph(data) {
     // Add nodes to the array and to the nodeSet
     data.forEach(item => {
         const nodeId = item.id.toString();
-        nodes.push({ id: nodeId, content: item.content, character: item.character });
+        nodes.push({ id: nodeId, content: item.content, character: item.character, choices: item.choices });
         nodeSet.add(nodeId);
     });
 
