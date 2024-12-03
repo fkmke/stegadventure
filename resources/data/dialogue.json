@@ -4,73 +4,73 @@
         "character": "Dr. Glitchwell",
         "type": "TEXT",
         "content": "Good morning!!! Are you okay?",
-        "next": 102
+        "next": 101
     },
     {
-        "id": 102,
+        "id": 101,
         "character": "Dr. Glitchwell",
         "type": "QUESTION",
-        "content": "You remember your secret name right?",
+        "content": "You remember your codename right?",
         "choices": [
             {
                 "text": "${name}",
-                "destination_id": 103
+                "destination_id": 102
             }
         ]
     },
     {
-        "id": 103,
+        "id": 102,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
         "content": "Amazing! Welcome back to the real world ${name}. The tests went fine. ",
-        "next": 104
+        "next": 103
     },
     {
-        "id": 104,
+        "id": 103,
         "character": "Dr. Glitchwell",
         "type": "QUESTION",
         "content": "I am glad you are back alive.",
         "choices": [
             {
-                "text": "Yeh, that\u2019s great!",
-                "destination_id": 105
+                "text": "Yeah, that\u2019s great!",
+                "destination_id": 104
             },
             {
                 "text": "Wait what tests?",
-                "destination_id": 106
+                "destination_id": 105
             }
         ]
+    },
+    {
+        "id": 104,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Yes, I know! I am amazing!",
+        "next": 106
     },
     {
         "id": 105,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Yes, I know! I am amazing!",
-        "next": 107
+        "content": "You don\u2019t remember?",
+        "next": 106
     },
     {
         "id": 106,
-        "character": "Dr. Glitchwell",
+        "character": "HQ Security",
         "type": "TEXT",
-        "content": "You don\u2019t remember?",
+        "content": "ALERT ALERT ALERT!",
         "next": 107
     },
     {
         "id": 107,
-        "character": "HQ Security",
+        "character": "Boss M.",
         "type": "TEXT",
-        "content": "ALERT ALERT ALERT!",
+        "content": "Bad news. We have evidence that our enemy SilentSpectra has decrypted our data again.",
         "next": 108
     },
     {
         "id": 108,
-        "character": "Boss M.",
-        "type": "TEXT",
-        "content": "Bad news. We have evidence that our enemy SilentSpectra has decrypted our data again.",
-        "next": 109
-    },
-    {
-        "id": 109,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
         "content": "No way! I even made our encryption algorithm more complex! ",
