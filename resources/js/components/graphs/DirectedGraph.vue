@@ -58,7 +58,7 @@ function createGraph() {
         .attr("markerHeight", 6)
         .append("path")
         .attr("d", "M 0,-5 L 10 ,0 L 0,5")
-        .attr("fill", "#999");
+        .attr("fill", "#EFEFEF");
 
     // Create force simulation
     const simulation = d3
@@ -75,7 +75,8 @@ function createGraph() {
         .enter()
         .append("line")
         .attr("stroke-width", 5)
-        .attr("stroke", "#999")
+        .attr("stroke", "#EFEFEF")
+        .attr("fill", "#EFEFEF")
         .attr("marker-end", "url(#arrowhead)");
 
     // Add nodes with tooltip

@@ -1,5 +1,7 @@
 <template>
-    <DirectedGraph :nodes="nodes" :links="links" />
+    <div class="story">
+        <DirectedGraph :nodes="nodes" :links="links" />
+    </div>
 </template>
 
 <script setup>
@@ -53,3 +55,9 @@ function convertDataToGraph(data) {
 // Convert JSON into nodes and links
 const { nodes, links } = convertDataToGraph(jsonStory);
 </script>
+
+<style scoped>
+.story {
+    background-color: #0f0f0f;
+}
+</style>
