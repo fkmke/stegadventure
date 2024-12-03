@@ -7,7 +7,7 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Stegoknow</title>
+    <title>StegAdventure</title>
     @vite('resources/css/app.css')
 </head>
 

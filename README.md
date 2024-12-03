@@ -1,4 +1,4 @@
-# Stegoknow
+# StegAdventure
 
 This is a project for a serious game on the topic of steganography, which will be tested and evaluated for my bachelor thesis.
 
