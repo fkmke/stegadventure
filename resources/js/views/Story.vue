@@ -52,8 +52,4 @@ function convertDataToGraph(data) {
 
 // Convert JSON into nodes and links
 const { nodes, links } = convertDataToGraph(jsonStory);
-
-// Log the output to check if nodes and links are correct
-console.log("Nodes:", nodes);
-console.log("Links:", links);
 </script>

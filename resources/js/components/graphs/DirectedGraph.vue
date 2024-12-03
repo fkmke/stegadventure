@@ -1,5 +1,5 @@
 <template>
-    <div ref="graphContainer" class="graph-container"></div>
+    <div ref="graphContainer" />
 </template>
 
 <script setup>
@@ -74,7 +74,7 @@ function createGraph() {
         .data(props.links)
         .enter()
         .append("line")
-        .attr("stroke-width", 2)
+        .attr("stroke-width", 5)
         .attr("stroke", "#999")
         .attr("marker-end", "url(#arrowhead)");
 
@@ -87,9 +87,9 @@ function createGraph() {
         .append("circle")
         .attr("r", (d) => {
             if (d.id === "100") {
-                return 20;
+                return 30;
             } else {
-                return 10;
+                return 20;
             }
         })
         .attr("fill", (d) => {
@@ -130,18 +130,23 @@ function createGraph() {
     const tooltip = d3
         .select(graphContainer.value)
         .append("div")
-        .attr("class", "tooltip")
         .style("position", "absolute")
         .style("visibility", "hidden")
         .style("background", "rgba(0, 0, 0, 0.7)")
         .style("color", "white")
-        .style("padding", "5px")
-        .style("border-radius", "4px")
-        .style("pointer-events", "none");
+        .style("padding", "10px")
+        .style("border-radius", "10px")
+        .style("pointer-events", "none")
+        .style("max-width", "400px");
 
     // Handle mouse over event to show tooltip
     function handleMouseOver(event, d) {
-        tooltip.style("visibility", "visible").text(JSON.stringify(d));
+        tooltip.style("visibility", "visible")
+            .html(`
+            <strong>ID:</strong> ${d.id} <br>
+            <strong>${d.character}:</strong>
+            "${d.content}"
+        `);;
     }
 
     // Handle mouse out event to hide tooltip
@@ -173,24 +178,3 @@ onMounted(() => {
     createGraph();
 });
 </script>
-
-<style scoped>
-.graph-container {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
-
-circle {
-    cursor: pointer;
-}
-
-line {
-    stroke: #999;
-}
-
-.tooltip {
-    font-size: 12px;
-    pointer-events: none;
-}
-</style>
