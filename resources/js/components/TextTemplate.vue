@@ -1,7 +1,7 @@
 <template>
     <div id="background">
         <div class="text-object title">
-            <h1>Stegoknow</h1>
+            <h1>StegAdventure</h1>
         </div>
         <div class="text-object">
             <p>Hello, welcome!</p>
