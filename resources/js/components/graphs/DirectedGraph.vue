@@ -82,32 +82,10 @@ function createGraph() {
     // Add nodes with tooltip
     const node = g
         .append("g")
-        .selectAll("circle")
+        .selectAll("g")  // Create a group for each node to hold both circle and text
         .data(props.nodes)
         .enter()
-        .append("circle")
-        .attr("r", (d) => {
-            if (d.id === "100") {
-                return 30;
-            } else {
-                return 20;
-            }
-        })
-        .attr("fill", (d) => {
-            if (d.id.startsWith('100')) {
-                return 'red';
-            } else if (d.id.startsWith('1')) {
-                return 'blue';
-            } else if (d.id.startsWith('2')) {
-                return 'green';
-            } else if (d.id.startsWith('3')) {
-                return 'orange';
-            } else {
-                return '#69b3a2';
-            }
-        })
-        .on("mouseover", handleMouseOver)
-        .on("mouseout", handleMouseOut)
+        .append("g")  // Group for each node (circle + text)
         .call(
             d3
                 .drag()
@@ -126,6 +104,44 @@ function createGraph() {
                     d.fy = null;
                 })
         );
+
+    // Add the circle for each node
+    node.append("circle")
+        .attr("r", (d) => {
+            if (d.id === "100") {
+                return 30;  // Larger size for id 100
+            } else {
+                return 20;  // Default circle size
+            }
+        })
+        .attr("fill", (d) => {
+            if (d.id.startsWith('100')) {
+                return '#eb422f';
+            } else if (d.id.startsWith('1')) {
+                return '#34aeeb';
+            } else if (d.id.startsWith('2')) {
+                return '#2bf060';
+            } else if (d.id.startsWith('3')) {
+                return '#f0b53e';
+            } else {
+                return '#fff';
+            }
+        })
+        // Add mouseover and mouseout event listeners for tooltip
+        .on("mouseover", function (event, d) {
+            handleMouseOver(event, d);  // Show tooltip
+        })
+        .on("mouseout", handleMouseOut);  // Hide tooltip
+
+    // Add text inside each node (centered)
+    node.append("text")
+        .attr("x", 0)  // Position text at the center of the circle horizontally
+        .attr("y", 0)  // Position text at the center vertically
+        .attr("text-anchor", "middle")  // Center text horizontally
+        .attr("fill", "black")  // Set text color
+        .attr("font-size", "16px")  // Set font size
+        .attr("dy", ".35em")  // Adjust vertical positioning
+        .text((d) => d.id);  // Display the node's id
 
     // Tooltip div
     const tooltip = d3
@@ -163,13 +179,22 @@ function createGraph() {
 
     // Update positions on each simulation tick
     simulation.on("tick", () => {
+        // Update link positions
         link
             .attr("x1", (d) => d.source.x)
             .attr("y1", (d) => d.source.y)
             .attr("x2", (d) => d.target.x)
             .attr("y2", (d) => d.target.y);
 
-        node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+        // Update circle positions (not the g group)
+        node.selectAll("circle")
+            .attr("cx", (d) => d.x)
+            .attr("cy", (d) => d.y);
+
+        // Update text positions
+        node.selectAll("text")
+            .attr("x", (d) => d.x)
+            .attr("y", (d) => d.y);
     });
 
     // Update tooltip position with mouse movement
