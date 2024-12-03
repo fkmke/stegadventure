@@ -1,0 +1,996 @@
+[
+    {
+        "id": 100,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Good morning!!! Are you okay?"
+    },
+    {
+        "id": 102,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "You remember your secret name right?",
+        "choices": [
+            {
+                "text": "${name}",
+                "destination_id": 103
+            }
+        ]
+    },
+    {
+        "id": 103,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Amazing! Welcome back to the real world ${name}. The tests went fine. "
+    },
+    {
+        "id": 104,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "I am glad you are back alive.",
+        "choices": [
+            {
+                "text": "Yeh, that\u2019s great!",
+                "destination_id": 105
+            },
+            {
+                "text": "Wait what tests?",
+                "destination_id": 106
+            }
+        ]
+    },
+    {
+        "id": 105,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Yes, I know! I am amazing!",
+        "next": 107
+    },
+    {
+        "id": 106,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "You don\u2019t remember?",
+        "next": 107
+    },
+    {
+        "id": 107,
+        "character": "HQ Security",
+        "type": "TEXT",
+        "content": "ALERT ALERT ALERT!"
+    },
+    {
+        "id": 108,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Bad news. We have evidence that our enemy SilentSpectra has decrypted our data again."
+    },
+    {
+        "id": 109,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "No way! I even made our encryption algorithm more complex! ",
+        "choices": [
+            {
+                "text": "How does cryptography work again?",
+                "destination_id": 130
+            },
+            {
+                "text": "I am familiar with cryptography",
+                "destination_id": 110
+            },
+            {
+                "text": "That\u2019s a your problem",
+                "destination_id": 120
+            }
+        ]
+    },
+    {
+        "id": 110,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Good for you.",
+        "next": 140
+    },
+    {
+        "id": 120,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Let me cry in the corner for a second\u2026",
+        "next": 140
+    },
+    {
+        "id": 130,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "When I want to send a message to you, I encrypt my message first with the public key that you shared with me."
+    },
+    {
+        "id": 131,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Then, my message is encrypted, and thus unreadable, even for myself. This is the cipher text, which I send over the network."
+    },
+    {
+        "id": 132,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "When you receive my message, you are the only one who can decrypt the message."
+    },
+    {
+        "id": 133,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "That is because you only have the private key that can decrypt this cipher text."
+    },
+    {
+        "id": 134,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "That is at least assumed that the public key that you gave to me at first matches your private key\u2026"
+    },
+    {
+        "id": 135,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "\u2026 and that you never shared your private key with anyone. I mean, just keep it private!"
+    },
+    {
+        "id": 140,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Okay, back to the topic my people."
+    },
+    {
+        "id": 141,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "The how and what does not matter. What matters is that we are in big trouble now."
+    },
+    {
+        "id": 142,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Our sources think that SilentSpectra has access to a super-fast computer which cracks our secret keys."
+    },
+    {
+        "id": 143,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "You mean a quantum computer?"
+    },
+    {
+        "id": 144,
+        "character": "Boss M.",
+        "type": "QUESTION",
+        "content": "I don\u2019t know.",
+        "choices": [
+            {
+                "text": "Why can\u2019t we decrypt their communication?",
+                "destination_id": 145
+            },
+            {
+                "text": "How is SilentSpectra communicating then?",
+                "destination_id": 145
+            }
+        ]
+    },
+    {
+        "id": 145,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Well\u2026 our sources haven\u2019t been able to find any suspicious communication at all."
+    },
+    {
+        "id": 146,
+        "character": "Boss M.",
+        "type": "QUESTION",
+        "content": "Their interactions on social media for example seem fairly normal.",
+        "choices": [
+            {
+                "text": "Any good news?",
+                "destination_id": 147
+            },
+            {
+                "text": "This is a disaster!",
+                "destination_id": 147
+            }
+        ]
+    },
+    {
+        "id": 147,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "The good news is that we have tracked down and detained Agent P., who seems to be working for SilentSpectra."
+    },
+    {
+        "id": 148,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "We have secured his hideout too. I will interrogate him to see whether he has some information."
+    },
+    {
+        "id": 149,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "${name}, I want you to search his room for clues. "
+    },
+    {
+        "id": 150,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Dr. Glitchwell, you stay on standby in case ${name} needs you to analyse something. "
+    },
+    {
+        "id": 151,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "Yes ma\u2019am!",
+        "choices": [
+            {
+                "text": "Let\u2019s investigate!",
+                "destination_id": 190
+            },
+            {
+                "text": "Let\u2019s wait!",
+                "destination_id": 30
+            }
+        ]
+    },
+    {
+        "id": 152,
+        "character": "Boss M.",
+        "type": "QUESTION",
+        "content": "What do you want to wait for?",
+        "choices": [
+            {
+                "text": "I need to go to the toilet",
+                "destination_id": 160
+            },
+            {
+                "text": "I need a cup of coffee first",
+                "destination_id": 170
+            },
+            {
+                "text": "I want to play Pok\u00e9mon Go",
+                "destination_id": 180
+            }
+        ]
+    },
+    {
+        "id": 160,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "I did not want to hear that.",
+        "next": 190
+    },
+    {
+        "id": 170,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Dr. Glitchwell, is drowsiness one of the side effects of your tests?"
+    },
+    {
+        "id": 171,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "\u2026",
+        "next": 190
+    },
+    {
+        "id": 180,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "You know I pay you well enough to just do your job!",
+        "next": 190
+    },
+    {
+        "id": 190,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Just go to Agent P.\u2019s hideout now."
+    },
+    {
+        "id": 200,
+        "character": "${name}",
+        "type": "TEXT",
+        "content": "Okay, I have arrived at Agent P.\u2019s hideout."
+    },
+    {
+        "id": 201,
+        "character": "${name}",
+        "type": "QUESTION",
+        "content": "I should call Dr. Glitchwell whenever I am ready. What should I investigate?",
+        "choices": [
+            {
+                "text": "The computer",
+                "destination_id": 210
+            },
+            {
+                "text": "The bin",
+                "destination_id": 220
+            },
+            {
+                "text": "The books",
+                "destination_id": 240
+            },
+            {
+                "text": "I should call Dr. Glitchwell",
+                "destination_id": 280
+            }
+        ]
+    },
+    {
+        "id": 210,
+        "character": "${name}",
+        "type": "QUESTION",
+        "content": "I see two images\u2026 What could that possibly mean?",
+        "choices": [
+            {
+                "text": "They\u2019re the same picture",
+                "destination_id": 211
+            },
+            {
+                "text": "One image is altered",
+                "destination_id": 212
+            },
+            {
+                "text": "Agent P. really likes beaches",
+                "destination_id": 213
+            }
+        ]
+    },
+    {
+        "id": 211,
+        "character": "${name}",
+        "type": "TEXT",
+        "content": "\u2026",
+        "next": 201
+    },
+    {
+        "id": 212,
+        "character": "${name}",
+        "type": "TEXT",
+        "content": "But why would one picture be altered?",
+        "next": 201
+    },
+    {
+        "id": 213,
+        "character": "${name}",
+        "type": "TEXT",
+        "content": "How lovely, I like beaches too!",
+        "next": 201
+    },
+    {
+        "id": 220,
+        "character": "${name}",
+        "type": "QUESTION",
+        "content": "Do I understand what is written here?",
+        "choices": [
+            {
+                "text": "No, what does this diagram mean?",
+                "destination_id": 221
+            },
+            {
+                "text": "Yes, the diagram speaks for itself",
+                "destination_id": 201
+            }
+        ]
+    },
+    {
+        "id": 221,
+        "character": "${name}",
+        "type": "TEXT",
+        "content": "I get called\u2026 Let\u2019s pick up the phone."
+    },
+    {
+        "id": 222,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Hello ${name}! You haven\u2019t called me yet, so I got worried. What\u2019s up?"
+    },
+    {
+        "id": 223,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "\u2026"
+    },
+    {
+        "id": 224,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "So, you have trouble  understanding a diagram you found\u2026 Let me see\u2026"
+    },
+    {
+        "id": 225,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "This diagram shows that a hidden message can be combined with a carrier and a stego key."
+    },
+    {
+        "id": 226,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I assume the carrier will be some kind of data object on a computer, such as PDF, MP3, or an image."
+    },
+    {
+        "id": 227,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "The key will probably be used so that others cannot uncover the secret message easily."
+    },
+    {
+        "id": 228,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "All this data seems to be combined into one object. I think that object will be send over a certain medium\u2026"
+    },
+    {
+        "id": 229,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Welp, I need to go! Boss M. calls me.",
+        "next": 201
+    },
+    {
+        "id": 240,
+        "character": "${name}",
+        "type": "TEXT",
+        "content": "Agent P. has quite some books. Let\u2019s look into some books."
+    },
+    {
+        "id": 280,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "Hello ${name}! I am so relieved to hear from you. Are you done investigating?",
+        "choices": [
+            {
+                "text": "Yes",
+                "destination_id": 281
+            },
+            {
+                "text": "No",
+                "destination_id": 201
+            }
+        ]
+    },
+    {
+        "id": 281,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "What have you found?",
+        "choices": [
+            {
+                "text": "A mess",
+                "destination_id": 282
+            },
+            {
+                "text": "Steganography",
+                "destination_id": 283
+            },
+            {
+                "text": "Cryptography",
+                "destination_id": 284
+            },
+            {
+                "text": "A firewall",
+                "destination_id": 285
+            }
+        ]
+    },
+    {
+        "id": 282,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Then I would like you to clean your room for once!",
+        "next": 281
+    },
+    {
+        "id": 283,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Yes! Agent P. seems to be particularly interested in steganography.",
+        "next": 290
+    },
+    {
+        "id": 284,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "There must be more than solely cryptography\u2026",
+        "next": 281
+    },
+    {
+        "id": 285,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I like the wall decoration too!",
+        "next": 281
+    },
+    {
+        "id": 290,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Bring something I can analyse. I can only analyse one item, otherwise we will not be able to take action in time. Bye!"
+    },
+    {
+        "id": 291,
+        "character": "${name}",
+        "type": "TEXT",
+        "content": "I will bring\u2026",
+        "choices": [
+            {
+                "text": "The pictures from the computer",
+                "destination_id": 320
+            },
+            {
+                "text": "The diagram from the bin",
+                "destination_id": 300
+            },
+            {
+                "text": "The books about steganography",
+                "destination_id": 310
+            }
+        ]
+    },
+    {
+        "id": 300,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Okay, I see you have brought the diagram from the bin. Let me take a look at it\u2026"
+    },
+    {
+        "id": 301,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "This diagram shows that a hidden message can be combined with a carrier and a stego key."
+    },
+    {
+        "id": 302,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I assume the carrier will be some kind of data object on a computer, such as PDF, MP3, or an image."
+    },
+    {
+        "id": 303,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "The key will probably be used so that others cannot uncover the secret message easily."
+    },
+    {
+        "id": 304,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "All this data seems to be combined into one object. I think that object will be send over a certain medium\u2026"
+    },
+    {
+        "id": 305,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "This shows that Agent P. is very interested in combining a hidden message with a carrier object."
+    },
+    {
+        "id": 306,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "This must be called steganography! They seem to be using it, but how?"
+    },
+    {
+        "id": 307,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I cannot analyse any further. Please return to Agent P.\u2019s room and bring something useful this time.",
+        "next": 200
+    },
+    {
+        "id": 310,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Okay, I see you have brought the books from the shelf. That must be heavy! Let me take a look at it\u2026"
+    },
+    {
+        "id": 311,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "So, steganography is the art of hiding, which is different to cryptography."
+    },
+    {
+        "id": 312,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Another book is about the history of steganography."
+    },
+    {
+        "id": 313,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "It seems it has had its uses in a non-digital world as well."
+    },
+    {
+        "id": 314,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "But also, it has been part of a major history event."
+    },
+    {
+        "id": 315,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Agent P. seems to be very interested in this topic, but with this information I cannot proceed."
+    },
+    {
+        "id": 316,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Please return to Agent P.\u2019s room and bring something useful this time.",
+        "next": 200
+    },
+    {
+        "id": 320,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "Okay, I see you have brought the two images from the computer. What would you like me to analyse?",
+        "choices": [
+            {
+                "text": "The file size",
+                "destination_id": 321
+            },
+            {
+                "text": "The metadata of the image",
+                "destination_id": 325
+            },
+            {
+                "text": "The individual bits",
+                "destination_id": 330
+            }
+        ]
+    },
+    {
+        "id": 321,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "The file size seems to be exactly the same\u2026"
+    },
+    {
+        "id": 322,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "There is no evidence to suggest that these images are suspicious.",
+        "next": 320
+    },
+    {
+        "id": 325,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "The images are both BMP images. Also, the  creation date of both images are exactly the same. They seem duplicates."
+    },
+    {
+        "id": 326,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "BMP images store each pixel within the RGBA model (Red, Green, Blue, Alpha)."
+    },
+    {
+        "id": 327,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Alpha is the opacity value. All RGBA values will be combined into one colour pixel."
+    },
+    {
+        "id": 328,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Is this relevant for steganography?",
+        "next": 320
+    },
+    {
+        "id": 330,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Let me take a look at the individual bits for both images\u2026"
+    },
+    {
+        "id": 331,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "WOAH!!!"
+    },
+    {
+        "id": 332,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "The least significant bits seem to differ!",
+        "choices": [
+            {
+                "text": "What are least significant bits?",
+                "destination_id": 333
+            },
+            {
+                "text": "Nice finding!",
+                "destination_id": 345
+            }
+        ]
+    },
+    {
+        "id": 333,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Bits are presented as either 0 or 1. A group of eight bits form a byte, which can represent a decimal value between 0 and 255."
+    },
+    {
+        "id": 334,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "The most right bit is the least significant bit, since it adjusts its value minimally.",
+        "choices": [
+            {
+                "text": "Could you give some examples?",
+                "destination_id": 335
+            },
+            {
+                "text": "I understand now",
+                "destination_id": 345
+            }
+        ]
+    },
+    {
+        "id": 335,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "The byte 10001000 has a decimal value of 136. Let\u2019s change the least significant bit."
+    },
+    {
+        "id": 336,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "10001000 changed to 10001001, because the most right bit is the least significant bit."
+    },
+    {
+        "id": 337,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "The value of 10001001 is 137, so if this byte represented the colour red, we have only changed its value slightly."
+    },
+    {
+        "id": 338,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "In contrast: if we would have adjusted 10001000 to 00001000, its value would have been 8."
+    },
+    {
+        "id": 339,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "If this byte represented the red colour, the colour would have drastically changed!",
+        "next": 345
+    },
+    {
+        "id": 345,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "When we put all the least significant bits of the images behind each other, characters can be read."
+    },
+    {
+        "id": 346,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Let\u2019s say the number 0 is \u2018a\u2019, and the number 25 is \u2018z\u2019, then we can read a word in the right picture!"
+    },
+    {
+        "id": 347,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I assume this is the simple protocol that Agent P. came up with."
+    },
+    {
+        "id": 348,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "If he used a stego key to randomize which least significant bits are used, we would not be able to have read this message."
+    },
+    {
+        "id": 349,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I guess that is why Agent P. highlighted \u2018stego key\u2019 in the diagram he threw away\u2026"
+    },
+    {
+        "id": 350,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "He has not implemented a stego key yet. This gives us opportunities!"
+    },
+    {
+        "id": 351,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "By the way, what do you think Agent P. is using this steganography for?",
+        "choices": [
+            {
+                "text": "For communication within SilentSpectra",
+                "destination_id": 352
+            },
+            {
+                "text": "For embedding malicious code",
+                "destination_id": 265
+            }
+        ]
+    },
+    {
+        "id": 352,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Good observation! That may also explain why we haven\u2019t seen SilentSpectra communicating yet."
+    },
+    {
+        "id": 353,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Maybe they hide their secret messages within their images on social media!"
+    },
+    {
+        "id": 354,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "But maybe they embed malicious code within the images too."
+    },
+    {
+        "id": 355,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "MAYBE WE ARE HACKED\u2026"
+    },
+    {
+        "id": 356,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "And they steal our private keys through a malicious code embedded within an image\u2026"
+    },
+    {
+        "id": 357,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "And then they use images to send our stolen private keys back to them."
+    },
+    {
+        "id": 358,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "They never needed a quantum computer to decrypt our messages over and over again\u2026"
+    },
+    {
+        "id": 359,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "Our Intrusion Detection System would have never suspected an image to contain our private keys\u2026",
+        "choices": [
+            {
+                "text": "What is an Intrusion Detection System?",
+                "destination_id": 360
+            },
+            {
+                "text": "I understand",
+                "destination_id": 362
+            }
+        ]
+    },
+    {
+        "id": 360,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Our Intrusion Detection System scans our network traffic for malicious activity."
+    },
+    {
+        "id": 361,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "But if the activity is hidden within an image, our system does not detect that, yet."
+    },
+    {
+        "id": 362,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I need to do research on this topic to prevent attacks using steganography.",
+        "next": 280
+    },
+    {
+        "id": 265,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "MAYBE WE ARE HACKED\u2026"
+    },
+    {
+        "id": 266,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "And they steal our private keys through a malicious code embedded within an image\u2026"
+    },
+    {
+        "id": 267,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "And then they use images to send our stolen private keys back to them."
+    },
+    {
+        "id": 268,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "They never needed a quantum computer to decrypt our messages over and over again\u2026"
+    },
+    {
+        "id": 269,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "Our Intrusion Detection System would have never suspected an image to contain our private keys\u2026",
+        "choices": [
+            {
+                "text": "What is an Intrusion Detection System?",
+                "destination_id": 270
+            },
+            {
+                "text": "I understand",
+                "destination_id": 272
+            }
+        ]
+    },
+    {
+        "id": 270,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Our Intrusion Detection System scans our network traffic for malicious activity."
+    },
+    {
+        "id": 271,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "But if the activity is hidden within an image, our system does not detect that, yet."
+    },
+    {
+        "id": 272,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I need to do research on this topic to prevent attacks using steganography."
+    },
+    {
+        "id": 273,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "That reminds me\u2026 "
+    },
+    {
+        "id": 274,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Maybe SilentSpectra hides their secret messages within their images on social media!"
+    },
+    {
+        "id": 275,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "That may also explain why we haven\u2019t seen SilentSpectra communicating yet.",
+        "next": 280
+    },
+    {
+        "id": 280,
+        "character": "Boss M.",
+        "type": "CUSTOM",
+        "content": "${name}, please find the hidden message of this part of the image, Dr. Glitchwell. You will do the other part."
+    },
+    {
+        "id": 281,
+        "character": "Boss M.",
+        "type": "OPEN QUESTION",
+        "content": "What word did you find?",
+        "choices": [
+            {
+                "text": "[\u2026]",
+                "destination_id": 290
+            }
+        ]
+    },
+    {
+        "id": 290,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Let\u2019s call it a day for now and come up with a plan to deal with this issue tomorrow."
+    }
+]
