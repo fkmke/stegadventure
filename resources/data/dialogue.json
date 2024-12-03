@@ -3,7 +3,8 @@
         "id": 100,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Good morning!!! Are you okay?"
+        "content": "Good morning!!! Are you okay?",
+        "next": 102
     },
     {
         "id": 102,
@@ -21,7 +22,8 @@
         "id": 103,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Amazing! Welcome back to the real world ${name}. The tests went fine. "
+        "content": "Amazing! Welcome back to the real world ${name}. The tests went fine. ",
+        "next": 104
     },
     {
         "id": 104,
@@ -57,13 +59,15 @@
         "id": 107,
         "character": "HQ Security",
         "type": "TEXT",
-        "content": "ALERT ALERT ALERT!"
+        "content": "ALERT ALERT ALERT!",
+        "next": 108
     },
     {
         "id": 108,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "Bad news. We have evidence that our enemy SilentSpectra has decrypted our data again."
+        "content": "Bad news. We have evidence that our enemy SilentSpectra has decrypted our data again.",
+        "next": 109
     },
     {
         "id": 109,
@@ -103,61 +107,71 @@
         "id": 130,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "When I want to send a message to you, I encrypt my message first with the public key that you shared with me."
+        "content": "When I want to send a message to you, I encrypt my message first with the public key that you shared with me.",
+        "next": 131
     },
     {
         "id": 131,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Then, my message is encrypted, and thus unreadable, even for myself. This is the cipher text, which I send over the network."
+        "content": "Then, my message is encrypted, and thus unreadable, even for myself. This is the cipher text, which I send over the network.",
+        "next": 132
     },
     {
         "id": 132,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "When you receive my message, you are the only one who can decrypt the message."
+        "content": "When you receive my message, you are the only one who can decrypt the message.",
+        "next": 133
     },
     {
         "id": 133,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "That is because you only have the private key that can decrypt this cipher text."
+        "content": "That is because you only have the private key that can decrypt this cipher text.",
+        "next": 134
     },
     {
         "id": 134,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "That is at least assumed that the public key that you gave to me at first matches your private key\u2026"
+        "content": "That is at least assumed that the public key that you gave to me at first matches your private key\u2026",
+        "next": 135
     },
     {
         "id": 135,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "\u2026 and that you never shared your private key with anyone. I mean, just keep it private!"
+        "content": "\u2026 and that you never shared your private key with anyone. I mean, just keep it private!",
+        "next": 140
     },
     {
         "id": 140,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "Okay, back to the topic my people."
+        "content": "Okay, back to the topic my people.",
+        "next": 141
     },
     {
         "id": 141,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "The how and what does not matter. What matters is that we are in big trouble now."
+        "content": "The how and what does not matter. What matters is that we are in big trouble now.",
+        "next": 142
     },
     {
         "id": 142,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "Our sources think that SilentSpectra has access to a super-fast computer which cracks our secret keys."
+        "content": "Our sources think that SilentSpectra has access to a super-fast computer which cracks our secret keys.",
+        "next": 143
     },
     {
         "id": 143,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "You mean a quantum computer?"
+        "content": "You mean a quantum computer?",
+        "next": 144
     },
     {
         "id": 144,
@@ -179,7 +193,8 @@
         "id": 145,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "Well\u2026 our sources haven\u2019t been able to find any suspicious communication at all."
+        "content": "Well\u2026 our sources haven\u2019t been able to find any suspicious communication at all.",
+        "next": 146
     },
     {
         "id": 146,
@@ -201,25 +216,29 @@
         "id": 147,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "The good news is that we have tracked down and detained Agent P., who seems to be working for SilentSpectra."
+        "content": "The good news is that we have tracked down and detained Agent P., who seems to be working for SilentSpectra.",
+        "next": 148
     },
     {
         "id": 148,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "We have secured his hideout too. I will interrogate him to see whether he has some information."
+        "content": "We have secured his hideout too. I will interrogate him to see whether he has some information.",
+        "next": 149
     },
     {
         "id": 149,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "${name}, I want you to search his room for clues. "
+        "content": "${name}, I want you to search his room for clues. ",
+        "next": 150
     },
     {
         "id": 150,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "Dr. Glitchwell, you stay on standby in case ${name} needs you to analyse something. "
+        "content": "Dr. Glitchwell, you stay on standby in case ${name} needs you to analyse something. ",
+        "next": 151
     },
     {
         "id": 151,
@@ -233,7 +252,7 @@
             },
             {
                 "text": "Let\u2019s wait!",
-                "destination_id": 30
+                "destination_id": 152
             }
         ]
     },
@@ -268,7 +287,8 @@
         "id": 170,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "Dr. Glitchwell, is drowsiness one of the side effects of your tests?"
+        "content": "Dr. Glitchwell, is drowsiness one of the side effects of your tests?",
+        "next": 171
     },
     {
         "id": 171,
@@ -288,17 +308,19 @@
         "id": 190,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "Just go to Agent P.\u2019s hideout now."
+        "content": "Just go to Agent P.\u2019s hideout now.",
+        "next": 200
     },
     {
         "id": 200,
-        "character": "${name}",
+        "character": "player",
         "type": "TEXT",
-        "content": "Okay, I have arrived at Agent P.\u2019s hideout."
+        "content": "Okay, I have arrived at Agent P.\u2019s hideout.",
+        "next": 201
     },
     {
         "id": 201,
-        "character": "${name}",
+        "character": "player",
         "type": "QUESTION",
         "content": "I should call Dr. Glitchwell whenever I am ready. What should I investigate?",
         "choices": [
@@ -322,7 +344,7 @@
     },
     {
         "id": 210,
-        "character": "${name}",
+        "character": "player",
         "type": "QUESTION",
         "content": "I see two images\u2026 What could that possibly mean?",
         "choices": [
@@ -342,28 +364,28 @@
     },
     {
         "id": 211,
-        "character": "${name}",
+        "character": "player",
         "type": "TEXT",
         "content": "\u2026",
         "next": 201
     },
     {
         "id": 212,
-        "character": "${name}",
+        "character": "player",
         "type": "TEXT",
         "content": "But why would one picture be altered?",
         "next": 201
     },
     {
         "id": 213,
-        "character": "${name}",
+        "character": "player",
         "type": "TEXT",
         "content": "How lovely, I like beaches too!",
         "next": 201
     },
     {
         "id": 220,
-        "character": "${name}",
+        "character": "player",
         "type": "QUESTION",
         "content": "Do I understand what is written here?",
         "choices": [
@@ -379,51 +401,59 @@
     },
     {
         "id": 221,
-        "character": "${name}",
+        "character": "player",
         "type": "TEXT",
-        "content": "I get called\u2026 Let\u2019s pick up the phone."
+        "content": "I get called\u2026 Let\u2019s pick up the phone.",
+        "next": 222
     },
     {
         "id": 222,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Hello ${name}! You haven\u2019t called me yet, so I got worried. What\u2019s up?"
+        "content": "Hello ${name}! You haven\u2019t called me yet, so I got worried. What\u2019s up?",
+        "next": 223
     },
     {
         "id": 223,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "\u2026"
+        "content": "\u2026",
+        "next": 224
     },
     {
         "id": 224,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "So, you have trouble  understanding a diagram you found\u2026 Let me see\u2026"
+        "content": "So, you have trouble  understanding a diagram you found\u2026 Let me see\u2026",
+        "next": 225
     },
     {
         "id": 225,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "This diagram shows that a hidden message can be combined with a carrier and a stego key."
+        "content": "This diagram shows that a hidden message can be combined with a carrier and a stego key.",
+        "next": 226
     },
     {
         "id": 226,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "I assume the carrier will be some kind of data object on a computer, such as PDF, MP3, or an image."
+        "content": "I assume the carrier will be some kind of data object on a computer, such as PDF, MP3, or an image.",
+        "next": 227
     },
     {
         "id": 227,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "The key will probably be used so that others cannot uncover the secret message easily."
+        "content": "The key will probably be used so that others cannot uncover the secret message easily.",
+        "next": 228
     },
     {
         "id": 228,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "All this data seems to be combined into one object. I think that object will be send over a certain medium\u2026"
+        "content": "All this data seems to be combined into one object. I think that object will be send over a certain medium\u2026",
+        "next": 229
     },
     {
         "id": 229,
@@ -434,9 +464,10 @@
     },
     {
         "id": 240,
-        "character": "${name}",
+        "character": "player",
         "type": "TEXT",
-        "content": "Agent P. has quite some books. Let\u2019s look into some books."
+        "content": "Agent P. has quite some books. Let\u2019s look into some books.",
+        "next": 280
     },
     {
         "id": 280,
@@ -510,11 +541,12 @@
         "id": 290,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Bring something I can analyse. I can only analyse one item, otherwise we will not be able to take action in time. Bye!"
+        "content": "Bring something I can analyse. I can only analyse one item, otherwise we will not be able to take action in time. Bye!",
+        "next": 291
     },
     {
         "id": 291,
-        "character": "${name}",
+        "character": "player",
         "type": "TEXT",
         "content": "I will bring\u2026",
         "choices": [
@@ -536,43 +568,50 @@
         "id": 300,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Okay, I see you have brought the diagram from the bin. Let me take a look at it\u2026"
+        "content": "Okay, I see you have brought the diagram from the bin. Let me take a look at it\u2026",
+        "next": 301
     },
     {
         "id": 301,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "This diagram shows that a hidden message can be combined with a carrier and a stego key."
+        "content": "This diagram shows that a hidden message can be combined with a carrier and a stego key.",
+        "next": 302
     },
     {
         "id": 302,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "I assume the carrier will be some kind of data object on a computer, such as PDF, MP3, or an image."
+        "content": "I assume the carrier will be some kind of data object on a computer, such as PDF, MP3, or an image.",
+        "next": 303
     },
     {
         "id": 303,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "The key will probably be used so that others cannot uncover the secret message easily."
+        "content": "The key will probably be used so that others cannot uncover the secret message easily.",
+        "next": 304
     },
     {
         "id": 304,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "All this data seems to be combined into one object. I think that object will be send over a certain medium\u2026"
+        "content": "All this data seems to be combined into one object. I think that object will be send over a certain medium\u2026",
+        "next": 305
     },
     {
         "id": 305,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "This shows that Agent P. is very interested in combining a hidden message with a carrier object."
+        "content": "This shows that Agent P. is very interested in combining a hidden message with a carrier object.",
+        "next": 306
     },
     {
         "id": 306,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "This must be called steganography! They seem to be using it, but how?"
+        "content": "This must be called steganography! They seem to be using it, but how?",
+        "next": 307
     },
     {
         "id": 307,
@@ -585,37 +624,43 @@
         "id": 310,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Okay, I see you have brought the books from the shelf. That must be heavy! Let me take a look at it\u2026"
+        "content": "Okay, I see you have brought the books from the shelf. That must be heavy! Let me take a look at it\u2026",
+        "next": 311
     },
     {
         "id": 311,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "So, steganography is the art of hiding, which is different to cryptography."
+        "content": "So, steganography is the art of hiding, which is different to cryptography.",
+        "next": 312
     },
     {
         "id": 312,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Another book is about the history of steganography."
+        "content": "Another book is about the history of steganography.",
+        "next": 313
     },
     {
         "id": 313,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "It seems it has had its uses in a non-digital world as well."
+        "content": "It seems it has had its uses in a non-digital world as well.",
+        "next": 314
     },
     {
         "id": 314,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "But also, it has been part of a major history event."
+        "content": "But also, it has been part of a major history event.",
+        "next": 315
     },
     {
         "id": 315,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Agent P. seems to be very interested in this topic, but with this information I cannot proceed."
+        "content": "Agent P. seems to be very interested in this topic, but with this information I cannot proceed.",
+        "next": 316
     },
     {
         "id": 316,
@@ -648,7 +693,8 @@
         "id": 321,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "The file size seems to be exactly the same\u2026"
+        "content": "The file size seems to be exactly the same\u2026",
+        "next": 322
     },
     {
         "id": 322,
@@ -661,19 +707,22 @@
         "id": 325,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "The images are both BMP images. Also, the  creation date of both images are exactly the same. They seem duplicates."
+        "content": "The images are both BMP images. Also, the  creation date of both images are exactly the same. They seem duplicates.",
+        "next": 326
     },
     {
         "id": 326,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "BMP images store each pixel within the RGBA model (Red, Green, Blue, Alpha)."
+        "content": "BMP images store each pixel within the RGBA model (Red, Green, Blue, Alpha).",
+        "next": 327
     },
     {
         "id": 327,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Alpha is the opacity value. All RGBA values will be combined into one colour pixel."
+        "content": "Alpha is the opacity value. All RGBA values will be combined into one colour pixel.",
+        "next": 328
     },
     {
         "id": 328,
@@ -686,13 +735,15 @@
         "id": 330,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Let me take a look at the individual bits for both images\u2026"
+        "content": "Let me take a look at the individual bits for both images\u2026",
+        "next": 331
     },
     {
         "id": 331,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "WOAH!!!"
+        "content": "WOAH!!!",
+        "next": 332
     },
     {
         "id": 332,
@@ -714,7 +765,8 @@
         "id": 333,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Bits are presented as either 0 or 1. A group of eight bits form a byte, which can represent a decimal value between 0 and 255."
+        "content": "Bits are presented as either 0 or 1. A group of eight bits form a byte, which can represent a decimal value between 0 and 255.",
+        "next": 334
     },
     {
         "id": 334,
@@ -736,25 +788,29 @@
         "id": 335,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "The byte 10001000 has a decimal value of 136. Let\u2019s change the least significant bit."
+        "content": "The byte 10001000 has a decimal value of 136. Let\u2019s change the least significant bit.",
+        "next": 336
     },
     {
         "id": 336,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "10001000 changed to 10001001, because the most right bit is the least significant bit."
+        "content": "10001000 changed to 10001001, because the most right bit is the least significant bit.",
+        "next": 337
     },
     {
         "id": 337,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "The value of 10001001 is 137, so if this byte represented the colour red, we have only changed its value slightly."
+        "content": "The value of 10001001 is 137, so if this byte represented the colour red, we have only changed its value slightly.",
+        "next": 338
     },
     {
         "id": 338,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "In contrast: if we would have adjusted 10001000 to 00001000, its value would have been 8."
+        "content": "In contrast: if we would have adjusted 10001000 to 00001000, its value would have been 8.",
+        "next": 339
     },
     {
         "id": 339,
@@ -767,37 +823,43 @@
         "id": 345,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "When we put all the least significant bits of the images behind each other, characters can be read."
+        "content": "When we put all the least significant bits of the images behind each other, characters can be read.",
+        "next": 346
     },
     {
         "id": 346,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Let\u2019s say the number 0 is \u2018a\u2019, and the number 25 is \u2018z\u2019, then we can read a word in the right picture!"
+        "content": "Let\u2019s say the number 0 is \u2018a\u2019, and the number 25 is \u2018z\u2019, then we can read a word in the right picture!",
+        "next": 347
     },
     {
         "id": 347,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "I assume this is the simple protocol that Agent P. came up with."
+        "content": "I assume this is the simple protocol that Agent P. came up with.",
+        "next": 348
     },
     {
         "id": 348,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "If he used a stego key to randomize which least significant bits are used, we would not be able to have read this message."
+        "content": "If he used a stego key to randomize which least significant bits are used, we would not be able to have read this message.",
+        "next": 349
     },
     {
         "id": 349,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "I guess that is why Agent P. highlighted \u2018stego key\u2019 in the diagram he threw away\u2026"
+        "content": "I guess that is why Agent P. highlighted \u2018stego key\u2019 in the diagram he threw away\u2026",
+        "next": 350
     },
     {
         "id": 350,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "He has not implemented a stego key yet. This gives us opportunities!"
+        "content": "He has not implemented a stego key yet. This gives us opportunities!",
+        "next": 351
     },
     {
         "id": 351,
@@ -811,7 +873,7 @@
             },
             {
                 "text": "For embedding malicious code",
-                "destination_id": 265
+                "destination_id": 365
             }
         ]
     },
@@ -819,43 +881,50 @@
         "id": 352,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Good observation! That may also explain why we haven\u2019t seen SilentSpectra communicating yet."
+        "content": "Good observation! That may also explain why we haven\u2019t seen SilentSpectra communicating yet.",
+        "next": 353
     },
     {
         "id": 353,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Maybe they hide their secret messages within their images on social media!"
+        "content": "Maybe they hide their secret messages within their images on social media!",
+        "next": 354
     },
     {
         "id": 354,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "But maybe they embed malicious code within the images too."
+        "content": "But maybe they embed malicious code within the images too.",
+        "next": 355
     },
     {
         "id": 355,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "MAYBE WE ARE HACKED\u2026"
+        "content": "MAYBE WE ARE HACKED\u2026",
+        "next": 356
     },
     {
         "id": 356,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "And they steal our private keys through a malicious code embedded within an image\u2026"
+        "content": "And they steal our private keys through a malicious code embedded within an image\u2026",
+        "next": 357
     },
     {
         "id": 357,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "And then they use images to send our stolen private keys back to them."
+        "content": "And then they use images to send our stolen private keys back to them.",
+        "next": 358
     },
     {
         "id": 358,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "They never needed a quantum computer to decrypt our messages over and over again\u2026"
+        "content": "They never needed a quantum computer to decrypt our messages over and over again\u2026",
+        "next": 359
     },
     {
         "id": 359,
@@ -877,118 +946,130 @@
         "id": 360,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Our Intrusion Detection System scans our network traffic for malicious activity."
+        "content": "Our Intrusion Detection System scans our network traffic for malicious activity.",
+        "next": 361
     },
     {
         "id": 361,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "But if the activity is hidden within an image, our system does not detect that, yet."
+        "content": "But if the activity is hidden within an image, our system does not detect that, yet.",
+        "next": 362
     },
     {
         "id": 362,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
         "content": "I need to do research on this topic to prevent attacks using steganography.",
-        "next": 280
+        "next": 380
     },
     {
-        "id": 265,
+        "id": 365,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "MAYBE WE ARE HACKED\u2026"
+        "content": "MAYBE WE ARE HACKED\u2026",
+        "next": 366
     },
     {
-        "id": 266,
+        "id": 366,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "And they steal our private keys through a malicious code embedded within an image\u2026"
+        "content": "And they steal our private keys through a malicious code embedded within an image\u2026",
+        "next": 367
     },
     {
-        "id": 267,
+        "id": 367,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "And then they use images to send our stolen private keys back to them."
+        "content": "And then they use images to send our stolen private keys back to them.",
+        "next": 368
     },
     {
-        "id": 268,
+        "id": 368,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "They never needed a quantum computer to decrypt our messages over and over again\u2026"
+        "content": "They never needed a quantum computer to decrypt our messages over and over again\u2026",
+        "next": 369
     },
     {
-        "id": 269,
+        "id": 369,
         "character": "Dr. Glitchwell",
         "type": "QUESTION",
         "content": "Our Intrusion Detection System would have never suspected an image to contain our private keys\u2026",
         "choices": [
             {
                 "text": "What is an Intrusion Detection System?",
-                "destination_id": 270
+                "destination_id": 370
             },
             {
                 "text": "I understand",
-                "destination_id": 272
+                "destination_id": 372
             }
         ]
     },
     {
-        "id": 270,
+        "id": 370,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Our Intrusion Detection System scans our network traffic for malicious activity."
+        "content": "Our Intrusion Detection System scans our network traffic for malicious activity.",
+        "next": 371
     },
     {
-        "id": 271,
+        "id": 371,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "But if the activity is hidden within an image, our system does not detect that, yet."
+        "content": "But if the activity is hidden within an image, our system does not detect that, yet.",
+        "next": 372
     },
     {
-        "id": 272,
+        "id": 372,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "I need to do research on this topic to prevent attacks using steganography."
+        "content": "I need to do research on this topic to prevent attacks using steganography.",
+        "next": 373
     },
     {
-        "id": 273,
+        "id": 373,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "That reminds me\u2026 "
+        "content": "That reminds me\u2026 ",
+        "next": 374
     },
     {
-        "id": 274,
+        "id": 374,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Maybe SilentSpectra hides their secret messages within their images on social media!"
+        "content": "Maybe SilentSpectra hides their secret messages within their images on social media!",
+        "next": 375
     },
     {
-        "id": 275,
+        "id": 375,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
         "content": "That may also explain why we haven\u2019t seen SilentSpectra communicating yet.",
-        "next": 280
+        "next": 380
     },
     {
-        "id": 280,
+        "id": 380,
         "character": "Boss M.",
         "type": "CUSTOM",
-        "content": "${name}, please find the hidden message of this part of the image, Dr. Glitchwell. You will do the other part."
+        "content": "${name}, please find the hidden message of this part of the image, Dr. Glitchwell. You will do the other part.",
+        "next": 381
     },
     {
-        "id": 281,
+        "id": 381,
         "character": "Boss M.",
         "type": "OPEN QUESTION",
         "content": "What word did you find?",
         "choices": [
             {
                 "text": "[\u2026]",
-                "destination_id": 290
+                "destination_id": 390
             }
         ]
     },
     {
-        "id": 290,
+        "id": 390,
         "character": "Boss M.",
         "type": "TEXT",
         "content": "Let\u2019s call it a day for now and come up with a plan to deal with this issue tomorrow."
