@@ -1325,7 +1325,7 @@
         "id": 421,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "But be careful, if you get caught by their anti-malware and be put into quarantaine, you will never be able to get back to the real world. ",
+        "content": "But be careful, if you get caught by their anti-malware and be put into quarantine, you will never be able to get back to the real world. ",
         "next": 422
     },
     {
@@ -1450,6 +1450,188 @@
         "id": 437,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "Dr. Glitchwell, prepare the Pixinator and transfer ${name} to the computer world."
+        "content": "Dr. Glitchwell, prepare the Pixinator and transfer ${name} to the computer world.",
+        "next": 500
+    },
+    {
+        "id": 500,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I am on my own now. My choices really matter now.",
+        "next": 501
+    },
+    {
+        "id": 501,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Phase 1: get in. I am literally data on a computer now.",
+        "next": 502
+    },
+    {
+        "id": 502,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "I need to make sure the anti-malware systems of SilentSpectra cannot find me. I will\u2026",
+        "choices": [
+            {
+                "text": "Use cryptography",
+                "destination_id": 503
+            },
+            {
+                "text": "Use steganography",
+                "destination_id": 520
+            }
+        ]
+    },
+    {
+        "id": 503,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Okay, I have decrypted myself and send an email to Agent T. with myself attached.",
+        "next": 504
+    },
+    {
+        "id": 504,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "Hello, the name is Aegis. I am the Intrusion Detection System for the SilentSpectra network.",
+        "next": 505
+    },
+    {
+        "id": 505,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You must bypass me to gain access.",
+        "next": 506
+    },
+    {
+        "id": 506,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I see you are an email, but something encrypted is attached. ",
+        "next": 507
+    },
+    {
+        "id": 507,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I cannot guarantee that you have no means of harm, since I cannot read the encrypted data.",
+        "next": 508
+    },
+    {
+        "id": 508,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "Therefore you will be quarantined!",
+        "next": 509
+    },
+    {
+        "id": 509,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "GAME OVER",
+        "next": 510
+    },
+    {
+        "id": 510,
+        "character": "player",
+        "type": "TEXT",
+        "content": "The message within encrypted data is hidden, but the existence of it is not.",
+        "next": 511
+    },
+    {
+        "id": 511,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "Do you want to try phase 1 again?",
+        "choices": [
+            {
+                "text": "Yes",
+                "destination_id": 500
+            },
+            {
+                "text": "No",
+                "destination_id": 650
+            }
+        ]
+    },
+    {
+        "id": 520,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "Which of the following images shall I attach to the email to Agent T.?",
+        "choices": [
+            {
+                "text": "Image 1",
+                "destination_id": 521
+            },
+            {
+                "text": "Image 2",
+                "destination_id": 523
+            },
+            {
+                "text": "Image 3",
+                "destination_id": 524
+            }
+        ]
+    },
+    {
+        "id": 521,
+        "character": "player",
+        "type": "TEXT",
+        "content": "An image with a lot of different colours would have worked best, since there we can make use of that redundant information.",
+        "next": 522
+    },
+    {
+        "id": 522,
+        "character": "player",
+        "type": "TEXT",
+        "content": "But I will try this image anyway.",
+        "next": 530
+    },
+    {
+        "id": 523,
+        "character": "player",
+        "type": "TEXT",
+        "content": "This image will fit our needs perfectly!",
+        "next": 530
+    },
+    {
+        "id": 524,
+        "character": "player",
+        "type": "TEXT",
+        "content": "A bigger image can contain more data. It is hard to hide myself in here without altering the visibility of the image.",
+        "next": 522
+    },
+    {
+        "id": 530,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Now that I got an image, I need to hide myself in it.",
+        "next": 531
+    },
+    {
+        "id": 531,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "Where in the image should I hide?",
+        "choices": [
+            {
+                "text": "At the start of the file",
+                "destination_id": 0
+            },
+            {
+                "text": "At the end of the file",
+                "destination_id": 0
+            },
+            {
+                "text": "Replace the most significant bits by me",
+                "destination_id": 0
+            },
+            {
+                "text": "Replace the least significant bits by me",
+                "destination_id": 0
+            }
+        ]
     }
 ]
