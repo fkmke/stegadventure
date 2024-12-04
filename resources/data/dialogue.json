@@ -13,7 +13,39 @@
         "content": "You remember your codename right?",
         "choices": [
             {
-                "text": "${name}",
+                "text": "PixelPhantom",
+                "destination_id": 102
+            },
+            {
+                "text": "ByteBandit",
+                "destination_id": 102
+            },
+            {
+                "text": "007",
+                "destination_id": 102
+            },
+            {
+                "text": "Agent Jan-Kees",
+                "destination_id": 102
+            },
+            {
+                "text": "ZeroTrace",
+                "destination_id": 102
+            },
+            {
+                "text": "Sudo",
+                "destination_id": 102
+            },
+            {
+                "text": "Agent B.",
+                "destination_id": 102
+            },
+            {
+                "text": "Stella",
+                "destination_id": 102
+            },
+            {
+                "text": "Joe",
                 "destination_id": 102
             }
         ]
@@ -45,14 +77,14 @@
         "id": 104,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Yes, I know! I am amazing!",
+        "content": "Yes, I know! I am the amazing inventor of the Pixinator!",
         "next": 106
     },
     {
         "id": 105,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "You don\u2019t remember?",
+        "content": "You don\u2019t remember my great invention the Pixinator?",
         "next": 106
     },
     {
@@ -466,7 +498,7 @@
         "id": 240,
         "character": "player",
         "type": "TEXT",
-        "content": "Agent P. has quite some books. Let\u2019s look into some books.",
+        "content": "Agent P. has quite some books. Let\u2019s look into some books. TODO!!!",
         "next": 201
     },
     {
@@ -1059,19 +1091,365 @@
     {
         "id": 381,
         "character": "Boss M.",
-        "type": "OPEN QUESTION",
+        "type": "QUESTION",
         "content": "What word did you find?",
         "choices": [
             {
-                "text": "[\u2026]",
+                "text": "Fire",
+                "destination_id": 382
+            },
+            {
+                "text": "Cash",
+                "destination_id": 382
+            },
+            {
+                "text": "Iron",
+                "destination_id": 382
+            },
+            {
+                "text": "Sign",
+                "destination_id": 382
+            },
+            {
+                "text": "Face",
                 "destination_id": 390
+            },
+            {
+                "text": "Four",
+                "destination_id": 382
+            },
+            {
+                "text": "Star",
+                "destination_id": 382
             }
         ]
     },
     {
+        "id": 382,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "There is no way that correlates with my finding.",
+        "next": 383
+    },
+    {
+        "id": 383,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Make sure to concatenate all the least significant bits.",
+        "next": 384
+    },
+    {
+        "id": 384,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "That is where the secret message is stored, which our systems did not detect.",
+        "next": 385
+    },
+    {
+        "id": 385,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Please try again.",
+        "next": 381
+    },
+    {
         "id": 390,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I found \u2018book\u2019. I guess they are using Facebook for their communication!",
+        "next": 391
+    },
+    {
+        "id": 391,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "Let\u2019s call it a day for now and come up with a plan to deal with this issue tomorrow."
+        "content": "Let\u2019s call it a day for now and come up with a plan to deal with this issue tomorrow.",
+        "next": 400
+    },
+    {
+        "id": 400,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Good morning\u2026 I worked all night, but I found out that SilentSpectra is indeed using Facebook for communication.",
+        "next": 401
+    },
+    {
+        "id": 401,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "We have seen their messages before of course, but we weren\u2019t aware that they integrated their secret message within the attached files.",
+        "next": 402
+    },
+    {
+        "id": 402,
+        "character": "Dr. Glitchwell",
+        "type": "QUESTION",
+        "content": "Indeed. I also found out that Agent T., who is working for SilentSpectra is using the email adress tom@covinco.com actively.",
+        "choices": [
+            {
+                "text": "We can perform a DDoS attack",
+                "destination_id": 403
+            },
+            {
+                "text": "We can perform USB Drops",
+                "destination_id": 404
+            },
+            {
+                "text": "We can perform spear phishing",
+                "destination_id": 407
+            }
+        ]
+    },
+    {
+        "id": 403,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Well\u2026 we haven\u2019t located their servers yet, so that is not possible.",
+        "next": 405
+    },
+    {
+        "id": 404,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Well\u2026 we haven\u2019t located their main hideout yet, so that will be useless.",
+        "next": 405
+    },
+    {
+        "id": 405,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "What are you suggesting instead?",
+        "next": 406
+    },
+    {
+        "id": 406,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "I am suggesting we use spear phishing to send an email to Agent T, and hope he will open the attachment in which we will hide Stegware.",
+        "next": 410
+    },
+    {
+        "id": 407,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Indeed. We can apply Stegware within the attachment of our spear phishing email.",
+        "next": 410
+    },
+    {
+        "id": 410,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Stegware?",
+        "next": 411
+    },
+    {
+        "id": 411,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Yes, the name for malicious software which makes use of steganography.",
+        "next": 412
+    },
+    {
+        "id": 412,
+        "character": "Boss M.",
+        "type": "QUESTION",
+        "content": "SilentSpectra hacked us in the end. We should\u2026",
+        "choices": [
+            {
+                "text": "Take revenge!",
+                "destination_id": 413
+            },
+            {
+                "text": "Find out their methods",
+                "destination_id": 413
+            }
+        ]
+    },
+    {
+        "id": 413,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "I was just about to say that!",
+        "next": 414
+    },
+    {
+        "id": 414,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "To do that we need to get into their system and steal their private keys and steganography research.",
+        "next": 415
+    },
+    {
+        "id": 415,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "In addition, I want to be fully able to control their system, so that I can shut it down when needed.",
+        "next": 416
+    },
+    {
+        "id": 416,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Or simply get updates on their progress without them knowing that we\u2019re in.",
+        "next": 417
+    },
+    {
+        "id": 417,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "We will use ${name} and my new invention the Pixinator. You remember waking up earlier from it?",
+        "next": 418
+    },
+    {
+        "id": 418,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "The tests went alright; I can successfully transfer you into the computer world!",
+        "next": 419
+    },
+    {
+        "id": 419,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "${name}, you will transfer into the computer world and hack into SilentSpectra\u2019s network.",
+        "next": 420
+    },
+    {
+        "id": 420,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "You will literally be the Stegware!",
+        "next": 421
+    },
+    {
+        "id": 421,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "But be careful, if you get caught by their anti-malware and be put into quarantaine, you will never be able to get back to the real world. ",
+        "next": 422
+    },
+    {
+        "id": 422,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "They used steganography on us! We will use steganography against them! ",
+        "next": 423
+    },
+    {
+        "id": 423,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "According to my research, it is very commonly used to get into systems unnoticed. But you will need to do it right. ",
+        "next": 424
+    },
+    {
+        "id": 424,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Listen carefully\u2026 The plan is as follows\u2026",
+        "next": 425
+    },
+    {
+        "id": 425,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Just like stealing a treasure from a museum, you first need to get in and out undetected.",
+        "next": 426
+    },
+    {
+        "id": 426,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "To get in, you will need to bypass their security system that scans for malware. ",
+        "next": 427
+    },
+    {
+        "id": 427,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Use steganography to hide yourself, but not fully. Remember, you ARE the malware, meaning that if a part of you is not visible, you will be stuck hidden forever, because you will never be executed.",
+        "next": 428
+    },
+    {
+        "id": 428,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "The best strategy is to hide yourself completely and have only a small script called the bootstrap that is going to extract you from the object you are hiding in. ",
+        "next": 429
+    },
+    {
+        "id": 429,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Next up is planting a code that polls for images on our account on X.",
+        "next": 430
+    },
+    {
+        "id": 430,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Indeed. I will post images containing scripts on X. That way, we can control the system from outside.",
+        "next": 431
+    },
+    {
+        "id": 431,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Here is the seed for the plant. Take good care of it.",
+        "next": 432
+    },
+    {
+        "id": 432,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "At last, you should get out of the system safely so that you can come back to the real world. Please take some sensitive information with you. ",
+        "next": 433
+    },
+    {
+        "id": 433,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "We will not be able to communicate with you once you are in. So you will be on your own now. ",
+        "next": 434
+    },
+    {
+        "id": 434,
+        "character": "Boss M.",
+        "type": "QUESTION",
+        "content": "A beautiful plan isn\u2019t it?",
+        "choices": [
+            {
+                "text": "Yes ma\u2019am!",
+                "destination_id": 437
+            },
+            {
+                "text": "Please repeat the plan",
+                "destination_id": 435
+            },
+            {
+                "text": "Just as beautiful as you <3",
+                "destination_id": 436
+            }
+        ]
+    },
+    {
+        "id": 435,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Didn\u2019t you pay attention? Well, here is a recap.",
+        "next": 424
+    },
+    {
+        "id": 436,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Keep focused!",
+        "next": 437
+    },
+    {
+        "id": 437,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Dr. Glitchwell, prepare the Pixinator and transfer ${name} to the computer world."
     }
 ]

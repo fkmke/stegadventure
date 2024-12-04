@@ -63,8 +63,8 @@ function createGraph() {
     // Create force simulation
     const simulation = d3
         .forceSimulation(props.nodes)
-        .force("link", d3.forceLink(props.links).id((d) => d.id).distance(60))
-        .force("charge", d3.forceManyBody().strength(-200))
+        .force("link", d3.forceLink(props.links).id((d) => d.id).distance(100))
+        .force("charge", d3.forceManyBody().strength(-150))
         .force("center", d3.forceCenter(width / 2 / 0.2, height / 2 / 0.2));
 
     // Add links
@@ -118,11 +118,15 @@ function createGraph() {
             if (d.id.startsWith('100')) {
                 return '#eb422f';
             } else if (d.id.startsWith('1')) {
-                return '#34aeeb';
+                return '#cd30f0';
             } else if (d.id.startsWith('2')) {
-                return '#2bf060';
+                return '#34aeeb';
             } else if (d.id.startsWith('3')) {
-                return '#f0b53e';
+                return '#2bf060';
+            } else if (d.id.startsWith('4')) {
+                return '#f5e342';
+            } else if (d.id.startsWith('5')) {
+                return '#f07c29';
             } else {
                 return '#fff';
             }
