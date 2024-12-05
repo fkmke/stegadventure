@@ -1,6 +1,15 @@
 <template>
     <div class="story">
-        <DirectedGraph :nodes="nodes" :links="links" />
+        <div class="filters">
+            <button @click="getAll">All</button>
+            <button @click="getChapter(1)">Chapter 1</button>
+            <button @click="getChapter(2)">Chapter 2</button>
+            <button @click="getChapter(3)">Chapter 3</button>
+            <button @click="getChapter(4)">Chapter 4</button>
+            <button @click="getChapter(5)">Chapter 5</button>
+            <button @click="getChapter(6)">Chapter 6</button>
+        </div>
+        <DirectedGraph :nodes="filteredNodes" :links="filteredLinks" />
     </div>
 </template>
 
@@ -8,6 +17,7 @@
 import DirectedGraph from '../components/graphs/DirectedGraph.vue';
 
 import jsonStory from '../../data/dialogue.json';
+import { ref } from 'vue';
 
 // Function to convert JSON to graph format
 function convertDataToGraph(data) {
@@ -54,10 +64,45 @@ function convertDataToGraph(data) {
 
 // Convert JSON into nodes and links
 const { nodes, links } = convertDataToGraph(jsonStory);
+
+// With filters
+const filteredNodes = ref(nodes);
+const filteredLinks = ref(links);
+
+function getAll() {
+    filteredNodes.value = nodes;
+    filteredLinks.value = links;
+}
+
+function getChapter(chapter) {
+    filteredNodes.value = nodes.filter((node) => node.id.startsWith(chapter));
+    filteredLinks.value = links.filter(
+        (link) => link.source.id.startsWith(chapter) && link.target.id.startsWith(chapter)
+    );
+}
+
 </script>
 
 <style scoped>
 .story {
     background-color: #0f0f0f;
+}
+
+.filters {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 200px;
+}
+
+button {
+    padding: 5px;
+    border: 4px white solid;
+    border-radius: 5px;
+    color: white;
+    background-color: #0f0f0fC0;
 }
 </style>
