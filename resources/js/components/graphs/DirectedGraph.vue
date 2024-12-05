@@ -64,7 +64,7 @@ function createGraph() {
     const simulation = d3
         .forceSimulation(props.nodes)
         .force("link", d3.forceLink(props.links).id((d) => d.id).distance(100))
-        .force("charge", d3.forceManyBody().strength(-150))
+        .force("charge", d3.forceManyBody().strength(-200))
         .force("center", d3.forceCenter(width / 2 / 0.2, height / 2 / 0.2));
 
     // Add links

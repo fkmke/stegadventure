@@ -1536,14 +1536,14 @@
         "id": 510,
         "character": "player",
         "type": "TEXT",
-        "content": "The message within encrypted data is hidden, but the existence of it is not.",
+        "content": "Hm\u2026 the message within encrypted data is hidden, but the existence of it is not.",
         "next": 511
     },
     {
         "id": 511,
         "character": "GAME",
         "type": "TEXT",
-        "content": "Do you want to try phase 1 again?",
+        "content": "Do you want to try again from phase 1 of the final mission?",
         "choices": [
             {
                 "text": "Yes",
@@ -1618,20 +1618,447 @@
         "choices": [
             {
                 "text": "At the start of the file",
-                "destination_id": 0
+                "destination_id": 535
             },
             {
                 "text": "At the end of the file",
-                "destination_id": 0
+                "destination_id": 535
             },
             {
                 "text": "Replace the most significant bits by me",
-                "destination_id": 0
+                "destination_id": 550
             },
             {
                 "text": "Replace the least significant bits by me",
-                "destination_id": 0
+                "destination_id": 580
             }
         ]
+    },
+    {
+        "id": 535,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Okay, let\u2019s go!",
+        "next": 536
+    },
+    {
+        "id": 536,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "Hello, the name is Aegis. I am the Intrusion Detection System for the SilentSpectra network.",
+        "next": 537
+    },
+    {
+        "id": 537,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You must bypass me to gain access.",
+        "next": 538
+    },
+    {
+        "id": 538,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I see you are an email, with an image attachment.",
+        "next": 539
+    },
+    {
+        "id": 539,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "The image looks highly altered. A lot of redundant data seems to be put together.",
+        "next": 540
+    },
+    {
+        "id": 540,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "Therefore, I cannot guarantee that you have no means of harm.",
+        "next": 541
+    },
+    {
+        "id": 541,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You will be quarantined!",
+        "next": 542
+    },
+    {
+        "id": 542,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "GAME OVER",
+        "next": 543
+    },
+    {
+        "id": 543,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Hmm\u2026 putting a data object at the very start or end is very suspicious.",
+        "next": 544
+    },
+    {
+        "id": 544,
+        "character": "player",
+        "type": "TEXT",
+        "content": "It can easily be detected. I should try to spread the data throughout the file more next time.",
+        "next": 545
+    },
+    {
+        "id": 545,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "Do you want to try again from phase 1 of the final mission?",
+        "choices": [
+            {
+                "text": "Yes",
+                "destination_id": 500
+            },
+            {
+                "text": "No",
+                "destination_id": 650
+            }
+        ]
+    },
+    {
+        "id": 550,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "How will I hide myself within these most significant bits?",
+        "choices": [
+            {
+                "text": "I will hide 100% in these bits to be undetectable for their anti-malware system",
+                "destination_id": 551
+            },
+            {
+                "text": "I will hide 100% in these bits and attach a small script that extracts myself",
+                "destination_id": 570
+            }
+        ]
+    },
+    {
+        "id": 551,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Okay, let\u2019s go!",
+        "next": 552
+    },
+    {
+        "id": 552,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "Hello, the name is Aegis. I am the Intrusion Detection System for the SilentSpectra network.",
+        "next": 553
+    },
+    {
+        "id": 553,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You must bypass me to gain access.",
+        "next": 554
+    },
+    {
+        "id": 554,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I see you are an email, with an image attachment.",
+        "next": 555
+    },
+    {
+        "id": 555,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "The colours of the image look so weird, as if they are not the right colours.",
+        "next": 556
+    },
+    {
+        "id": 556,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "But maybe that is just a new hype or art trend that I am not aware of.",
+        "next": 557
+    },
+    {
+        "id": 557,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You are lucky! I will let you through this time.",
+        "next": 558
+    },
+    {
+        "id": 558,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Pfeww! I am through, but I could have better hidden in the least significant bits of the image\u2026",
+        "next": 559
+    },
+    {
+        "id": 559,
+        "character": "player",
+        "type": "TEXT",
+        "content": "That way, the colours are not altered much.",
+        "next": 560
+    },
+    {
+        "id": 560,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Now I should wait until Agent T. opens the image of the email that I am part of.",
+        "next": 561
+    },
+    {
+        "id": 561,
+        "character": "player",
+        "type": "TEXT",
+        "content": "\u2026",
+        "next": 562
+    },
+    {
+        "id": 562,
+        "character": "player",
+        "type": "TEXT",
+        "content": "\u2026",
+        "next": 563
+    },
+    {
+        "id": 563,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Agent T. opened the image but I am still stuck in the image\u2026",
+        "next": 564
+    },
+    {
+        "id": 564,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Their computer system does not see me, the Stegware, and can thus never execute me\u2026",
+        "next": 565
+    },
+    {
+        "id": 565,
+        "character": "player",
+        "type": "TEXT",
+        "content": "I am stuck in this image forever, because nothing gets me out.",
+        "next": 566
+    },
+    {
+        "id": 566,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "GAME OVER",
+        "next": 567
+    },
+    {
+        "id": 567,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "Do you want to try again from phase 1 of the final mission?",
+        "choices": [
+            {
+                "text": "Yes",
+                "destination_id": 500
+            },
+            {
+                "text": "No",
+                "destination_id": 650
+            }
+        ]
+    },
+    {
+        "id": 570,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "Hello, the name is Aegis. I am the Intrusion Detection System for the SilentSpectra network.",
+        "next": 571
+    },
+    {
+        "id": 571,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You must bypass me to gain access.",
+        "next": 572
+    },
+    {
+        "id": 572,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I see you are an email, with an image attachment.",
+        "next": 573
+    },
+    {
+        "id": 573,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "The colours of the image look so weird, as if they are not the right colours.",
+        "next": 574
+    },
+    {
+        "id": 574,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "But maybe that is just a new hype or art trend that I am not aware of.",
+        "next": 575
+    },
+    {
+        "id": 575,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You are lucky! I will let you through this time.",
+        "next": 576
+    },
+    {
+        "id": 576,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Pfeww! I am through, but I could have better hidden in the least significant bits of the image\u2026",
+        "next": 577
+    },
+    {
+        "id": 577,
+        "character": "player",
+        "type": "TEXT",
+        "content": "That way, the colours are not altered much.",
+        "next": 606
+    },
+    {
+        "id": 580,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "How will I hide myself within these least significant bits?",
+        "choices": [
+            {
+                "text": "I will hide 100% in these bits to be undetectable for their anti-malware system",
+                "destination_id": 581
+            },
+            {
+                "text": "I will hide 100% in these bits and attach a small script that extracts myself",
+                "destination_id": 590
+            }
+        ]
+    },
+    {
+        "id": 581,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Okay, let\u2019s go!",
+        "next": 582
+    },
+    {
+        "id": 582,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "Hello, the name is Aegis. I am the Intrusion Detection System for the SilentSpectra network.",
+        "next": 583
+    },
+    {
+        "id": 583,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You must bypass me to gain access.",
+        "next": 584
+    },
+    {
+        "id": 584,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I see you are an email, with an image attachment.",
+        "next": 585
+    },
+    {
+        "id": 585,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I do not see anything suspicious, you may pass through.",
+        "next": 586
+    },
+    {
+        "id": 586,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Good!",
+        "next": 560
+    },
+    {
+        "id": 590,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Okay, let\u2019s go!",
+        "next": 591
+    },
+    {
+        "id": 591,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "Hello, the name is Aegis. I am the Intrusion Detection System for the SilentSpectra network.",
+        "next": 592
+    },
+    {
+        "id": 592,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "You must bypass me to gain access.",
+        "next": 593
+    },
+    {
+        "id": 593,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I see you are an email, with an image attachment.",
+        "next": 594
+    },
+    {
+        "id": 594,
+        "character": "Aegis",
+        "type": "TEXT",
+        "content": "I do not see anything suspicious, you may pass through.",
+        "next": 595
+    },
+    {
+        "id": 595,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Good!",
+        "next": 596
+    },
+    {
+        "id": 596,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Now I should wait until Agent T. opens the attachment, which runs the extract script to extract myself.",
+        "next": 597
+    },
+    {
+        "id": 597,
+        "character": "player",
+        "type": "TEXT",
+        "content": "\u2026",
+        "next": 598
+    },
+    {
+        "id": 598,
+        "character": "player",
+        "type": "TEXT",
+        "content": "\u2026",
+        "next": 599
+    },
+    {
+        "id": 599,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Great! Agent T. opened the image and I got extracted. I am fully free in the SilentSpectra network now!",
+        "next": 600
+    },
+    {
+        "id": 600,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Phase 1 of the mission finished! Now let\u2019s continue to phase 2.",
+        "next": 601
+    },
+    {
+        "id": 601,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "What was phase 2 again?"
     }
 ]
