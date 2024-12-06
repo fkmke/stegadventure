@@ -7,7 +7,7 @@
             <button @click="getChapter(3)">Chapter 3</button>
             <button @click="getChapter(4)">Chapter 4</button>
             <button @click="getChapter(5)">Chapter 5</button>
-            <button @click="getChapter(6)">Chapter 6</button>
+            <button @click="getChapter(7)">Chapter 6</button>
         </div>
         <DirectedGraph :nodes="filteredNodes" :links="filteredLinks" />
     </div>
@@ -75,6 +75,15 @@ function getAll() {
 }
 
 function getChapter(chapter) {
+    // Chapter 5 spreads over two numbers
+    if (chapter === 5) {
+        filteredNodes.value = nodes.filter((node) => node.id.startsWith('5') || node.id.startsWith('6'));
+        filteredLinks.value = links.filter(
+            (link) => (link.source.id.startsWith('5') || link.source.id.startsWith('6')) && (link.target.id.startsWith('5') || link.target.id.startsWith('6'))
+        );
+        return;
+    }
+
     filteredNodes.value = nodes.filter((node) => node.id.startsWith(chapter));
     filteredLinks.value = links.filter(
         (link) => link.source.id.startsWith(chapter) && link.target.id.startsWith(chapter)

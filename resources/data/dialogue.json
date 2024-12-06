@@ -1551,7 +1551,7 @@
             },
             {
                 "text": "No",
-                "destination_id": 650
+                "destination_id": 700
             }
         ]
     },
@@ -1702,23 +1702,7 @@
         "character": "player",
         "type": "TEXT",
         "content": "It can easily be detected. I should try to spread the data throughout the file more next time.",
-        "next": 545
-    },
-    {
-        "id": 545,
-        "character": "GAME",
-        "type": "TEXT",
-        "content": "Do you want to try again from phase 1 of the final mission?",
-        "choices": [
-            {
-                "text": "Yes",
-                "destination_id": 500
-            },
-            {
-                "text": "No",
-                "destination_id": 650
-            }
-        ]
+        "next": 511
     },
     {
         "id": 550,
@@ -1846,23 +1830,7 @@
         "character": "GAME",
         "type": "TEXT",
         "content": "GAME OVER",
-        "next": 567
-    },
-    {
-        "id": 567,
-        "character": "GAME",
-        "type": "TEXT",
-        "content": "Do you want to try again from phase 1 of the final mission?",
-        "choices": [
-            {
-                "text": "Yes",
-                "destination_id": 500
-            },
-            {
-                "text": "No",
-                "destination_id": 650
-            }
-        ]
+        "next": 511
     },
     {
         "id": 570,
@@ -2059,6 +2027,314 @@
         "id": 601,
         "character": "player",
         "type": "QUESTION",
-        "content": "What was phase 2 again?"
+        "content": "What was phase 2 again?",
+        "choices": [
+            {
+                "text": "Plant the seed",
+                "destination_id": 603
+            },
+            {
+                "text": "Water the plant",
+                "destination_id": 602
+            },
+            {
+                "text": "Harvest the plant",
+                "destination_id": 602
+            }
+        ]
+    },
+    {
+        "id": 602,
+        "character": "player",
+        "type": "TEXT",
+        "content": "No, it can\u2019t be. It doesn\u2019t even mean anything.",
+        "next": 601
+    },
+    {
+        "id": 603,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Yes, I will plant the seed Dr. Glitchwell gave to me.",
+        "next": 604
+    },
+    {
+        "id": 604,
+        "character": "player",
+        "type": "TEXT",
+        "content": "The script will poll for new pictures on our account on X and download the image.",
+        "next": 605
+    },
+    {
+        "id": 605,
+        "character": "player",
+        "type": "TEXT",
+        "content": "We will hide commands in these images, so that we can control this system from outside.",
+        "next": 606
+    },
+    {
+        "id": 606,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Alright, the seed is planted. Let\u2019s enter phase 3 of the mission and get out.",
+        "next": 607
+    },
+    {
+        "id": 607,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "Boss M. told be to bring some sensitive data along. I will bring\u2026",
+        "choices": [
+            {
+                "text": "Holiday images from Agent T.",
+                "destination_id": 608
+            },
+            {
+                "text": "Stego research and their private keys",
+                "destination_id": 609
+            }
+        ]
+    },
+    {
+        "id": 608,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Hm\u2026 I am not sure if Boss M. will be happy with that data.",
+        "next": 607
+    },
+    {
+        "id": 609,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Okay, I found this data!",
+        "next": 610
+    },
+    {
+        "id": 610,
+        "character": "player",
+        "type": "QUESTION",
+        "content": "Now, how do I get out?",
+        "choices": [
+            {
+                "text": "Use steganography to hide myself and the information in a PDF file on the way out",
+                "destination_id": 640
+            },
+            {
+                "text": "Don\u2019t do anything as the way out of the system is not protected",
+                "destination_id": 620
+            },
+            {
+                "text": "Use cryptography to hide that I am having sensitive files with me",
+                "destination_id": 630
+            }
+        ]
+    },
+    {
+        "id": 620,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "Hello, the name is Velos. I am the Data Leakage Protection for the SilentSpectra network.",
+        "next": 621
+    },
+    {
+        "id": 621,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "I scan for sensitive data patterns, like credit card numbers and other sensitive data.",
+        "next": 622
+    },
+    {
+        "id": 622,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "I see some private keys are in your possession, but the context is never right to let them out.",
+        "next": 623
+    },
+    {
+        "id": 623,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "Therefore, you may not leave this system!",
+        "next": 634
+    },
+    {
+        "id": 630,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "Hello, the name is Velos. I am the Data Leakage Protection for the SilentSpectra network.",
+        "next": 631
+    },
+    {
+        "id": 631,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "I scan for sensitive data patterns, like credit card numbers and other sensitive data.",
+        "next": 632
+    },
+    {
+        "id": 632,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "You are completely encrypted. I can therefore not guarantee that you are carrying sensitive data.",
+        "next": 633
+    },
+    {
+        "id": 633,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "So, you may not leave this system!",
+        "next": 634
+    },
+    {
+        "id": 634,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "GAME OVER",
+        "next": 635
+    },
+    {
+        "id": 635,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Hm\u2026 I need to outsmart Velos the Data Leakage Protection.",
+        "next": 511
+    },
+    {
+        "id": 640,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "Hello, the name is Velos. I am the Data Leakage Protection for the SilentSpectra network.",
+        "next": 641
+    },
+    {
+        "id": 641,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "I scan for sensitive data patterns, like credit card numbers and other sensitive data.",
+        "next": 642
+    },
+    {
+        "id": 642,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "You seem to be an unharmful PDF file that is going to be uploaded on the internet.",
+        "next": 643
+    },
+    {
+        "id": 643,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "That is no weird action. Agent P. probably just wants to share something.",
+        "next": 644
+    },
+    {
+        "id": 644,
+        "character": "Velos",
+        "type": "TEXT",
+        "content": "I will let you through.",
+        "next": 645
+    },
+    {
+        "id": 645,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Great! I got out of the system and I am free on the internet now.",
+        "next": 750
+    },
+    {
+        "id": 700,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "\u2026",
+        "next": 701
+    },
+    {
+        "id": 701,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Have you found ${name} already?",
+        "next": 702
+    },
+    {
+        "id": 702,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "No, I haven\u2019t. It seems that ${name} is stuck in the system. I cannot get them out.",
+        "next": 703
+    },
+    {
+        "id": 703,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "He will not wake up now from by Pixinator.",
+        "next": 704
+    },
+    {
+        "id": 704,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "We have lost our hero. May ${name} rest in peace.",
+        "next": 760
+    },
+    {
+        "id": 750,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "\u2026",
+        "next": 751
+    },
+    {
+        "id": 751,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Amazing! I have found ${name} on the internet. I will transfer him back to life now.",
+        "next": 752
+    },
+    {
+        "id": 752,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "Congratulations! You have made it back alive.",
+        "next": 753
+    },
+    {
+        "id": 753,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "I see you brought some sensitive data that I wanted to see along. Good job!",
+        "next": 754
+    },
+    {
+        "id": 754,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "We will now be able to fully control SilentSpectra.",
+        "next": 755
+    },
+    {
+        "id": 755,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "Yep, and I have upgraded our system security with strong StegAnalysis and steganography prevention tools.",
+        "next": 756
+    },
+    {
+        "id": 756,
+        "character": "Dr. Glitchwell",
+        "type": "TEXT",
+        "content": "We will also not open a suspicious attachment of an email anymore.",
+        "next": 757
+    },
+    {
+        "id": 757,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "You are a real steganography master!",
+        "next": 760
+    },
+    {
+        "id": 760,
+        "character": "GAME",
+        "type": "TEXT",
+        "content": "The end."
     }
 ]

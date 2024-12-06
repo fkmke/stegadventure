@@ -111,14 +111,14 @@ function createGraph(nodes, links) {
     // Add the circle for each node
     node.append("circle")
         .attr("r", (d) => {
-            if (d.id === "100") {
+            if (d.id === "100" || d.id === "200" || d.id === "300" || d.id === "310" || d.id === "320" || d.id === "400" || d.id === "500" || d.id === "700" || d.id === "750") {
                 return 30;  // Larger size for id 100
             } else {
                 return 20;  // Default circle size
             }
         })
         .attr("fill", (d) => {
-            if (d.id.startsWith('100')) {
+            if (d.id.startsWith('100') || d.id.startsWith('760')) {
                 return '#eb422f';
             } else if (d.id.startsWith('1')) {
                 return '#cd30f0';
@@ -130,6 +130,10 @@ function createGraph(nodes, links) {
                 return '#f5e342';
             } else if (d.id.startsWith('5')) {
                 return '#f07c29';
+            } else if (d.id.startsWith('6')) {
+                return '#f07c29';
+            } else if (d.id.startsWith('7')) {
+                return '#f516c8';
             } else {
                 return '#fff';
             }
