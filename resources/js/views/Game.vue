@@ -3,7 +3,7 @@ import DialogBox from '../components/game/DialogBox.vue';
 import { ref } from 'vue';
 import nodes from '../../data/dialogue.json';
 
-let node = ref(nodes[17]);
+let node = ref(nodes[0]);
 
 function binarySearchById(targetId) {
     let left = 0;
@@ -24,8 +24,13 @@ function binarySearchById(targetId) {
     return null;
 }
 
-function handleTypeTextOnClick() {
+function handleTextOnClick() {
     node.value = binarySearchById(node.value.next);
+}
+
+function handleQuestionOnClick(choice) {
+    console.log(choice)
+    node.value = binarySearchById(choice.destination_id);
 }
 
 </script>
@@ -33,9 +38,10 @@ function handleTypeTextOnClick() {
 <template>
     <!-- Type TEXT -->
     <div v-if="node.type === 'TEXT'">
-        <DialogBox :character="node.character" :content="node.content" :onClick="handleTypeTextOnClick" />
+        <DialogBox :node="node" :onClick="handleTextOnClick" />
     </div>
     <!-- Type QUESTION -->
     <div v-if="node.type === 'QUESTION'">
+        <DialogBox :node="node" :onClick="handleQuestionOnClick" />
     </div>
 </template>
