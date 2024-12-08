@@ -104,7 +104,7 @@
     {
         "id": 108,
         "character": "Dr. Glitchwell",
-        "type": "TEXT",
+        "type": "QUESTION",
         "content": "No way! I even made our encryption algorithm more complex! ",
         "choices": [
             {
@@ -579,7 +579,7 @@
     {
         "id": 291,
         "character": "player",
-        "type": "TEXT",
+        "type": "QUESTION",
         "content": "I will bring\u2026",
         "choices": [
             {
@@ -896,7 +896,7 @@
     {
         "id": 351,
         "character": "Dr. Glitchwell",
-        "type": "TEXT",
+        "type": "QUESTION",
         "content": "By the way, what do you think Agent P. is using this steganography for?",
         "choices": [
             {
@@ -1542,7 +1542,7 @@
     {
         "id": 511,
         "character": "GAME",
-        "type": "TEXT",
+        "type": "QUESTION",
         "content": "Do you want to try again from phase 1 of the final mission?",
         "choices": [
             {
