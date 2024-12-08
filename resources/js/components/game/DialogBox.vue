@@ -9,15 +9,18 @@ const props = defineProps({
 const hasRead = ref(false);
 
 function handleOnClick() {
+    // Go to next node
     if (props.node.type === 'TEXT') {
         props.onClick();
     }
+    // Show answers
     if (props.node.type === 'QUESTION') {
         hasRead.value = true;
     }
 }
 
 function handleOnClickAnswer(choice) {
+    // Return choice and reset hasRead value
     props.onClick(choice);
     hasRead.value = false;
 }
@@ -41,19 +44,18 @@ function handleOnClickAnswer(choice) {
 
 <style scoped>
 .noselect {
-    -webkit-touch-callout: none;
     /* iOS Safari */
-    -webkit-user-select: none;
+    -webkit-touch-callout: none;
     /* Safari */
-    -khtml-user-select: none;
+    -webkit-user-select: none;
     /* Konqueror HTML */
-    -moz-user-select: none;
+    -khtml-user-select: none;
     /* Old versions of Firefox */
-    -ms-user-select: none;
+    -moz-user-select: none;
     /* Internet Explorer/Edge */
+    -ms-user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
     user-select: none;
-    /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .click {

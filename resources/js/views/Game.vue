@@ -3,8 +3,10 @@ import DialogBox from '../components/game/DialogBox.vue';
 import { ref } from 'vue';
 import nodes from '../../data/dialogue.json';
 
+// Current gamenode
 let node = ref(nodes[0]);
 
+// Binary search the nodes array
 function binarySearchById(targetId) {
     let left = 0;
     let right = nodes.length - 1;
@@ -25,11 +27,12 @@ function binarySearchById(targetId) {
 }
 
 function handleTextOnClick() {
+    // Find next node
     node.value = binarySearchById(node.value.next);
 }
 
 function handleQuestionOnClick(choice) {
-    console.log(choice)
+    // Find node of choice
     node.value = binarySearchById(choice.destination_id);
 }
 
