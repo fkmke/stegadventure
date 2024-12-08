@@ -25,7 +25,7 @@ function handleOnClickAnswer(choice) {
 </script>
 
 <template>
-    <div class="click" @click="handleOnClick">
+    <div class="click noselect" @click="handleOnClick">
         <!-- Type TEXT & Type QUESTION-->
         <p class="text">
             <b>{{ node.character }}:</b> {{ node.content }}
@@ -40,6 +40,22 @@ function handleOnClickAnswer(choice) {
 </template>
 
 <style scoped>
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
 .click {
     position: absolute;
     width: 100vw;
@@ -63,6 +79,7 @@ function handleOnClickAnswer(choice) {
     border: 4px white solid;
     border-radius: 20px;
     color: white;
-    background-color: #00000050
+    background-color: #00000050;
+    cursor: pointer;
 }
 </style>
