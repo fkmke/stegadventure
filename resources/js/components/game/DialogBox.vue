@@ -53,7 +53,6 @@ function imagePath() {
 // Function used to update the background for different screen sizes
 function updateContainerSize() {
     nextTick(() => {
-        console.log("tick")
         const img = backgroundImage.value;
         const container = backgroundContainer.value;
 
@@ -145,6 +144,8 @@ onBeforeUnmount(() => {
     height: 100vh;
     background-color: black;
     overflow: hidden;
+    display: flex;
+    justify-items: center;
 }
 
 .background-container {
@@ -176,6 +177,7 @@ onBeforeUnmount(() => {
     right: 5%;
     gap: 10px;
     max-width: 40%;
+    min-width: 15%;
 }
 
 .choice {

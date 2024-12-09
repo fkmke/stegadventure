@@ -5,6 +5,7 @@ import nodes from '../../data/dialogue.json';
 
 // Current gamenode
 let node = ref(nodes[0]);
+let gameHasEnded = ref(false);
 
 // Game states
 let name = ref("Player");
@@ -32,6 +33,12 @@ function binarySearchById(targetId) {
 
 // Find next node
 function handleTextOnClick() {
+    // Do not go to next node when game has ended
+    if (node.value.id === 760) {
+        gameHasEnded.value = true;
+        return;
+    }
+    // Find next node value
     node.value = binarySearchById(node.value.next);
 }
 
