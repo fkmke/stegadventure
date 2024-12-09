@@ -6,6 +6,10 @@ import nodes from '../../data/dialogue.json';
 // Current gamenode
 let node = ref(nodes[0]);
 
+// Game states
+let name = ref("Player");
+let score = ref(0);
+
 // Binary search the nodes array
 function binarySearchById(targetId) {
     let left = 0;
@@ -26,25 +30,29 @@ function binarySearchById(targetId) {
     return null;
 }
 
+// Find next node
 function handleTextOnClick() {
-    // Find next node
     node.value = binarySearchById(node.value.next);
 }
 
+// Find node of choice
 function handleQuestionOnClick(choice) {
-    // Find node of choice
+    // Set name when asked for name
+    if (node.value.id === 101) {
+        name.value = choice.text;
+    }
+    // Go to next node
     node.value = binarySearchById(choice.destination_id);
 }
-
 </script>
 
 <template>
     <!-- Type TEXT -->
     <div v-if="node.type === 'TEXT'">
-        <DialogBox :node="node" :onClick="handleTextOnClick" />
+        <DialogBox :node="node" :onClick="handleTextOnClick" :name="name" />
     </div>
     <!-- Type QUESTION -->
     <div v-if="node.type === 'QUESTION'">
-        <DialogBox :node="node" :onClick="handleQuestionOnClick" />
+        <DialogBox :node="node" :onClick="handleQuestionOnClick" :name="name" />
     </div>
 </template>

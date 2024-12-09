@@ -3,6 +3,7 @@ import { ref } from 'vue';
 
 const props = defineProps({
     node: Object,
+    name: Object,
     onClick: Function,
 });
 
@@ -25,13 +26,27 @@ function handleOnClickAnswer(choice) {
     hasRead.value = false;
 }
 
+// Replaces ${something} by its value.
+// Example template: "Hello, ${name}! You have ${count} new messages."
+// Example values: { name: "Alice", count: 5 }
+function replacePlaceholders(template, values) {
+    return template.replace(/\$\{(\w+)\}/g, (match, key) => {
+        return key in values ? values[key] : match;
+    });
+}
+
+// Returns the text shown to the user.
+function getContent() {
+    return replacePlaceholders(props.node.content, { name: props.name });
+}
+
 </script>
 
 <template>
     <div class="click noselect" @click="handleOnClick">
         <!-- Type TEXT & Type QUESTION-->
         <p class="text">
-            <b>{{ node.character }}:</b> {{ node.content }}
+            <b>{{ node.character }}:</b> {{ getContent() }}
         </p>
         <!-- Type QUESTION -->
         <div v-if="hasRead" class="choices">
