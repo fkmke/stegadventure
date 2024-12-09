@@ -55,4 +55,12 @@ function handleQuestionOnClick(choice) {
     <div v-if="node.type === 'QUESTION'">
         <DialogBox :node="node" :onClick="handleQuestionOnClick" :name="name" />
     </div>
+    <!-- Type CUSTOM -->
+    <div v-if="node.type === 'CUSTOM'">
+        <!-- Skip for now -->
+        {{ handleQuestionOnClick({
+            "text": "Face",
+            "destination_id": 390
+        }) }}
+    </div>
 </template>
