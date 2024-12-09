@@ -12,7 +12,8 @@ const hasRead = ref(false);
 // Styling
 const backgroundContainer = ref(null);
 const backgroundImage = ref(null);
-const fontSize = ref('28px');
+const fontSizeText = ref('28px');
+const fontSizeChoice = ref('20px');
 
 function handleOnClick() {
     // Go to next node
@@ -82,7 +83,8 @@ function updateContainerSize() {
         // Function to update font size on different screen sizes
         if (backgroundImage.value) {
             const height = backgroundImage.value.clientHeight;
-            fontSize.value = `${height * 0.035}px`; // Set font-size to 10% of background image height
+            fontSizeText.value = `${height * 0.035}px`; // Set font-size to 10% of background image height
+            fontSizeChoice.value = `${height * 0.030}px`;
         }
     });
 }
@@ -103,13 +105,15 @@ onBeforeUnmount(() => {
         <div ref="backgroundContainer" class="background-container">
             <img ref="backgroundImage" class="background-image" :src="imagePath()" @load="updateContainerSize" />
             <!-- Type TEXT & Type QUESTION -->
-            <p class="text" :style="{ fontSize }">
+            <p class="text" :style="{ fontSize: fontSizeText }">
                 <b>{{ node.character }}:</b> {{ getContent() }}
             </p>
             <!-- Type QUESTION -->
-            <div v-if="hasRead" class="choices">
-                <div v-for="choice in node.choices" :key="choice.text" class="choice" :style="{ fontSize }"
-                    @click="handleOnClickAnswer(choice)">
+            <div v-if="hasRead" class="choices"
+                :style="node.choices.length > 5 ? { gridTemplateColumns: '1fr 1fr' } : {}">
+                <div />
+                <div v-for="choice in node.choices" :key="choice.text" class="choice"
+                    :style="{ fontSize: fontSizeChoice }" @click="handleOnClickAnswer(choice)">
                     {{ choice.text }}
                 </div>
             </div>
@@ -140,12 +144,12 @@ onBeforeUnmount(() => {
     width: 100vw;
     height: 100vh;
     background-color: black;
+    overflow: hidden;
 }
 
 .background-container {
     position: relative;
     margin: auto;
-    overflow: hidden;
     display: inline-block;
 }
 
@@ -160,29 +164,31 @@ onBeforeUnmount(() => {
     color: white;
     position: absolute;
     top: 80%;
-    right: 20%;
-    /* font-size: min(2.5vw, 3.5vh); */
+    left: 35%;
     display: block;
+    max-width: 56%;
 }
 
 .choices {
     display: grid;
-    max-width: 50%;
-    min-width: 30%;
     position: absolute;
-    bottom: 25%;
-    right: 10%;
-    /* font-size: min(2vw, 3vh); */
-    display: block;
+    bottom: 22.5%;
+    right: 5%;
+    gap: 10px;
+    max-width: 40%;
 }
 
 .choice {
-    margin: 5%;
-    padding: 5%;
+    min-width: fit-content;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border: 0.2vh white solid;
     border-radius: 10px;
     color: white;
-    background-color: #00000050;
+    background-color: #00000090;
     cursor: pointer;
     text-align: right;
 }
