@@ -45,8 +45,13 @@ function getContent() {
 }
 
 // Image path for the background
-function loadBackgroundImage() {
+function getBackgroundImage() {
     return `/backgrounds/${props.node.background}.png`;
+}
+
+// Image path for the character
+function getCharacterImage() {
+    return `/characters/${props.node.character}/${props.node.emotion}.png`;
 }
 
 // Update the background and font sizes dynamically
@@ -73,8 +78,12 @@ onBeforeUnmount(() => {
 <template>
     <div class="click noselect" @click="handleOnClick">
         <div ref="backgroundContainer" class="background-container">
-            <img ref="backgroundImage" class="background-image" :src="loadBackgroundImage()" @load="updateSizes"
+            <!-- Background -->
+            <img ref="backgroundImage" class="background-image" :src="getBackgroundImage()" @load="updateSizes"
                 @error="handleImageError" />
+            <!-- Character -->
+            <img class="character-image" :src="getCharacterImage()" />
+
             <!-- Type TEXT & Type QUESTION -->
             <p class="text" :style="{ fontSize: fontSizeText }">
                 <b>{{ node.character }}:</b> {{ getContent() }}
@@ -123,6 +132,14 @@ onBeforeUnmount(() => {
     height: 100%;
     object-fit: contain;
     display: block;
+}
+
+.character-image {
+    position: absolute;
+    width: auto;
+    height: 40%;
+    left: 0;
+    bottom: 0;
 }
 
 .text {
