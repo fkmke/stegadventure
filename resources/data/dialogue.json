@@ -427,7 +427,7 @@
             },
             {
                 "text": "Yes, the diagram speaks for itself",
-                "destination_id": 201
+                "destination_id": 230
             }
         ]
     },
@@ -492,13 +492,69 @@
         "character": "Dr. Glitchwell",
         "type": "TEXT",
         "content": "Welp, I need to go! Boss M. calls me.",
+        "next": 230
+    },
+    {
+        "id": 230,
+        "character": "player",
+        "type": "TEXT",
+        "content": "There is also a newspaper article in the bin, showing there are images on eBay containing steganography.",
+        "next": 231
+    },
+    {
+        "id": 231,
+        "character": "player",
+        "type": "TEXT",
+        "content": "That\u2019s a surprise!",
         "next": 201
     },
     {
         "id": 240,
         "character": "player",
         "type": "TEXT",
-        "content": "Agent P. has quite some books. Let\u2019s look into some books. TODO!!!",
+        "content": "Agent P. has quite some books. Let\u2019s look into some books.",
+        "next": 241
+    },
+    {
+        "id": 241,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Hm\u2026 The first book is about the difference between steganography and cryptography.",
+        "next": 242
+    },
+    {
+        "id": 242,
+        "character": "player",
+        "type": "TEXT",
+        "content": "Also, on the right side an example of hiding a message with the help of lemon juice.",
+        "next": 243
+    },
+    {
+        "id": 243,
+        "character": "player",
+        "type": "TEXT",
+        "content": "The second book is a history book.",
+        "next": 244
+    },
+    {
+        "id": 244,
+        "character": "player",
+        "type": "TEXT",
+        "content": "It shows how a slave was used as a cover to hide a secret message which was tattooed on the slave\u2019s scalp.",
+        "next": 245
+    },
+    {
+        "id": 245,
+        "character": "player",
+        "type": "TEXT",
+        "content": "The last book shows that terrorists use steganography. It is said that the technique is even used for the 9/11 attacks.",
+        "next": 246
+    },
+    {
+        "id": 246,
+        "character": "player",
+        "type": "TEXT",
+        "content": "So, steganography is quite important!",
         "next": 201
     },
     {
