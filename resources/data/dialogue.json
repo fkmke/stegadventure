@@ -526,32 +526,39 @@
         "id": 242,
         "character": "player",
         "type": "TEXT",
-        "content": "Also, on the right side an example of hiding a message with the help of lemon juice.",
+        "content": "Also, on the right side an example of hiding a message with the help of lemon juice is shown.",
         "next": 243
     },
     {
         "id": 243,
         "character": "player",
         "type": "TEXT",
-        "content": "The second book is a history book.",
+        "content": "Below that an example of a secret message using cryptography.",
         "next": 244
     },
     {
         "id": 244,
         "character": "player",
         "type": "TEXT",
-        "content": "It shows how a slave was used as a cover to hide a secret message which was tattooed on the slave\u2019s scalp.",
+        "content": "The second book is a history book.",
         "next": 245
     },
     {
         "id": 245,
         "character": "player",
         "type": "TEXT",
-        "content": "The last book shows that terrorists use steganography. It is said that the technique is even used for the 9/11 attacks.",
+        "content": "It shows how a slave was used as a cover to hide a secret message which was tattooed on the slave\u2019s scalp.",
         "next": 246
     },
     {
         "id": 246,
+        "character": "player",
+        "type": "TEXT",
+        "content": "The last book shows that terrorists use steganography. It is said that the technique is even used for the 9/11 attacks.",
+        "next": 247
+    },
+    {
+        "id": 247,
         "character": "player",
         "type": "TEXT",
         "content": "So, steganography is quite important!",
@@ -1233,7 +1240,7 @@
         "id": 401,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "We have seen their messages before of course, but we weren\u2019t aware that they integrated their secret message within the attached files.",
+        "content": "We have seen their public messages on social media before of course, but we weren\u2019t aware that they integrated their secret message within the attached files.",
         "next": 402
     },
     {
