@@ -45,13 +45,18 @@ function getContent() {
 }
 
 // Image path for the background
-function getImagePath() {
-    return "/backgrounds/dub/1.png";
+function loadBackgroundImage() {
+    return `/backgrounds/${props.node.background}.png`;
 }
 
 // Update the background and font sizes dynamically
 function updateSizes() {
     updateContainerSize(backgroundImage, backgroundContainer, fontSizeText, fontSizeChoice);
+}
+
+// Return fallback image if image not found
+function handleImageError(event) {
+    event.target.src = '/backgrounds/fallback.png';
 }
 
 onMounted(() => {
@@ -68,7 +73,8 @@ onBeforeUnmount(() => {
 <template>
     <div class="click noselect" @click="handleOnClick">
         <div ref="backgroundContainer" class="background-container">
-            <img ref="backgroundImage" class="background-image" :src="getImagePath()" @load="updateSizes" />
+            <img ref="backgroundImage" class="background-image" :src="loadBackgroundImage()" @load="updateSizes"
+                @error="handleImageError" />
             <!-- Type TEXT & Type QUESTION -->
             <p class="text" :style="{ fontSize: fontSizeText }">
                 <b>{{ node.character }}:</b> {{ getContent() }}

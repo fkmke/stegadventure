@@ -1914,7 +1914,7 @@
         "character": "player",
         "type": "TEXT",
         "content": "Okay, I have decrypted myself and send an email to Agent T. with myself attached.",
-        "background": "pc-world/aegis/decrypted-email",
+        "background": "pc-world/aegis/encrypted-email",
         "emotion": "default",
         "next": 504
     },
@@ -1923,7 +1923,7 @@
         "character": "Aegis",
         "type": "TEXT",
         "content": "Hello, the name is Aegis. I am the Intrusion Detection System for the SilentSpectra network.",
-        "background": "pc-world/aegis/decrypted-email",
+        "background": "pc-world/aegis/encrypted-email",
         "emotion": "default",
         "next": 505
     },
@@ -1932,7 +1932,7 @@
         "character": "Aegis",
         "type": "TEXT",
         "content": "You must bypass me to gain access.",
-        "background": "pc-world/aegis/decrypted-email",
+        "background": "pc-world/aegis/encrypted-email",
         "emotion": "default",
         "next": 506
     },
@@ -1941,7 +1941,7 @@
         "character": "Aegis",
         "type": "TEXT",
         "content": "I see you are an email, but something encrypted is attached. ",
-        "background": "pc-world/aegis/decrypted-email",
+        "background": "pc-world/aegis/encrypted-email",
         "emotion": "default",
         "next": 507
     },
@@ -1950,7 +1950,7 @@
         "character": "Aegis",
         "type": "TEXT",
         "content": "I cannot guarantee that you have no means of harm, since I cannot read the encrypted data.",
-        "background": "pc-world/aegis/decrypted-email",
+        "background": "pc-world/aegis/encrypted-email",
         "emotion": "default",
         "next": 508
     },
@@ -1959,7 +1959,7 @@
         "character": "Aegis",
         "type": "TEXT",
         "content": "Therefore you will be quarantined!",
-        "background": "pc-world/aegis/decrypted-email-quarantine",
+        "background": "pc-world/aegis/encrypted-email-quarantine",
         "emotion": "default",
         "next": 509
     },
