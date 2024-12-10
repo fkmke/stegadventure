@@ -18,7 +18,13 @@ def convert_to_json(df):
             "character": row["Character"],
             "type": row["Type"],
             "content": row["Content"],
+            "background": row["Background"],
+            "emotion": row["Emotion"],
         }
+
+        if "Points" in df.columns and pd.notna(row["Points"]):
+            entry["points"] = int(row["Points"])
+
         if "Choices" in df.columns and pd.notna(row["Choices"]):
             choices = []
             for choice in row["Choices"].split(';'):
@@ -32,6 +38,14 @@ def convert_to_json(df):
 
         if "Next" in df.columns and pd.notna(row["Next"]):
             entry["next"] = int(row["Next"])
+
+        if "Background" in df.columns and pd.notna(row["Background"]):
+            entry["background"] = row["Background"]
+
+        if "Emotion" in df.columns and pd.notna(row["Emotion"]):
+            entry["emotion"] = row["Emotion"]
+        else:
+             entry["emotion"] = "default"
 
         dialogue_list.append(entry)
 
