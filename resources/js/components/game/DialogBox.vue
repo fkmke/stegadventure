@@ -60,8 +60,13 @@ function updateSizes() {
 }
 
 // Return fallback image if image not found
-function handleImageError(event) {
+function handleBackgroundImageError(event) {
     event.target.src = '/backgrounds/fallback.png';
+}
+
+// Return fallback image if image not found
+function handleCharacterImageError(event) {
+    event.target.src = '/characters/fallback.png';
 }
 
 onMounted(() => {
@@ -80,9 +85,9 @@ onBeforeUnmount(() => {
         <div ref="backgroundContainer" class="background-container">
             <!-- Background -->
             <img ref="backgroundImage" class="background-image" :src="getBackgroundImage()" @load="updateSizes"
-                @error="handleImageError" />
+                @error="handleBackgroundImageError" />
             <!-- Character -->
-            <img class="character-image" :src="getCharacterImage()" />
+            <img class="character-image" :src="getCharacterImage()" @error="handleCharacterImageError" />
 
             <!-- Type TEXT & Type QUESTION -->
             <p class="text" :style="{ fontSize: fontSizeText }">
