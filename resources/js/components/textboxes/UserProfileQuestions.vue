@@ -133,10 +133,4 @@ function next() {
 .example {
     font-size: 0.7rem;
 }
-
-.button {
-    margin-top: var(--standard-padding);
-    display: flex;
-    justify-content: flex-end
-}
 </style>

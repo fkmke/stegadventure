@@ -14,6 +14,15 @@ const readStudyInformation = ref(false);
 const hasGivenConsent = ref(false);
 
 // Experiment
+/*
+State 0: information letter and consent
+State 1: pre-experiment questions
+State 2: performing the task
+State 3: filling in UES-SF
+State 4: performing the knowledge test
+State 5: optional feedback
+State 6: thank you for participating
+*/
 const experimentState = ref(0);
 
 // Participant id
@@ -41,6 +50,7 @@ watch([readStudyInformation, hasGivenConsent], async (newValues, oldValues) => {
             <Game v-if="inGameGroup" v-model:experimentState="experimentState" />
             <SteganographyText v-else v-model:experimentState="experimentState" />
         </div>
+        <!-- TODO state 2-6 -->
     </div>
 </template>
 

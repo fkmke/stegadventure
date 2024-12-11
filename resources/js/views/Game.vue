@@ -3,9 +3,14 @@ import DialogBox from '../components/game/DialogBox.vue';
 import { ref } from 'vue';
 import nodes from '../../data/dialogue.json';
 
+const props = defineProps({
+    experimentState: Number,
+});
+
+const emit = defineEmits(['update:experimentState']);
+
 // Current gamenode
 let node = ref(nodes[0]);
-let gameHasEnded = ref(false);
 
 // Game states
 let name = ref("Player");
@@ -35,7 +40,8 @@ function binarySearchById(targetId) {
 function handleTextOnClick() {
     // Do not go to next node when game has ended
     if (node.value.id === 760) {
-        gameHasEnded.value = true;
+        // Go to next part in the experiment
+        emit('update:experimentState', 2);
         return;
     }
     // Find next node value

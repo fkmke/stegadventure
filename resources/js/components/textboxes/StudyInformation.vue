@@ -72,11 +72,3 @@ function next() {
     </TextTemplate>
 
 </template>
-
-<style scoped>
-.button {
-    margin-top: var(--standard-padding);
-    display: flex;
-    justify-content: flex-end
-}
-</style>

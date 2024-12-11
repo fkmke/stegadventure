@@ -49,6 +49,12 @@ p + p {
     margin-top: var(--standard-padding);
 }
 
+.button {
+    margin-top: var(--standard-padding);
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* --- Forms --- */
 .form {
     display: flex;
