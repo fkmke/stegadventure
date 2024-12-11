@@ -147,7 +147,9 @@ input[type='checkbox']:checked::after {
 
 .buttons {
     margin-top: var(--standard-padding);
+    gap: var(--standard-padding);
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 </style>

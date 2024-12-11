@@ -20,12 +20,12 @@ div {
     padding-bottom: 10px;
     padding-left: var(--standard-padding);
     padding-right: var(--standard-padding);
-    min-width: 200px;
+    width: 200px;
+    min-width: fit-content;
     border-radius: var(--rounded-big);
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
-    width: fit-content;
     cursor: pointer;
 }
 
