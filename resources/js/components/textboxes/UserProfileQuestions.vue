@@ -15,6 +15,9 @@ const emit = defineEmits(['update:experimentState']);
 const age = ref(null);
 const expertise = ref(null);
 const education = ref(null);
+const cybersecurity = ref(null);
+const steganography = ref(null);
+const stegoExplanation = ref(null);
 
 // Send result and go to next
 function next() {
@@ -53,8 +56,8 @@ function launchFullScreen(element) {
             about steganography will then start.
         </p>
         <p v-else>
-            You have been given the reading task. Please answer the questions below and then press 'NEXT'. The text
-            about steganography will then be shown.
+            You have been given the reading task. Please answer the questions below and then press 'NEXT'. You can then
+            learn about steganography.
         </p>
 
         <div class="form">
@@ -127,6 +130,44 @@ function launchFullScreen(element) {
                 <label for="MBO">
                     College (MBO)
                 </label>
+            </div>
+
+            <!-- Question 4: Cybersecurity level -->
+            <h3>What is your level of technical knowledge on <u>cybersecurity</u>?</h3>
+            <div class="form-item align-self">
+                <label for="Very Low">
+                    Very Low
+                </label>
+                <input type="radio" id="Very Low" value="Very Low" v-model="cybersecurity" />
+                <input type="radio" id="Low" value="Low" v-model="cybersecurity" />
+                <input type="radio" id="Average" value="Average" v-model="cybersecurity" />
+                <input type="radio" id="High" value="High" v-model="cybersecurity" />
+                <input type="radio" id="Expert" value="Expert" v-model="cybersecurity" />
+                <label for="Expert">
+                    Expert
+                </label>
+            </div>
+
+            <!-- Question 5: Steganography level -->
+            <h3>What is your level of technical knowledge on <u>steganography</u>?</h3>
+            <div class="form-item align-self">
+                <label for="Very Low">
+                    Very Low
+                </label>
+                <input type="radio" id="Very Low" value="Very Low" v-model="steganography" />
+                <input type="radio" id="Low" value="Low" v-model="steganography" />
+                <input type="radio" id="Average" value="Average" v-model="steganography" />
+                <input type="radio" id="High" value="High" v-model="steganography" />
+                <input type="radio" id="Expert" value="Expert" v-model="steganography" />
+                <label for="Expert">
+                    Expert
+                </label>
+            </div>
+
+            <!-- Question 6: Steganography level -->
+            <div class="form-item column">
+                <h3>Please explain in your own words what you think steganography is.</h3>
+                <textarea id="explanation" v-model="stegoExplanation" type="text" />
             </div>
         </div>
 
