@@ -1,14 +1,20 @@
 <script setup>
+import UTlogo from '../../img/UT-logo-stacked.png';
+
 const props = defineProps({
     title: {
         type: String,
         default: "StegAdventure"
     },
 });
+
 </script>
 
 <template>
     <div id="background">
+        <!-- UT logo -->
+        <img class="logo" :src="UTlogo" alt="Logo of the University of Twente" />
+        <!-- Title and text -->
         <div class="text-object title">
             <h1>{{ title }}</h1>
         </div>
@@ -29,6 +35,14 @@ const props = defineProps({
     min-height: 100vh;
     padding-top: var(--standard-distance);
     padding-bottom: var(--standard-distance);
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--standard-distance);
+    filter: brightness(0) invert(1);
 }
 
 .text-object {

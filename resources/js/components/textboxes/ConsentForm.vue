@@ -2,6 +2,10 @@
 import TextTemplate from '../TextTemplate.vue';
 import Button from '../Button.vue';
 import { ref } from 'vue';
+import { scrollToTop } from '../scrollToTop';
+import { onMounted } from 'vue';
+
+onMounted(scrollToTop);
 
 const props = defineProps({
     hasGivenConsent: Boolean,
