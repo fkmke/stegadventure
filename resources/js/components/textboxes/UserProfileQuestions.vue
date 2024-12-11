@@ -20,8 +20,20 @@ const education = ref(null);
 function next() {
     // TODO handle results
 
+    // Launch fullscreen for browsers that support it
+    launchFullScreen(document.documentElement);
     // Go to next part in the experiment
     emit('update:experimentState', 1);
+}
+
+function launchFullScreen(element) {
+    if (element.requestFullScreen) {
+        element.requestFullScreen();
+    } else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullScreen) {
+        element.webkitRequestFullScreen();
+    }
 }
 </script>
 
@@ -118,8 +130,18 @@ function next() {
             </div>
         </div>
 
+        <div v-if="inGameGroup" style="margin-top: var(--standard-padding);">
+            <h2>Game tips:</h2>
+            <ul>
+                <li>Do not reload the page</li>
+                <li>Click anywhere to go to the next frame</li>
+                <li>Use your mouse to answer questions and perform actions</li>
+            </ul>
+        </div>
+
         <div class="button">
-            <Button text="Next" :onClick="next" />
+            <Button v-if="inGameGroup" text="Start game" :onClick="next" />
+            <Button v-else text="Start learning" :onClick="next" />
         </div>
 
     </TextTemplate>
@@ -133,5 +155,9 @@ function next() {
 
 .example {
     font-size: 0.7rem;
+}
+
+ul {
+    margin-left: 20px;
 }
 </style>

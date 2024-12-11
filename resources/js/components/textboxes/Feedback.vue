@@ -1,6 +1,6 @@
 <script setup>
-import TextTemplate from '../components/TextTemplate.vue';
-import Button from '../components/Button.vue';
+import TextTemplate from '../TextTemplate.vue';
+import Button from '../Button.vue';
 
 const props = defineProps({
     experimentState: Number,
@@ -9,18 +9,18 @@ const props = defineProps({
 
 const emit = defineEmits(['update:experimentState']);
 function next() {
-    emit('update:experimentState', 2);
+    emit('update:experimentState', 5);
 }
 </script>
 
 <template>
     <TextTemplate>
         <p>
-            Hereby some information on steganography.
+            Hereby some space to give some optional feedback.
         </p>
 
         <div class="button">
-            <Button text="I have read the text" :onClick="next" />
+            <Button text="Next" :onClick="next" />
         </div>
     </TextTemplate>
 </template>

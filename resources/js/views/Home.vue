@@ -9,6 +9,9 @@ import UserProfileQuestions from '../components/textboxes/UserProfileQuestions.v
 import Game from './Game.vue';
 import SteganographyText from './SteganographyText.vue';
 import UES from '../components/textboxes/UES.vue';
+import KnowledgeTest from '../components/textboxes/KnowledgeTest.vue';
+import Feedback from '../components/textboxes/Feedback.vue';
+import ThankYou from '../components/textboxes/ThankYou.vue';
 
 // Information and consent
 const readStudyInformation = ref(false);
@@ -60,11 +63,15 @@ watch([readStudyInformation, hasGivenConsent], async (newValues, oldValues) => {
         <UES v-if="experimentState === 2" v-model:experimentState="experimentState" :participantId="participantId" />
 
         <!-- State 3: performing the knowledge test -->
+        <KnowledgeTest v-if="experimentState === 3" v-model:experimentState="experimentState"
+            :participantId="participantId" />
 
         <!-- State 4: optional feedback -->
+        <Feedback v-if="experimentState === 4" v-model:experimentState="experimentState"
+            :participantId="participantId" />
 
         <!-- State 5: thank you for participating -->
-
+        <ThankYou v-if="experimentState === 5" />
     </div>
 </template>
 
