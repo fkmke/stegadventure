@@ -175,7 +175,7 @@ function launchFullScreen(element) {
             <h2>Game tips:</h2>
             <ul>
                 <li>Do not reload the page</li>
-                <li>Click anywhere to go to the next frame</li>
+                <li>Click anywhere on your screen to go to the next frame</li>
                 <li>Use your mouse to answer questions and perform actions</li>
             </ul>
         </div>
