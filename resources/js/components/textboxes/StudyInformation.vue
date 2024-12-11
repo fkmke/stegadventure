@@ -1,15 +1,21 @@
 <script setup>
-import TextTemplate from '../components/TextTemplate.vue';
-import Button from './Button.vue';
+import TextTemplate from '../TextTemplate.vue';
+import Button from '../Button.vue';
 
 const props = defineProps({
     readStudyInformation: Boolean,
 });
+
+// Go to consent form
+const emit = defineEmits(['update:readStudyInformation']);
+function next() {
+    emit('update:readStudyInformation', true);
+}
 </script>
 
 <template>
     <TextTemplate>
-        <h2>Study information</h2>
+        <h2>Study Information</h2>
         <h3>Purpose of the research</h3>
         <p>
             In this research, you will be learning about steganography, either by reading a text, or by playing a game.
@@ -59,15 +65,18 @@ const props = defineProps({
             <a href="mailto:ethicscommittee-cis@utwente.nl">ethicscommittee-cis@utwente.nl</a>.
         </p>
 
-        <Button text="Next" class="next-button" />
+        <div class="buttons">
+            <Button text="Next" :onClick="next" />
+        </div>
 
     </TextTemplate>
 
 </template>
 
 <style scoped>
-.next-button {
-    margin-top: 20px;
-    margin-left: auto;
+.buttons {
+    margin-top: var(--standard-padding);
+    display: flex;
+    justify-content: flex-end
 }
 </style>

@@ -21,6 +21,8 @@
 
     --secondary-container: #0a0a0a;
     --on-secondary-container: #eaeaea;
+
+    --error: #a11d1d;
 }
 
 body {

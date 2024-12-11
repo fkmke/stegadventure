@@ -9,14 +9,14 @@ import * as directives from "vuetify/directives";
 const lightTheme = {
     dark: false,
     colors: {
-        background: "#FFFFFF",
-        surface: "#FFFFFF",
-        primary: "#FE3B0B",
-        secondary: "#D7D7D7",
-        "on-background": "#2B2E33",
-        "on-surface": "#2B2E33",
-        "on-primary": "#FFFFFF",
-        "on-secondary": "#2B2E33",
+        background: "#000",
+        surface: "#eaeaea",
+        primary: "#0e0c69",
+        secondary: "#0a0a0a",
+        "on-background": "#eaeaea",
+        "on-surface": "#0a0a0a",
+        "on-primary": "#eaeaea",
+        "on-secondary": "#eaeaea",
         "error": "#FE3B0B",
     },
 };
@@ -25,17 +25,17 @@ export default createVuetify({
     components,
     directives,
 
-    theme: {
-        defaultTheme: "lightTheme",
-        themes: {
-            lightTheme,
-        },
-    },
+    // theme: {
+    //     defaultTheme: "lightTheme",
+    //     themes: {
+    //         lightTheme,
+    //     },
+    // },
     icons: {
         defaultSet: 'fa',
         aliases,
-    sets: {
-      fa,
+        sets: {
+            fa,
+        },
     },
-      },
 });
