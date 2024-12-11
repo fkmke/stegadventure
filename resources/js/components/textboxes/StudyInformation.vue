@@ -65,7 +65,7 @@ function next() {
             <a href="mailto:ethicscommittee-cis@utwente.nl">ethicscommittee-cis@utwente.nl</a>.
         </p>
 
-        <div class="buttons">
+        <div class="button">
             <Button text="Next" :onClick="next" />
         </div>
 
@@ -74,7 +74,7 @@ function next() {
 </template>
 
 <style scoped>
-.buttons {
+.button {
     margin-top: var(--standard-padding);
     display: flex;
     justify-content: flex-end

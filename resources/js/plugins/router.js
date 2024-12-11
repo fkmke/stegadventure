@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Story from "../views/Story.vue";
 import Game from "../views/Game.vue";
+import SteganographyText from "../views/SteganographyText.vue";
 import PageNotFound from "../views/404.vue";
 
 const routes = [
@@ -19,6 +20,11 @@ const routes = [
         path: "/game",
         name: "Game",
         component: Game,
+    },
+    {
+        path: "/text",
+        name: "Text",
+        component: SteganographyText,
     },
     {
         path: "/:pathMatch(.*)*",

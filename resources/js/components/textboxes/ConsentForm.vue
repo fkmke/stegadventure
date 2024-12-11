@@ -92,56 +92,11 @@ function next() {
 </template>
 
 <style scoped>
-.form {
-    display: flex;
-    flex-direction: column;
-}
-
 .form-item {
-    display: flex;
     justify-content: space-between;
-    padding-right: var(--standard-padding);
-    gap: var(--standard-padding);
-    align-items: center;
 }
 
-.form-item+.form-item,
-.form-item+h3 {
-    margin-top: var(--standard-padding);
-}
-
-input[type='checkbox'] {
-    -webkit-appearance: none;
-    appearance: none;
-    min-width: var(--standard-padding);
-    min-height: var(--standard-padding);
-    max-width: var(--standard-padding);
-    max-height: var(--standard-padding);
-    background: white;
-    border-radius: var(--rounded-big);
-    border: var(--border-width) solid var(--secondary);
-    cursor: pointer;
-    position: relative;
-}
-
-input[type='checkbox']:checked {
-    background: var(--primary);
-}
-
-input[type='checkbox']:checked::after {
-    content: '';
-    position: absolute;
-    top: 6px;
-    left: 10px;
-    width: 6px;
-    height: 12px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-}
-
-.error {
-    color: var(--error);
+.form-item+.form-item {
     margin-top: var(--standard-padding);
 }
 
