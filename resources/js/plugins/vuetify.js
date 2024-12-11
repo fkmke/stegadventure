@@ -17,7 +17,7 @@ const lightTheme = {
         "on-surface": "#0a0a0a",
         "on-primary": "#eaeaea",
         "on-secondary": "#eaeaea",
-        "error": "#FE3B0B",
+        "error": "#a11d1d",
     },
 };
 
