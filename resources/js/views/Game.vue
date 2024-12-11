@@ -5,6 +5,7 @@ import nodes from '../../data/dialogue.json';
 
 const props = defineProps({
     experimentState: Number,
+    participantId: String,
 });
 
 const emit = defineEmits(['update:experimentState']);

@@ -8,6 +8,7 @@ import ConsentForm from '../components/textboxes/ConsentForm.vue';
 import UserProfileQuestions from '../components/textboxes/UserProfileQuestions.vue';
 import Game from './Game.vue';
 import SteganographyText from './SteganographyText.vue';
+import UES from '../components/textboxes/UES.vue';
 
 // Information and consent
 const readStudyInformation = ref(false);
@@ -15,13 +16,12 @@ const hasGivenConsent = ref(false);
 
 // Experiment
 /*
-State 0: information letter and consent
-State 1: pre-experiment questions
-State 2: performing the task
-State 3: filling in UES-SF
-State 4: performing the knowledge test
-State 5: optional feedback
-State 6: thank you for participating
+State 0: information letter, consent, and pre-experiment questions
+State 1: performing the task
+State 2: filling in UES-SF
+State 3: performing the knowledge test
+State 4: optional feedback
+State 5: thank you for participating
 */
 const experimentState = ref(0);
 
@@ -42,15 +42,29 @@ watch([readStudyInformation, hasGivenConsent], async (newValues, oldValues) => {
     <StudyInformation v-if="!readStudyInformation" v-model:readStudyInformation="readStudyInformation" />
     <ConsentForm v-if="readStudyInformation && !hasGivenConsent" v-model:readStudyInformation="readStudyInformation"
         v-model:hasGivenConsent="hasGivenConsent" />
+
     <!-- Experiment -->
     <div v-if="readStudyInformation && hasGivenConsent">
+        <!-- State 0: pre-experiment questions -->
         <UserProfileQuestions v-if="experimentState === 0" :in-game-group="inGameGroup"
-            v-model:experimentState="experimentState" />
+            v-model:experimentState="experimentState" :participantId="participantId" />
+
+        <!-- State 1: performing the task -->
         <div v-if="experimentState === 1">
-            <Game v-if="inGameGroup" v-model:experimentState="experimentState" />
-            <SteganographyText v-else v-model:experimentState="experimentState" />
+            <Game v-if="inGameGroup" v-model:experimentState="experimentState" :participantId="participantId" />
+            <SteganographyText v-else v-model:experimentState="experimentState" :participantId="participantId" />
         </div>
+
         <!-- TODO state 2-6 -->
+        <!-- State 2: filling in UES-SF -->
+        <UES v-if="experimentState === 2" v-model:experimentState="experimentState" :participantId="participantId" />
+
+        <!-- State 3: performing the knowledge test -->
+
+        <!-- State 4: optional feedback -->
+
+        <!-- State 5: thank you for participating -->
+
     </div>
 </template>
 

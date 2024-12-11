@@ -4,6 +4,7 @@ import Button from '../components/Button.vue';
 
 const props = defineProps({
     experimentState: Number,
+    participantId: String,
 });
 
 const emit = defineEmits(['update:experimentState']);

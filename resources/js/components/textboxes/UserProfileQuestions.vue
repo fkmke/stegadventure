@@ -5,6 +5,7 @@ import { ref } from 'vue';
 
 const props = defineProps({
     inGameGroup: Boolean,
+    participantId: String,
     experimentState: Number,
 });
 
