@@ -1,7 +1,11 @@
 <script setup>
-import TextTemplate from '../components/TextTemplate.vue';
+import { ref } from 'vue';
+import StudyInformation from '../components/StudyInformation.vue';
+
+const readStudyInformation = ref(false);
+
 </script>
 
 <template>
-    <TextTemplate />
+    <StudyInformation :readStudyInformation="readStudyInformation" />
 </template>

@@ -7,10 +7,14 @@
     --standard-distance: 100px;
     --rounded-big: 20px;
     --border-width: 2px;
+    --max-object-width: 95vw;
 
     /* Colours */
     --primary: #0e0c69;
+    --on-primary: #eaeaea;
+
     --secondary: #0a0a0a;
+    --on-secondary: #eaeaea;
 
     --primary-container: #eaeaea;
     --on-primary-container: #0a0a0a;
@@ -21,4 +25,14 @@
 
 body {
     font-family: "Readex Pro", sans-serif;
+}
+
+p + h1,
+p + h2,
+p + h3 {
+    margin-top: 20px;
+}
+
+p + p {
+    margin-top: 10px;
 }
