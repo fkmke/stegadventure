@@ -13,7 +13,7 @@ const hasGivenConsent = ref(false);
 
 // Participant id
 const participantId = uuid.v4();
-const inGameGroup = Math.floor(Math.random() * 2);
+const inGameGroup = Boolean(Math.floor(Math.random() * 2));
 
 // Scroll to top when changing between pages
 watch([readStudyInformation, hasGivenConsent], async (newValues, oldValues) => {
@@ -24,7 +24,6 @@ watch([readStudyInformation, hasGivenConsent], async (newValues, oldValues) => {
 </script>
 
 <template>
-    {{ inGameGroup }}
     <!-- Information and consent -->
     <StudyInformation v-if="!readStudyInformation" v-model:readStudyInformation="readStudyInformation" />
     <ConsentForm v-if="readStudyInformation && !hasGivenConsent" v-model:readStudyInformation="readStudyInformation"
