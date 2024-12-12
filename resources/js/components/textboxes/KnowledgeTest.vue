@@ -9,6 +9,10 @@ const props = defineProps({
 
 const emit = defineEmits(['update:experimentState']);
 function next() {
+    // TODO check if everything is filled in
+
+    // TODO send inputs to back end
+
     emit('update:experimentState', 4);
 }
 </script>

@@ -44,6 +44,11 @@ p + p {
     margin-top: 10px;
 }
 
+ul,
+ol {
+    margin-left: 20px;
+}
+
 .error {
     color: var(--error);
     margin-top: var(--standard-padding);

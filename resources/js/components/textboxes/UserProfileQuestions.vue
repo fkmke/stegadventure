@@ -21,6 +21,8 @@ const stegoExplanation = ref(null);
 
 // Send result and go to next
 function next() {
+    // TODO check if everything is filled in
+
     // TODO handle results
 
     // Launch fullscreen for browsers that support it
@@ -198,10 +200,6 @@ function launchFullScreen(element) {
 
 .example {
     font-size: 0.7rem;
-}
-
-ul {
-    margin-left: 20px;
 }
 
 .warning {
