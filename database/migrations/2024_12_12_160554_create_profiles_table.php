@@ -11,7 +11,7 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('profiles', function (Blueprint $table) {
-            $table->foreignUuid('participant_id')->constrained();
+            $table->foreignUuid('participant_id')->constrained()->primary();
             $table->text('main_expertise');
             $table->text('education');
             $table->text('gaming_experience');
