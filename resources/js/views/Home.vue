@@ -1,6 +1,7 @@
 <script setup>
-import { ref, watch, nextTick } from 'vue';
+import { ref, watch, nextTick, onMounted } from 'vue';
 import { scrollToTop } from '../components/scrollToTop';
+import { leavePageWarning } from '../components/leavePageWarning';
 import { uuid } from "vue-uuid";
 // Views
 import StudyInformation from '../components/textboxes/StudyInformation.vue';
@@ -37,6 +38,8 @@ watch([readStudyInformation, hasGivenConsent], async (newValues, oldValues) => {
     await nextTick();
     scrollToTop();
 });
+
+onMounted(leavePageWarning);
 
 </script>
 
