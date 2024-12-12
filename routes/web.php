@@ -9,7 +9,7 @@ Route::get('/api' , function() {
 });
 */
 
-Route::post('/api/contactform', [ContactFormController::class, 'submit']);
+// Route::post('/api/contactform', [ContactFormController::class, 'submit']);
 
 // Use Vue router in resources/js/plugins/router.js
 Route::get('{any?}', fn() => view('app'))
