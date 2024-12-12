@@ -43,9 +43,9 @@ function launchFullScreen(element) {
 <template>
     <TextTemplate>
         <h2>Questions before your task</h2>
-        <p>
+        <p class="warning">
             <b>
-                <span class="error">IMPORTANT NOTICE:</span> Please do not refresh your browser at any time during this
+                IMPORTANT NOTICE: Please do not refresh your browser at any time during this
                 experiment. Also, do
                 not use the 'back' and 'forward' buttons in your browser. Both will completely reset what you have
                 done, and therefore your actions will not be recorded.
@@ -99,7 +99,7 @@ function launchFullScreen(element) {
                 </label>
             </div>
             <div class="form-item">
-                <input type="radio" id=" Professions and applied sciences" value=" Professions and applied sciences"
+                <input type="radio" id="Professions and applied sciences" value="Professions and applied sciences"
                     v-model="expertise" />
                 <label for="Professions and applied sciences">
                     Professions and applied sciences<br />
@@ -165,12 +165,14 @@ function launchFullScreen(element) {
             </div>
 
             <!-- Question 6: Steganography level -->
+            <!-- TODO change to multiple choice -->
             <div class="form-item column">
                 <h3>Please explain in your own words what you think steganography is.</h3>
                 <textarea id="explanation" v-model="stegoExplanation" type="text" />
             </div>
         </div>
 
+        <!-- Game tips -->
         <div v-if="inGameGroup" style="margin-top: var(--standard-padding);">
             <h2>Game tips:</h2>
             <ul>
@@ -200,5 +202,13 @@ function launchFullScreen(element) {
 
 ul {
     margin-left: 20px;
+}
+
+.warning {
+    margin-top: 10px;
+    padding: var(--standard-padding);
+    background-color: var(--error);
+    border-radius: var(--rounded-big);
+    color: var(--on-primary);
 }
 </style>

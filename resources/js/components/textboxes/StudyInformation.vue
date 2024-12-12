@@ -23,6 +23,10 @@ function next() {
             At last, you will be asked to answer some test questions to research the learning effectiveness of the
             method you used. All of this will take place online.
         </p>
+        <p>
+            In case you are put in the reading group, but you are still interested in playing the game, you will get the
+            option to play the game after you have completed the experiment.
+        </p>
 
         <h3>Benefits and risks</h3>
         <p>
