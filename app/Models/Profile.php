@@ -31,5 +31,16 @@ class Profile extends Model
 {
     use HasFactory;
 
+    protected $fillable =
+        [
+            'participant_id',
+            'main_expertise',
+            'education',
+            'gaming_experience',
+            'cybersecurity',
+            'steganography',
+            'stego_explanation',
+        ];
+
     public $timestamps = false;
 }

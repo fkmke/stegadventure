@@ -23,7 +23,12 @@ class Participant extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['id', 'has_finished', 'in_game_group'];
+    protected $fillable =
+        [
+            'id',
+            'has_finished',
+            'in_game_group'
+        ];
 
     public $timestamps = false;
 }
