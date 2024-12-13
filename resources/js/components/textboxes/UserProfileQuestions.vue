@@ -25,7 +25,7 @@ const stegoExplanation = ref(null);
 function next() {
     // TODO check if everything is filled in
 
-    // TODO send results to server
+    // Send results to server
     const profile = {
         participant_id: props.participantId,
         main_expertise: expertise.value,
@@ -45,6 +45,7 @@ function next() {
         })
         .catch(error => {
             console.error('Error saving participant\'s profile:', error.response?.data);
+            // TODO show error to user and ask to try again
         });
 }
 
