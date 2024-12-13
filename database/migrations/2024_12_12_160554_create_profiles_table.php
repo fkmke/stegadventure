@@ -12,6 +12,7 @@ return new class extends Migration {
     {
         Schema::create('profiles', function (Blueprint $table) {
             $table->foreignUuid('participant_id')->constrained()->primary();
+            $table->integer('age');
             $table->text('main_expertise');
             $table->text('education');
             $table->text('gaming_experience');
@@ -26,6 +27,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('profile');
+        Schema::dropIfExists('profiles');
     }
 };

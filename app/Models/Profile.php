@@ -34,6 +34,7 @@ class Profile extends Model
     protected $fillable =
         [
             'participant_id',
+            'age',
             'main_expertise',
             'education',
             'gaming_experience',

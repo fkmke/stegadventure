@@ -23,6 +23,7 @@ class CreateProfileRequest extends FormRequest
     {
         return [
             'participant_id' => 'required|uuid',
+            'age' => 'required|integer',
             'main_expertise' => 'required|string',
             'education' => 'required|string',
             'gaming_experience' => 'required|string',

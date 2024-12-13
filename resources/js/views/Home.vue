@@ -51,7 +51,7 @@ watch([readStudyInformation, hasGivenConsent], async (newValues, oldValues) => {
             })
             .catch(error => {
                 hasGivenConsent.value = false;
-                console.error('Error creating participant:', error.response?.data);
+                console.error('Error creating participant:', error.response?.data.message);
             });
     }
 });

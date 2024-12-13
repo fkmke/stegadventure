@@ -10,6 +10,8 @@ const props = defineProps({
     experimentState: Number,
 });
 
+const showError = ref(false);
+const showServerError = ref(false);
 const emit = defineEmits(['update:experimentState']);
 
 // Answers
@@ -23,11 +25,25 @@ const stegoExplanation = ref(null);
 
 // Send result and go to next
 function next() {
-    // TODO check if everything is filled in
-
+    showServerError.value = false;
+    showError.value = false;
+    // Check if everything is filled in
+    if (
+        age.value === null
+        || !expertise.value
+        || !education.value
+        || !gaming.value
+        || !cybersecurity.value
+        || !steganography.value
+        || !stegoExplanation.value
+    ) {
+        showError.value = true;
+        return;
+    }
     // Send results to server
     const profile = {
         participant_id: props.participantId,
+        age: age.value,
         main_expertise: expertise.value,
         education: education.value,
         gaming_experience: gaming.value,
@@ -44,8 +60,9 @@ function next() {
             emit('update:experimentState', 1);
         })
         .catch(error => {
-            console.error('Error saving participant\'s profile:', error.response?.data);
-            // TODO show error to user and ask to try again
+            console.error('Error saving participant\'s profile:', error.response?.data.message);
+            // Show error to user and ask to try again
+            showServerError.value = true;
         });
 }
 
@@ -83,7 +100,7 @@ function launchFullScreen(element) {
             <!-- Question 1: Age-->
             <div class="form-item column">
                 <h3>What is your age?</h3>
-                <input id="age" v-model="age" type="text" />
+                <input id="age" v-model.trim.number="age" type="text" />
             </div>
 
             <!-- Question 2: Main expertise -->
@@ -249,6 +266,16 @@ function launchFullScreen(element) {
                 <li>Use your mouse to answer questions and perform actions</li>
             </ul>
         </div>
+
+        <!-- Error -->
+        <p class="error" v-if="showError">
+            * You have not yet filled in all the questions. Please check above whether you have missed something.
+        </p>
+        <p class="error" v-if="showServerError">
+            * Something went wrong while saving your data. Are you sure your age is a whole number? Please try again. If
+            this
+            issue keeps arising, please <a href="mailto:f.g.j.weijsenfeld@student.utwente.nl">contact me</a>.
+        </p>
 
         <div class="button">
             <Button v-if="inGameGroup" text="Start game" :onClick="next" />
