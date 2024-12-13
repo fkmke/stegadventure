@@ -66,6 +66,7 @@ function handleQuestionOnClick(choice) {
 function saveNode(id, choice) {
     // Send results to server
     // TODO send time in seconds since start of playing game
+    // TODO only save node when in game of experiment
     const node = {
         participant_id: props.participantId,
         node: id,

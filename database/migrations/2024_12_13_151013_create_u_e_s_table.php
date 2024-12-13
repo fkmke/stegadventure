@@ -10,7 +10,7 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('uess', function (Blueprint $table) {
+        Schema::create('u_e_s', function (Blueprint $table) {
             $table->foreignUuid('participant_id')->constrained()->primary();
             $table->integer('fas1');
             $table->integer('fas2');
@@ -32,6 +32,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('uess');
+        Schema::dropIfExists('u_e_s');
     }
 };

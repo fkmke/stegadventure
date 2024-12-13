@@ -2,6 +2,7 @@
 import TextTemplate from '../TextTemplate.vue';
 import Button from '../Button.vue';
 import { onMounted, ref } from 'vue';
+import axios from 'axios';
 
 const props = defineProps({
     inGameGroup: Boolean,
