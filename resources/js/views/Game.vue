@@ -16,7 +16,8 @@ let node = ref(nodes[0]);
 
 // Game states
 let name = ref("Player");
-let score = ref(0);
+let score = ref(0); // TODO implement score
+// TODO implement chapter titles
 
 // Binary search the nodes array
 function binarySearchById(targetId) {
@@ -64,6 +65,7 @@ function handleQuestionOnClick(choice) {
 
 function saveNode(id, choice) {
     // Send results to server
+    // TODO send time in seconds since start of playing game
     const node = {
         participant_id: props.participantId,
         node: id,

@@ -10,6 +10,7 @@ const props = defineProps({
 
 const emit = defineEmits(['update:experimentState']);
 function next() {
+    // TODO send time in seconds since start of reading
     const read = {
         participant_id: props.participantId,
         time_since_start: 0,
