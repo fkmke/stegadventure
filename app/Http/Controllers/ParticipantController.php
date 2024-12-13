@@ -11,6 +11,12 @@ class ParticipantController extends Controller
 
     public function create(CreateParticiantRequest $request)
     {
-        Participant::create($request->validated());
+        $participant = Participant::create($request->validated());
+        return response()->json(
+            [
+                'message' => 'Participant created successfully!',
+            ],
+            200,
+        );
     }
 }

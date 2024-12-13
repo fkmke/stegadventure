@@ -3,6 +3,7 @@ import { ref, watch, nextTick, onMounted } from 'vue';
 import { scrollToTop } from '../components/scrollToTop';
 import { leavePageWarning } from '../components/leavePageWarning';
 import { uuid } from "vue-uuid";
+import axios from 'axios';
 // Views
 import StudyInformation from '../components/textboxes/StudyInformation.vue';
 import ConsentForm from '../components/textboxes/ConsentForm.vue';
@@ -37,6 +38,22 @@ const inGameGroup = Boolean(Math.floor(Math.random() * 2));
 watch([readStudyInformation, hasGivenConsent], async (newValues, oldValues) => {
     await nextTick();
     scrollToTop();
+
+    // Save participant in database
+    if (readStudyInformation.value && hasGivenConsent.value) {
+        const participant = {
+            id: participantId,
+            in_game_group: inGameGroup,
+        }
+        axios.post('/api/participant/create', participant)
+            .then((response) => {
+                console.log("The participant has given consent.");
+            })
+            .catch(error => {
+                hasGivenConsent.value = false;
+                console.error('Error creating participant:', error.response?.data);
+            });
+    }
 });
 
 onMounted(leavePageWarning);

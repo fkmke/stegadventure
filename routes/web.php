@@ -1,15 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\ParticipantController;
 
-/*
-Route::get('/api' , function() {
-   return 'JSON for backend can be put here';
-});
-*/
-
-// Route::post('/api/contactform', [ContactFormController::class, 'submit']);
+Route::post('/api/participant/create', [ParticipantController::class, 'create']);
 
 // Use Vue router in resources/js/plugins/router.js
 Route::get('{any?}', fn() => view('app'))
