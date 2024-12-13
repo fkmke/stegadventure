@@ -9,13 +9,58 @@ const props = defineProps({
     participantId: String,
 });
 
+const showError = ref(false);
+const showServerError = ref(false);
 const emit = defineEmits(['update:experimentState']);
+
 function next() {
-    // TODO check if everything is filled in
-
-    // TODO send inputs to back end
-
-    emit('update:experimentState', 3);
+    showServerError.value = false;
+    showError.value = false;
+    // Check if everything is filled in
+    if (
+        !FAS1.value
+        || !FAS2.value
+        || !FAS3.value
+        || !PUS1.value
+        || !PUS2.value
+        || !PUS3.value
+        || !AES1.value
+        || !AES2.value
+        || !AES3.value
+        || !RWS1.value
+        || !RWS2.value
+        || !RWS3.value
+    ) {
+        showError.value = true;
+        return;
+    }
+    // Send results to server
+    const ues = {
+        participant_id: props.participantId,
+        fas1: FAS1.value,
+        fas2: FAS2.value,
+        fas3: FAS3.value,
+        pus1: PUS1.value,
+        pus2: PUS2.value,
+        pus3: PUS3.value,
+        aes1: AES1.value,
+        aes2: AES2.value,
+        aes3: AES3.value,
+        rws1: RWS1.value,
+        rws2: RWS2.value,
+        rws3: RWS3.value,
+    }
+    axios.post('/api/ues/create', ues)
+        .then((response) => {
+            console.log("The participant's User Engagement Scale has been saved.");
+            // Go to next part in the experiment
+            emit('update:experimentState', 3);
+        })
+        .catch(error => {
+            console.error('Error saving participant\'s User Engagement Scale:', error.response?.data.message);
+            // Show error to user and ask to try again
+            showServerError.value = true;
+        });
 }
 
 function exitFullScreen() {
@@ -267,6 +312,15 @@ const RWS3 = ref(null);
                 </label>
             </div>
         </div>
+
+        <!-- Error -->
+        <p class="error" v-if="showError">
+            * You have not yet filled in all the questions. Please check above whether you have missed something.
+        </p>
+        <p class="error" v-if="showServerError">
+            * Something went wrong while saving your data. Please try again. If this issue keeps arising, please <a
+                href="mailto:f.g.j.weijsenfeld@student.utwente.nl">contact me</a>.
+        </p>
 
         <div class="button">
             <Button text="Next" :onClick="next" />

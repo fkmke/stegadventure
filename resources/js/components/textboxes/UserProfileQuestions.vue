@@ -273,8 +273,7 @@ function launchFullScreen(element) {
         </p>
         <p class="error" v-if="showServerError">
             * Something went wrong while saving your data. Are you sure your age is a whole number? Please try again. If
-            this
-            issue keeps arising, please <a href="mailto:f.g.j.weijsenfeld@student.utwente.nl">contact me</a>.
+            this issue keeps arising, please <a href="mailto:f.g.j.weijsenfeld@student.utwente.nl">contact me</a>.
         </p>
 
         <div class="button">
