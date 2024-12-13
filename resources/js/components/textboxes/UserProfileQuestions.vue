@@ -15,6 +15,7 @@ const emit = defineEmits(['update:experimentState']);
 const age = ref(null);
 const expertise = ref(null);
 const education = ref(null);
+const gaming = ref(null);
 const cybersecurity = ref(null);
 const steganography = ref(null);
 const stegoExplanation = ref(null);
@@ -48,9 +49,8 @@ function launchFullScreen(element) {
         <p class="warning">
             <b>
                 IMPORTANT NOTICE: Please do not refresh your browser at any time during this
-                experiment. Also, do
-                not use the 'back' and 'forward' buttons in your browser. Both will completely reset what you have
-                done, and therefore your actions will not be recorded.
+                experiment. Also, do not use the 'back' and 'forward' buttons in your browser. Both will completely
+                reset what you have done, and therefore your actions will not be recorded.
             </b>
         </p>
         <p v-if="inGameGroup">
@@ -134,7 +134,23 @@ function launchFullScreen(element) {
                 </label>
             </div>
 
-            <!-- Question 4: Cybersecurity level -->
+            <!-- Question 4: Gaming level -->
+            <h3>How much experience do you have in playing games?</h3>
+            <div class="form-item align-self">
+                <label for="None">
+                    None
+                </label>
+                <input type="radio" id="None" value="None" v-model="gaming" />
+                <input type="radio" id="A bit" value="A bit" v-model="gaming" />
+                <input type="radio" id="Average" value="Average" v-model="gaming" />
+                <input type="radio" id="More than average" value="More than average" v-model="gaming" />
+                <input type="radio" id="A lot" value="A lot" v-model="gaming" />
+                <label for="A lot">
+                    A lot
+                </label>
+            </div>
+
+            <!-- Question 5: Cybersecurity level -->
             <h3>What is your level of technical knowledge on <u>cybersecurity</u>?</h3>
             <div class="form-item align-self">
                 <label for="Very Low">
@@ -150,7 +166,7 @@ function launchFullScreen(element) {
                 </label>
             </div>
 
-            <!-- Question 5: Steganography level -->
+            <!-- Question 6: Steganography level -->
             <h3>What is your level of technical knowledge on <u>steganography</u>?</h3>
             <div class="form-item align-self">
                 <label for="Very Low">
@@ -166,12 +182,46 @@ function launchFullScreen(element) {
                 </label>
             </div>
 
-            <!-- Question 6: Steganography level -->
-            <!-- TODO change to multiple choice -->
-            <div class="form-item column">
-                <h3>Please explain in your own words what you think steganography is.</h3>
-                <textarea id="explanation" v-model="stegoExplanation" type="text" />
+            <!-- Question 7: Steganography level -->
+
+            <h3>What is steganography?</h3>
+            <div class="form-item">
+                <input type="radio" id="1" value="1" v-model="stegoExplanation" />
+                <label for="1">
+                    I don't know.
+                </label>
             </div>
+            <div class="form-item">
+                <input type="radio" id="2" value="2" v-model="stegoExplanation" />
+                <label for="2">
+                    A method of encrypting messages so that only authorized parties can read them.
+                </label>
+            </div>
+            <div class="form-item">
+                <input type="radio" id="3" value="3" v-model="stegoExplanation" />
+                <label for="3">
+                    The practice of hiding information within other non-secret data.
+                </label>
+            </div>
+            <div class="form-item">
+                <input type="radio" id="4" value="4" v-model="stegoExplanation" />
+                <label for="4">
+                    The study of deciphering geometric patterns in ancient texts.
+                </label>
+            </div>
+            <div class="form-item">
+                <input type="radio" id="5" value="5" v-model="stegoExplanation" />
+                <label for="5">
+                    The art of encrypting messages to make them unreadable without a key.
+                </label>
+            </div>
+            <div class="form-item">
+                <input type="radio" id="6" value="6" v-model="stegoExplanation" />
+                <label for="6">
+                    The technique of analyzing patterns in encrypted messages to uncover the content.
+                </label>
+            </div>
+
         </div>
 
         <!-- Game tips -->
