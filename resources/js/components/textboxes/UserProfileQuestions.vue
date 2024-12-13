@@ -2,6 +2,7 @@
 import TextTemplate from '../TextTemplate.vue';
 import Button from '../Button.vue';
 import { ref } from 'vue';
+import axios from 'axios';
 
 const props = defineProps({
     inGameGroup: Boolean,
@@ -24,12 +25,27 @@ const stegoExplanation = ref(null);
 function next() {
     // TODO check if everything is filled in
 
-    // TODO handle results
-
-    // Launch fullscreen for browsers that support it
-    launchFullScreen(document.documentElement);
-    // Go to next part in the experiment
-    emit('update:experimentState', 1);
+    // TODO send results to server
+    const profile = {
+        participant_id: props.participantId,
+        main_expertise: expertise.value,
+        education: education.value,
+        gaming_experience: gaming.value,
+        cybersecurity: cybersecurity.value,
+        steganography: steganography.value,
+        stego_explanation: stegoExplanation.value,
+    }
+    axios.post('/api/profile/create', profile)
+        .then((response) => {
+            console.log("The participant's profile has been saved.");
+            // Launch fullscreen for browsers that support it
+            launchFullScreen(document.documentElement);
+            // Go to next part in the experiment
+            emit('update:experimentState', 1);
+        })
+        .catch(error => {
+            console.error('Error saving participant\'s profile:', error.response?.data);
+        });
 }
 
 function launchFullScreen(element) {
@@ -182,8 +198,7 @@ function launchFullScreen(element) {
                 </label>
             </div>
 
-            <!-- Question 7: Steganography level -->
-
+            <!-- Question 7: Steganography explanation -->
             <h3>What is steganography?</h3>
             <div class="form-item">
                 <input type="radio" id="1" value="1" v-model="stegoExplanation" />

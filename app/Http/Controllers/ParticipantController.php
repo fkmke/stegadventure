@@ -8,10 +8,9 @@ use Illuminate\Http\Request;
 
 class ParticipantController extends Controller
 {
-
     public function create(CreateParticiantRequest $request)
     {
-        $participant = Participant::create($request->validated());
+        Participant::create($request->validated());
         return response()->json(
             [
                 'message' => 'Participant created successfully!',

@@ -14,6 +14,7 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->validateCsrfTokens(except: [
             // exclude these routes
             '/api/participant/create',
+            '/api/profile/create',
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
