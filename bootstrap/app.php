@@ -16,6 +16,7 @@ return Application::configure(basePath: dirname(__DIR__))
             '/api/participant/create',
             '/api/profile/create',
             '/api/game/node/add',
+            '/api/reading/add'
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
