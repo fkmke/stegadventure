@@ -10,9 +10,11 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::create('reading', function (Blueprint $table) {
-            $table->foreignUuid('participant_id')->constrained()->primary();
+        Schema::create('games', function (Blueprint $table) {
+            $table->foreignUuid('participant_id')->constrained();
+            $table->integer('node');
             $table->integer('time_since_start');
+            $table->text('choice')->default(null)->nullable();
         });
     }
 
@@ -21,6 +23,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('reading');
+        Schema::dropIfExists('games');
     }
 };

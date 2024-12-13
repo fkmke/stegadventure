@@ -15,6 +15,7 @@ return Application::configure(basePath: dirname(__DIR__))
             // exclude these routes
             '/api/participant/create',
             '/api/profile/create',
+            '/api/game/node/add',
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
