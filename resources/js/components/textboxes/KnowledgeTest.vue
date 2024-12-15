@@ -13,6 +13,8 @@ function next() {
 
     // TODO send inputs to back end
 
+    // TODO then send has_finished=true to back end
+
     emit('update:experimentState', 4);
 }
 </script>

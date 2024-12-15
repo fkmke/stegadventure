@@ -4,17 +4,18 @@ import TextTemplate from '../TextTemplate.vue';
 
 <template>
     <TextTemplate>
+        <h2>Thank you for participating!</h2>
         <p>
-            Thank you for participating! Please ask other people to participate in this study as well. That would be
+            Please ask other people to participate in this study as well. That would be
             really helpfull! They can simply visit <a href="https://game.femkew.nl">game.femkew.nl</a> to participate.
         </p>
         <p>
-            If you are interested in the topic, these are some nice links:
-            ...
+            If you are interested in the topic, you can find some extra material
+            <a href="https://stegadventure.femkew.nl/extra-info" target="_blank">here</a>.
         </p>
         <p>
-            If you were in the reading group, but still interested in playing the game, you can do that <a
-                href="https://stegadventure.femkew.nl/game">here</a>.
+            If you were in the reading group, but still interested in playing the game, you can do that
+            <a href="https://stegadventure.femkew.nl/game" target="_blank">here</a>.
         </p>
     </TextTemplate>
 </template>
