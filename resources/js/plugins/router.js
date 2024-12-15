@@ -21,6 +21,11 @@ const routes = [
         path: "/game",
         name: "Game",
         component: Game,
+        props: {
+            experimentState: 0,
+            participantId: 0,
+            saveResults: false,
+        },
     },
     {
         path: "/text",

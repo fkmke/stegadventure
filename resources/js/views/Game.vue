@@ -7,6 +7,7 @@ import axios from 'axios';
 const props = defineProps({
     experimentState: Number,
     participantId: String,
+    saveResults: Boolean,
 });
 
 const emit = defineEmits(['update:experimentState']);
@@ -64,9 +65,13 @@ function handleQuestionOnClick(choice) {
 }
 
 function saveNode(id, choice) {
+    // Only save node when in game of experiment
+    if (!saveResults) {
+        return;
+    }
+
     // Send results to server
     // TODO send time in seconds since start of playing game
-    // TODO only save node when in game of experiment
     const node = {
         participant_id: props.participantId,
         node: id,

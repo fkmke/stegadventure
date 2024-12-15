@@ -74,7 +74,8 @@ onMounted(leavePageWarning);
 
         <!-- State 1: performing the task -->
         <div v-if="experimentState === 1">
-            <Game v-if="inGameGroup" v-model:experimentState="experimentState" :participantId="participantId" />
+            <Game v-if="inGameGroup" v-model:experimentState="experimentState" :participantId="participantId"
+                :saveResults="true" />
             <SteganographyText v-else v-model:experimentState="experimentState" :participantId="participantId" />
         </div>
 
