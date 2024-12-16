@@ -10,7 +10,14 @@ class TestController extends Controller
 {
     public function create(CreateTestRequest $request)
     {
-        Test::create($request->validated());
+
+        $answers = $request->validated();
+        $score = 0;
+        // TODO calculate score and save score
+
+
+        $answers['score'] = $score;
+        Test::create($answers);
         return response()->json(
             [
                 'message' => 'Knowledge test submitted successfully!',

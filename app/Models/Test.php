@@ -22,8 +22,16 @@ class Test extends Model
             'question8',
             'question9',
             'time_since_start',
-            // 'score',
+            'score',
         ];
+
+    protected $casts = [
+        'question1' => 'array',
+        'question2' => 'array',
+        'question3' => 'array',
+        'question6' => 'array',
+        'question7' => 'array',
+    ];
 
     public $timestamps = false;
 }

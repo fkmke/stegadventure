@@ -19,6 +19,10 @@ const props = defineProps({
     participantId: String,
 });
 
+// Errors
+const showError = ref(false);
+const showServerError = ref(false);
+
 // Answers
 const question1 = ref([]); // checkbox
 const question2 = ref([]); // checkbox
@@ -30,14 +34,53 @@ const question7 = ref([]); // checkbox
 const question8 = ref(null); // radio button
 const question9 = ref(null); // radio button
 
+// Time spent
+const timeSinceStart = ref(0);
+
 const emit = defineEmits(['update:experimentState']);
 function next() {
-    // TODO check if everything is filled in
-
-    // TODO send inputs to back end
-
-    // Then send has_finished=true to back end
-    hasFinished();
+    showServerError.value = false;
+    showError.value = false;
+    // Check if everything is filled in
+    if (
+        !question1.value.length
+        || !question2.value.length
+        || !question3.value.length
+        || !question4.value
+        || !question5.value
+        || !question6.value.length
+        || !question7.value.length
+        || !question8.value
+        || !question9.value
+    ) {
+        showError.value = true;
+        return;
+    }
+    // Send results to server
+    const test = {
+        participant_id: props.participantId,
+        question1: question1.value,
+        question2: question2.value,
+        question3: question3.value,
+        question4: question4.value,
+        question5: question5.value,
+        question6: question6.value,
+        question7: question7.value,
+        question8: question8.value,
+        question9: question9.value,
+        time_since_start: timeSinceStart.value,
+    }
+    axios.post('/api/test/create', test)
+        .then((response) => {
+            console.log("The participant's knowledge test has been saved.");
+            // Then send has_finished=true to back end
+            hasFinished();
+        })
+        .catch(error => {
+            console.error('Error saving participant\'s knowledge test:', error.response?.data.message);
+            // Show error to user and ask to try again
+            showServerError.value = true;
+        });
 }
 
 function hasFinished() {
@@ -52,6 +95,7 @@ function hasFinished() {
         })
         .catch(error => {
             console.error('Error finishing the participant\'s data:', error.response?.data.message);
+            showServerError.value = true;
         });
 }
 </script>
@@ -568,6 +612,14 @@ function hasFinished() {
             </label>
         </div>
 
+        <!-- Error -->
+        <p class="error" v-if="showError">
+            * You have not yet filled in all the questions. Please check above whether you have missed something.
+        </p>
+        <p class="error" v-if="showServerError">
+            * Something went wrong while saving your data. Please try again. If this issue keeps arising, please <a
+                href="mailto:f.g.j.weijsenfeld@student.utwente.nl">contact me</a>.
+        </p>
 
         <div class="button">
             <Button text="Next" :onClick="next" />
