@@ -18,7 +18,7 @@ let node = ref(nodes[0]);
 // Game states
 let name = ref("Player");
 let score = ref(0); // TODO implement score
-// TODO implement chapter titles
+// TODO implement chapter titles and locations
 
 // Binary search the nodes array
 function binarySearchById(targetId) {
