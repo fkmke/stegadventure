@@ -3,6 +3,11 @@ import TextTemplate from '../TextTemplate.vue';
 import Button from '../Button.vue';
 import axios from 'axios';
 import { ref } from 'vue';
+// Pictures
+import q51 from '../../../img/test/q5-1.webp';
+import q52 from '../../../img/test/q5-2.webp';
+import q53 from '../../../img/test/q5-3.webp';
+import q54 from '../../../img/test/q5-4.webp';
 
 const props = defineProps({
     experimentState: Number,
@@ -236,6 +241,48 @@ function hasFinished() {
             Which of the following pictures can hide the most data with the use of steganography without visually seeing
             a difference? Select one option.
         </h3>
+        <div class="image-container">
+            <label for="q5.1" :class="{ 'selected-image': question5 === '1' }" @click.prevent @click="question5 = '1'">
+                <img :src="q51" />
+                <p>
+                    <b>Picture 1</b>
+                    <br>
+                    Dimensions: 1400×1400
+                    <br>
+                    Type: JPEG
+                </p>
+            </label>
+            <label for="q5.2" :class="{ 'selected-image': question5 === '2' }" @click.prevent @click="question5 = '2'">
+                <img :src="q52" />
+                <p>
+                    <b>Picture 2</b>
+                    <br>
+                    Dimensions: 1400×1400
+                    <br>
+                    Type: JPEG
+                </p>
+            </label>
+            <label for="q5.3" :class="{ 'selected-image': question5 === '3' }" @click.prevent @click="question5 = '3'">
+                <img :src="q53" />
+                <p>
+                    <b>Picture 3</b>
+                    <br>
+                    Dimensions: 1400×1400
+                    <br>
+                    Type: JPEG
+                </p>
+            </label>
+            <label for="q5.4" :class="{ 'selected-image': question5 === '4' }" @click.prevent @click="question5 = '4'">
+                <img :src="q54" />
+                <p>
+                    <b>Picture 4</b>
+                    <br>
+                    Dimensions: 1400×1400
+                    <br>
+                    Type: JPEG
+                </p>
+            </label>
+        </div>
         <div class="form-item">
             <input type="radio" id="q5.1" value="1" v-model="question5" />
             <label for="q5.1">
@@ -455,3 +502,31 @@ function hasFinished() {
         </div>
     </TextTemplate>
 </template>
+
+<style scoped>
+img {
+    height: 300px;
+    object-fit: contain;
+    max-width: calc(95vw - 2 * var(--standard-padding));
+}
+
+.selected-image {
+    background-color: var(--primary-light);
+    border-radius: 10px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--standard-padding);
+    justify-content: space-evenly;
+    margin-top: var(--standard-padding);
+    margin-bottom: var(--standard-padding);
+    text-align: center;
+    align-items: center;
+}
+
+.image-container>* {
+    padding: 10px;
+}
+</style>
