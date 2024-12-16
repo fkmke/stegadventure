@@ -8,6 +8,7 @@ import q51 from '../../../img/test/q5-1.webp';
 import q52 from '../../../img/test/q5-2.webp';
 import q53 from '../../../img/test/q5-3.webp';
 import q54 from '../../../img/test/q5-4.webp';
+import diagram from '../../../img/test/diagram.svg';
 
 const props = defineProps({
     experimentState: Number,
@@ -398,8 +399,11 @@ function hasFinished() {
 
         <!-- Question 8: Diagram -->
         <h3>
-            What should be put on the blank part of this diagram? Select one option.
+            What should be put on the blank block in this diagram? Select one option.
         </h3>
+        <div class="image-container">
+            <img :src="diagram" />
+        </div>
         <div class="form-item">
             <input type="radio" id="q8.1" value="1" v-model="question8" />
             <label for="q8.1">
