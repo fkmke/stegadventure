@@ -66,7 +66,7 @@ function handleQuestionOnClick(choice) {
 
 function saveNode(id, choice) {
     // Only save node when in game of experiment
-    if (!saveResults) {
+    if (!props.saveResults) {
         return;
     }
 

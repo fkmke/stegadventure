@@ -14,6 +14,7 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->validateCsrfTokens(except: [
             // exclude these routes
             '/api/participant/create',
+            '/api/participant/finish',
             '/api/profile/create',
             '/api/game/node/add',
             '/api/reading/add',

@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ParticipantController;
 
 Route::post('/api/participant/create', [ParticipantController::class, 'create']);
+Route::post('/api/participant/finish', [ParticipantController::class, 'finish']);
 Route::post('/api/profile/create', [ProfileController::class, 'create']);
 Route::post('/api/game/node/add', [GameController::class, 'addGameNode']);
 Route::post('/api/reading/add', [ReadingController::class, 'addReading']);
