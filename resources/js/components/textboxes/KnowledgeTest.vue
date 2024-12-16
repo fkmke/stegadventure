@@ -472,7 +472,7 @@ function hasFinished() {
             What should be put on the block with '???' in this diagram? Select one option.
         </h3>
         <div class="image-container">
-            <img :src="diagram" />
+            <img :src="diagram" style="width:550px;" />
         </div>
         <div class="form-item">
             <input type="radio" id="q8.1" value="1" v-model="question8" />
