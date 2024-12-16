@@ -13,7 +13,7 @@ class ReadingController extends Controller
         Reading::create($request->validated());
         return response()->json(
             [
-                'message' => 'Reading details added successfully!',
+                'message' => 'Reading details submitted successfully!',
             ],
             200,
         );

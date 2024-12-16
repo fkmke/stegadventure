@@ -13,7 +13,7 @@ class UESController extends Controller
         UES::create($request->validated());
         return response()->json(
             [
-                'message' => 'User Engagement Scale created successfully!',
+                'message' => 'User Engagement Scale submitted successfully!',
             ],
             200,
         );
