@@ -63,12 +63,10 @@ function hasFinished() {
             The following questions test whether the learning method you used was useful. There are two types of closed
             in this test questions:
         </p>
-        <p>
         <ol>
             <li>Checkboxes (square): multiple answers may be correct.</li>
             <li>Radio buttons (circle): only one option is correct.</li>
         </ol>
-        </p>
         <p>
             You will be reminded per question what answer is expected. Selecting a correct answer will increase your
             test score. Selecting a wrong answer will decrease your test score. Therefore, you can choose "I don't know"
@@ -453,7 +451,7 @@ function hasFinished() {
         <div class="form-item">
             <input type="checkbox" id="q7.4" value="4" v-model="question7" />
             <label for="q7.4">
-                The hidden message may be easily extracted by anyone who suspects its existance.
+                The hidden message may be easily extracted by anyone who suspects its existence.
             </label>
         </div>
         <div class="form-item">
@@ -471,7 +469,7 @@ function hasFinished() {
 
         <!-- Question 8: Diagram -->
         <h3>
-            What should be put on the blank block in this diagram? Select one option.
+            What should be put on the block with '???' in this diagram? Select one option.
         </h3>
         <div class="image-container">
             <img :src="diagram" />
@@ -515,12 +513,11 @@ function hasFinished() {
 
         <!-- Question 9: Stegware -->
         <h3>
-            Please put the pseudo code of the StegWare in the right order. Select one option.
+            Please put the pseudocode of the StegWare in the right order. Select one option.
         </h3>
         <p>
-            Pseudo code:
+            Pseudocode:
         </p>
-        <p>
         <ol type="A">
             <!-- A) -->
             <li>Select carrier file and malicious payload.</li>
@@ -533,7 +530,6 @@ function hasFinished() {
             <!-- E) -->
             <li>Execute the malicious payload.</li>
         </ol>
-        </p>
         <br>
         <div class="form-item">
             <input type="radio" id="q9.1" value="1" v-model="question9" />

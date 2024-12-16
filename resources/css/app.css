@@ -41,7 +41,11 @@ p + h3 {
     margin-top: 20px;
 }
 
-p + p {
+p + p,
+p + ol,
+ol + p,
+ul + p,
+p + ul {
     margin-top: 10px;
 }
 
