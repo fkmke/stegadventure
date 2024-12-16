@@ -5,6 +5,7 @@ import Game from "../views/Game.vue";
 import SteganographyText from "../views/SteganographyText.vue";
 import PageNotFound from "../views/404.vue";
 import ExtraInfo from "../components/textboxes/ExtraInfo.vue";
+import KnowledgeTest from "../components/textboxes/KnowledgeTest.vue";
 
 const routes = [
     {
@@ -31,6 +32,11 @@ const routes = [
         path: "/text",
         name: "Text",
         component: SteganographyText,
+    },
+    {
+        path: "/test",
+        name: "Test",
+        component: KnowledgeTest,
     },
     {
         path: "/extra-info",
