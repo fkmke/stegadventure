@@ -151,6 +151,40 @@ function hasFinished() {
             Which of the following pictures are an example of <u>cryptography</u>? Select all that apply. Pictures may
             contain both steganography and cryptography.
         </h3>
+        <div class="image-container">
+            <label for="q2.1" :class="{ 'selected-image': question2.includes('1') }" @click.prevent
+                @click="question2.includes('1') ? question2.splice(question2.indexOf('1'), 1) : question2.push('1')"
+                style="min-height:330px;">
+                <img :src="q11" />
+                <p>
+                    <b>Picture 1</b>
+                </p>
+            </label>
+            <label for="q2.2" :class="{ 'selected-image': question2.includes('2') }" @click.prevent
+                @click="question2.includes('2') ? question2.splice(question2.indexOf('2'), 1) : question2.push('2')"
+                style="min-height:330px;">
+                <img :src="q12" />
+                <p>
+                    <b>Picture 2</b>
+                </p>
+            </label>
+            <label for="q2.3" :class="{ 'selected-image': question2.includes('3') }" @click.prevent
+                @click="question2.includes('3') ? question2.splice(question2.indexOf('3'), 1) : question2.push('3')"
+                style="min-height:270px;">
+                <img :src="q13" />
+                <p>
+                    <b>Picture 3</b>
+                </p>
+            </label>
+            <label for="q2.4" :class="{ 'selected-image': question2.includes('4') }" @click.prevent
+                @click="question2.includes('4') ? question2.splice(question2.indexOf('4'), 1) : question2.push('4')"
+                style="min-height:270px;">
+                <img :src="q14" />
+                <p>
+                    <b>Picture 4</b>
+                </p>
+            </label>
+        </div>
         <div class="form-item">
             <input type="checkbox" id="q2.1" value="1" v-model="question2" />
             <label for="q2.1">
@@ -568,7 +602,7 @@ label {
     flex-wrap: wrap;
     gap: var(--standard-padding);
     justify-content: space-evenly;
-    margin-top: var(--standard-padding);
+    margin-top: 5px;
     margin-bottom: var(--standard-padding);
     text-align: center;
     align-items: end;
