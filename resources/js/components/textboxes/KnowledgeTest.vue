@@ -65,6 +65,7 @@ function hasFinished() {
             if you do not know the answer, which results into zero points for that question.
         </p>
 
+        <!-- TODO: make components for questions -->
         <!-- Question 1: Steganography vs cryptography -->
         <h3>
             Which of the following pictures are an example of <u>steganography</u>? Select all that apply. Pictures may
@@ -226,7 +227,7 @@ function hasFinished() {
         <div class="form-item">
             <input type="radio" id="q4.0" value="0" v-model="question4" />
             <label for="q4.0">
-                I don't know.
+                I don't know
             </label>
         </div>
 
@@ -309,7 +310,7 @@ function hasFinished() {
 
         <!-- Question 7: Stego key -->
         <h3>
-            What is the danger of not using a stego key?
+            What is the danger of not using a stego key? Select all that apply.
         </h3>
         <div class="form-item">
             <input type="checkbox" id="q7.1" value="1" v-model="question7" />
@@ -391,7 +392,7 @@ function hasFinished() {
 
         <!-- Question 9: Stegware -->
         <h3>
-            Please put the pseudo code of the StegWare in the right order.
+            Please put the pseudo code of the StegWare in the right order. Select one option.
         </h3>
         <p>
             Pseudo code:
@@ -444,7 +445,7 @@ function hasFinished() {
         <div class="form-item">
             <input type="radio" id="q9.0" value="0" v-model="question9" />
             <label for="q9.0">
-                I don't know
+                I don't know.
             </label>
         </div>
 
