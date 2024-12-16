@@ -4,6 +4,10 @@ import Button from '../Button.vue';
 import axios from 'axios';
 import { ref } from 'vue';
 // Pictures
+import q11 from '../../../img/test/q1-1.webp';
+import q12 from '../../../img/test/q1-2.webp';
+import q13 from '../../../img/test/q1-3.webp';
+import q14 from '../../../img/test/q1-4.webp';
 import q51 from '../../../img/test/q5-1.webp';
 import q52 from '../../../img/test/q5-2.webp';
 import q53 from '../../../img/test/q5-3.webp';
@@ -77,6 +81,40 @@ function hasFinished() {
             Which of the following pictures are an example of <u>steganography</u>? Select all that apply. Pictures may
             contain both steganography and cryptography.
         </h3>
+        <div class="image-container">
+            <label for="q1.1" :class="{ 'selected-image': question1.includes('1') }" @click.prevent
+                @click="question1.includes('1') ? question1.splice(question1.indexOf('1'), 1) : question1.push('1')"
+                style="min-height:330px;">
+                <img :src="q11" />
+                <p>
+                    <b>Picture 1</b>
+                </p>
+            </label>
+            <label for="q1.2" :class="{ 'selected-image': question1.includes('2') }" @click.prevent
+                @click="question1.includes('2') ? question1.splice(question1.indexOf('2'), 1) : question1.push('2')"
+                style="min-height:330px;">
+                <img :src="q12" />
+                <p>
+                    <b>Picture 2</b>
+                </p>
+            </label>
+            <label for="q1.3" :class="{ 'selected-image': question1.includes('3') }" @click.prevent
+                @click="question1.includes('3') ? question1.splice(question1.indexOf('3'), 1) : question1.push('3')"
+                style="min-height:270px;">
+                <img :src="q13" />
+                <p>
+                    <b>Picture 3</b>
+                </p>
+            </label>
+            <label for="q1.4" :class="{ 'selected-image': question1.includes('4') }" @click.prevent
+                @click="question1.includes('4') ? question1.splice(question1.indexOf('4'), 1) : question1.push('4')"
+                style="min-height:270px;">
+                <img :src="q14" />
+                <p>
+                    <b>Picture 4</b>
+                </p>
+            </label>
+        </div>
         <div class="form-item">
             <input type="checkbox" id="q1.1" value="1" v-model="question1" />
             <label for="q1.1">
@@ -509,9 +547,15 @@ function hasFinished() {
 
 <style scoped>
 img {
-    height: 300px;
+    width: 330px;
     object-fit: contain;
-    max-width: calc(95vw - 2 * var(--standard-padding));
+    max-width: 100%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .selected-image {
@@ -527,7 +571,7 @@ img {
     margin-top: var(--standard-padding);
     margin-bottom: var(--standard-padding);
     text-align: center;
-    align-items: center;
+    align-items: end;
 }
 
 .image-container>* {
