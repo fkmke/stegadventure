@@ -34,7 +34,7 @@ const question7 = ref([]); // checkbox
 const question8 = ref(null); // radio button
 const question9 = ref(null); // radio button
 
-// Time spent
+// TODO Time spent
 const timeSinceStart = ref(0);
 
 const emit = defineEmits(['update:experimentState']);

@@ -79,7 +79,6 @@ onMounted(leavePageWarning);
             <SteganographyText v-else v-model:experimentState="experimentState" :participantId="participantId" />
         </div>
 
-        <!-- TODO state 2-6 -->
         <!-- State 2: filling in UES-SF -->
         <UES v-if="experimentState === 2" :in-game-group="inGameGroup" v-model:experimentState="experimentState"
             :participantId="participantId" />
