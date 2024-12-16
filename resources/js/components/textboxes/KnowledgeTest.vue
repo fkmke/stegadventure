@@ -66,7 +66,10 @@ function hasFinished() {
         </p>
 
         <!-- Question 1: Steganography vs cryptography -->
-        <h3>Which of the following pictures are an example of <u>steganography</u>? Select all that apply.</h3>
+        <h3>
+            Which of the following pictures are an example of <u>steganography</u>? Select all that apply. Pictures may
+            contain both steganography and cryptography.
+        </h3>
         <div class="form-item">
             <input type="checkbox" id="q1.1" value="1" v-model="question1" />
             <label for="q1.1">
@@ -99,7 +102,10 @@ function hasFinished() {
         </div>
 
         <!-- Question 2: Steganography vs cryptography -->
-        <h3>Which of the following pictures are an example of <u>cryptography</u>? Select all that apply.</h3>
+        <h3>
+            Which of the following pictures are an example of <u>cryptography</u>? Select all that apply. Pictures may
+            contain both steganography and cryptography.
+        </h3>
         <div class="form-item">
             <input type="checkbox" id="q2.1" value="1" v-model="question2" />
             <label for="q2.1">
@@ -221,6 +227,224 @@ function hasFinished() {
             <input type="radio" id="q4.0" value="0" v-model="question4" />
             <label for="q4.0">
                 I don't know.
+            </label>
+        </div>
+
+        <!-- Question 5: Best hider -->
+        <h3>
+            Which of the following pictures can hide the most data with the use of steganography without visually seeing
+            a difference? Select one option.
+        </h3>
+        <div class="form-item">
+            <input type="radio" id="q5.1" value="1" v-model="question5" />
+            <label for="q5.1">
+                Picture 1
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="radio" id="q5.2" value="2" v-model="question5" />
+            <label for="q5.2">
+                Picture 2
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="radio" id="q5.3" value="3" v-model="question5" />
+            <label for="q5.3">
+                Picture 3
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="radio" id="q5.4" value="4" v-model="question5" />
+            <label for="q5.4">
+                Picture 4
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="radio" id="q5.0" value="0" v-model="question5" />
+            <label for="q5.0">
+                I don't know
+            </label>
+        </div>
+
+        <!-- Question 6: Steganography usage -->
+        <h3>
+            What could steganography be used for? Select all that apply.
+        </h3>
+        <div class="form-item">
+            <input type="checkbox" id="q6.1" value="1" v-model="question6" />
+            <label for="q6.1">
+                For getting inside a company's network with malware.
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="checkbox" id="q6.2" value="2" v-model="question6" />
+            <label for="q6.2">
+                For conceiling instructions within videos shared on social media.
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="checkbox" id="q6.3" value="3" v-model="question6" />
+            <label for="q6.3">
+                For verifying the authenticity of software using a digital signature.
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="checkbox" id="q6.4" value="4" v-model="question6" />
+            <label for="q6.4">
+                For protecting passwords for safe storage.
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="checkbox" id="q6.5" value="5" v-model="question6" />
+            <label for="q6.5">
+                For checking the validity of a communicated message.
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="checkbox" id="q6.0" value="0" v-model="question6" />
+            <label for="q6.0">
+                I don't know.
+            </label>
+        </div>
+
+        <!-- Question 7: Stego key -->
+        <h3>
+            What is the danger of not using a stego key?
+        </h3>
+        <div class="form-item">
+            <input type="checkbox" id="q7.1" value="1" v-model="question7" />
+            <label for="q7.1">
+                The cover file may become corrupted, which may lead to an unreadable message.
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="checkbox" id="q7.2" value="2" v-model="question7" />
+            <label for="q7.2">
+                The encryption of the hidden message will be weakened.
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="checkbox" id="q7.3" value="3" v-model="question7" />
+            <label for="q7.3">
+                The sender and receiver may not be able to verify each other's identity.
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="checkbox" id="q7.4" value="4" v-model="question7" />
+            <label for="q7.4">
+                The hidden message may be easily extracted by anyone who suspects its existance.
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="checkbox" id="q7.5" value="5" v-model="question7" />
+            <label for="q7.5">
+                The hidden message may be tampered with by someone who intercepted the transmission.
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="checkbox" id="q7.0" value="0" v-model="question7" />
+            <label for="q7.0">
+                I don't know.
+            </label>
+        </div>
+
+        <!-- Question 8: Diagram -->
+        <h3>
+            What should be put on the blank part of this diagram? Select one option.
+        </h3>
+        <div class="form-item">
+            <input type="radio" id="q8.1" value="1" v-model="question8" />
+            <label for="q8.1">
+                Cover
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="radio" id="q8.2" value="2" v-model="question8" />
+            <label for="q8.2">
+                StegWare
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="radio" id="q8.3" value="3" v-model="question8" />
+            <label for="q8.3">
+                Encryption
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="radio" id="q8.4" value="4" v-model="question8" />
+            <label for="q8.4">
+                StegAnalysis
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="radio" id="q8.5" value="5" v-model="question8" />
+            <label for="q8.5">
+                Identity
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="radio" id="q8.0" value="0" v-model="question8" />
+            <label for="q8.0">
+                I don't know
+            </label>
+        </div>
+
+        <!-- Question 9: Stegware -->
+        <h3>
+            Please put the pseudo code of the StegWare in the right order.
+        </h3>
+        <p>
+            Pseudo code:
+        </p>
+        <p>
+        <ol type="A">
+            <!-- A) -->
+            <li>Select carrier file and malicious payload.</li>
+            <!-- B) -->
+            <li>Decode and extract hidden data from the carrier file (at victim's side).</li>
+            <!-- C) -->
+            <li>Embed malicious payload into a carrier file.</li>
+            <!-- D) -->
+            <li>Distribute the steganographic carrier file to the victim.</li>
+            <!-- E) -->
+            <li>Execute the malicious payload.</li>
+        </ol>
+        </p>
+        <br>
+        <div class="form-item">
+            <input type="radio" id="q9.1" value="1" v-model="question9" />
+            <label for="q9.1">
+                A, C, D, E, B.
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="radio" id="q9.2" value="2" v-model="question9" />
+            <label for="q9.2">
+                C, A, B, D, E.
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="radio" id="q9.3" value="3" v-model="question9" />
+            <label for="q9.3">
+                A, C, B, E, D.
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="radio" id="q9.4" value="4" v-model="question9" />
+            <label for="q9.4">
+                D, A, B, C, E.
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="radio" id="q9.5" value="5" v-model="question9" />
+            <label for="q9.5">
+                A, C, D, B, E.
+            </label>
+        </div>
+        <div class="form-item">
+            <input type="radio" id="q9.0" value="0" v-model="question9" />
+            <label for="q9.0">
+                I don't know
             </label>
         </div>
 
