@@ -37,7 +37,8 @@ const question9 = ref(null); // radio button
 // TODO Time spent
 const timeSinceStart = ref(0);
 
-const emit = defineEmits(['update:experimentState']);
+const emit = defineEmits(['update:experimentState', 'update:testScore']);
+
 function next() {
     showServerError.value = false;
     showError.value = false;
@@ -72,7 +73,8 @@ function next() {
     }
     axios.post('/api/test/create', test)
         .then((response) => {
-            console.log("The participant's knowledge test has been saved.");
+            console.log("The participant's knowledge test has been saved and " + response.data.score + " points were scored.");
+            emit('update:testScore', response.data.score);
             // Then send has_finished=true to back end
             hasFinished();
         })

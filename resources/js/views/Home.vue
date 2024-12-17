@@ -33,6 +33,7 @@ const experimentState = ref(0);
 // Participant id
 const participantId = uuid.v4();
 const inGameGroup = Boolean(Math.floor(Math.random() * 2));
+const testScore = ref(0);
 
 // Scroll to top when changing between pages
 watch([readStudyInformation, hasGivenConsent], async (newValues, oldValues) => {
@@ -85,11 +86,11 @@ onMounted(leavePageWarning);
 
         <!-- State 3: performing the knowledge test -->
         <KnowledgeTest v-if="experimentState === 3" v-model:experimentState="experimentState"
-            :participantId="participantId" />
+            :participantId="participantId" v-model:testScore="testScore" />
 
         <!-- State 4: optional feedback -->
-        <Feedback v-if="experimentState === 4" v-model:experimentState="experimentState"
-            :participantId="participantId" />
+        <Feedback v-if="experimentState === 4" v-model:experimentState="experimentState" :participantId="participantId"
+            v-model:testScore="testScore" />
 
         <!-- State 5: thank you for participating -->
         <ThankYou v-if="experimentState === 5" />
