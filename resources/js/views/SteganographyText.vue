@@ -28,8 +28,59 @@ function next() {
 
 <template>
     <TextTemplate>
+
+        <h2>Cyber security</h2>
         <p>
-            Hereby some information on steganography.
+            Introduction and importance.
+        </p>
+
+        <h3>Cryptography</h3>
+        <p>
+            Public and private key
+        </p>
+
+        <h3>Steganography</h3>
+        <p>
+            Art of hiding
+        </p>
+        <p>
+            Slave + lemon juice + audio and PDF
+        </p>
+
+        <h2>Cryptography vs steganography</h2>
+        <p>
+            Art of hiding vs art of secret writing. + What do you want to achieve?
+        </p>
+
+        <h2>Relevance</h2>
+        <p>
+            Communication: terrorists 9/11 + social media on FB images or on eBay quite some images with steganography.
+        </p>
+        <p>
+            Also, can be used for malware. More about this later. First image steganography.
+        </p>
+
+        <h2>Image steganography</h2>
+        <h3>Hiding inside an image</h3>
+        <p>
+            Adjust pixels + note that pixels will be slightly adjusted
+        </p>
+
+        <h3>Stego key</h3>
+        <p>Why stego key?</p>
+
+        <h2>StegWare</h2>
+        <p>
+            Steganography Malware
+        </p>
+        <p>
+            Steal credit card numbers
+        </p>
+        <p>
+            Why? Hard to detect.
+        </p>
+        <p>
+            Pseudocode
         </p>
 
         <div class="button">
