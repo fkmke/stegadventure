@@ -7,7 +7,7 @@ import { ref } from 'vue';
 import q11 from '../../../img/test/q1-1.webp';
 import q12 from '../../../img/test/q1-2.webp';
 import q13 from '../../../img/test/q1-3.webp';
-import q14 from '../../../img/test/q1-4.webp';
+import q14 from '../../../img/test/q1-4.svg';
 import q51 from '../../../img/test/q5-1.webp';
 import q52 from '../../../img/test/q5-2.webp';
 import q53 from '../../../img/test/q5-3.webp';
