@@ -9,10 +9,12 @@ import TextTemplate from '../TextTemplate.vue';
             Please ask other people to participate in this study as well. That would be
             really helpfull! They can simply visit <a href="https://game.femkew.nl">game.femkew.nl</a> to participate.
         </p>
+        <!--
         <p>
             If you are interested in the topic, you can find some extra material
             <a href="https://stegadventure.femkew.nl/extra-info" target="_blank">here</a>.
         </p>
+        -->
         <p>
             If you were in the reading group, but still interested in playing the game, you can do that
             <a href="https://stegadventure.femkew.nl/game" target="_blank">here</a>.
