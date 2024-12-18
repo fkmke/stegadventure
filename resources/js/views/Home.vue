@@ -90,7 +90,7 @@ onMounted(leavePageWarning);
 
         <!-- State 4: optional feedback -->
         <Feedback v-if="experimentState === 4" v-model:experimentState="experimentState" :participantId="participantId"
-            v-model:testScore="testScore" />
+            v-model:testScore="testScore" :in-game-group="inGameGroup" />
 
         <!-- State 5: thank you for participating -->
         <ThankYou v-if="experimentState === 5" />
