@@ -128,34 +128,35 @@ function hasFinished() {
         <div class="image-container">
             <label for="q1.1" :class="{ 'selected-image': question1.includes('1') }" @click.prevent
                 @click="question1.includes('1') ? question1.splice(question1.indexOf('1'), 1) : question1.push('1')"
-                style="min-height:300px;">
+                style="min-height:320px;">
                 <img :src="q11" />
                 <p>
-                    <b>Picture 1</b>
+                    <b>Picture 1:</b> Some bits are adjusted in this image compared to the original one
                 </p>
             </label>
             <label for="q1.2" :class="{ 'selected-image': question1.includes('2') }" @click.prevent
                 @click="question1.includes('2') ? question1.splice(question1.indexOf('2'), 1) : question1.push('2')"
-                style="min-height:300px;">
+                style="min-height:320px;">
                 <img :src="q12" />
                 <p>
-                    <b>Picture 2</b>
+                    <b>Picture 2:</b> An unreadable text is encoded into an image
                 </p>
             </label>
             <label for="q1.3" :class="{ 'selected-image': question1.includes('3') }" @click.prevent
                 @click="question1.includes('3') ? question1.splice(question1.indexOf('3'), 1) : question1.push('3')"
-                style="min-height:270px;">
+                style="min-height:320px;">
                 <img :src="q13" />
                 <p>
-                    <b>Picture 3</b>
+                    <b>Picture 3:</b> When holding a paper with certain holes on top of the letter, a secret message
+                    appears
                 </p>
             </label>
             <label for="q1.4" :class="{ 'selected-image': question1.includes('4') }" @click.prevent
                 @click="question1.includes('4') ? question1.splice(question1.indexOf('4'), 1) : question1.push('4')"
-                style="min-height:270px;">
+                style="min-height:320px;">
                 <img :src="q14" />
                 <p>
-                    <b>Picture 4</b>
+                    <b>Picture 4:</b> Bob (in green) sends 'hello Alice' to Alice (in purple) over the internet
                 </p>
             </label>
         </div>
@@ -198,34 +199,35 @@ function hasFinished() {
         <div class="image-container">
             <label for="q2.1" :class="{ 'selected-image': question2.includes('1') }" @click.prevent
                 @click="question2.includes('1') ? question2.splice(question2.indexOf('1'), 1) : question2.push('1')"
-                style="min-height:300px;">
+                style="min-height:320px;">
                 <img :src="q11" />
                 <p>
-                    <b>Picture 1</b>
+                    <b>Picture 1:</b> Some bits are adjusted in this image compared to the original one
                 </p>
             </label>
             <label for="q2.2" :class="{ 'selected-image': question2.includes('2') }" @click.prevent
                 @click="question2.includes('2') ? question2.splice(question2.indexOf('2'), 1) : question2.push('2')"
-                style="min-height:300px;">
+                style="min-height:320px;">
                 <img :src="q12" />
                 <p>
-                    <b>Picture 2</b>
+                    <b>Picture 2:</b> An unreadable text is encoded into an image
                 </p>
             </label>
             <label for="q2.3" :class="{ 'selected-image': question2.includes('3') }" @click.prevent
                 @click="question2.includes('3') ? question2.splice(question2.indexOf('3'), 1) : question2.push('3')"
-                style="min-height:270px;">
+                style="min-height:320px;">
                 <img :src="q13" />
                 <p>
-                    <b>Picture 3</b>
+                    <b>Picture 3:</b> When holding a paper with certain holes on top of the letter, a secret message
+                    appears
                 </p>
             </label>
             <label for="q2.4" :class="{ 'selected-image': question2.includes('4') }" @click.prevent
                 @click="question2.includes('4') ? question2.splice(question2.indexOf('4'), 1) : question2.push('4')"
-                style="min-height:270px;">
+                style="min-height:320px;">
                 <img :src="q14" />
                 <p>
-                    <b>Picture 4</b>
+                    <b>Picture 4:</b> Bob (in green) sends 'hello Alice' to Alice (in purple) over the internet
                 </p>
             </label>
         </div>
@@ -633,6 +635,11 @@ function hasFinished() {
 img {
     width: 330px;
     object-fit: contain;
+    max-width: 100%;
+}
+
+img+p {
+    width: 330px;
     max-width: 100%;
 }
 
