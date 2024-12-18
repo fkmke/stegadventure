@@ -31,7 +31,14 @@ function next() {
 
         <h2>Cyber security</h2>
         <p>
-            Introduction and importance.
+            Cyber security is the practise of protecting systems, networks and data from digital threats. The world
+            keeps becoming more and more connected and thus the risk of cyber attacks inceases too. Companies have had
+            data leakages, and even personal computers have been locked by ransomware by criminals. Therefore, digital
+            systems must be protected.
+        </p>
+        <p>
+            This reading will focus on safe and secret transmissions. We will start with a very known concept:
+            cryptography. Then we will focus in the main topic: steganography.
         </p>
 
         <h3>Cryptography</h3>
