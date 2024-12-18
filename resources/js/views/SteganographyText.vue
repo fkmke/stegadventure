@@ -55,7 +55,7 @@ function next() {
 
         <div id="figure-1" class="image-wrapper">
             <img :src="caesarCipher" />
-            <p><b>Figure 1:</b> Caesar Cipher Wheel for shifting letters.</p>
+            <p><b>Figure 1:</b> Caesar Cipher Wheel for shifting letters</p>
         </div>
         <p>
             A famous basic cryptography algorithm is the Caesar Cipher, in which each alphabet letter is shifted by a
@@ -90,7 +90,7 @@ function next() {
         </p>
         <div id="figure-3" class="image-wrapper">
             <img :src="uvInk" />
-            <p><b>Figure 3:</b> Something secret can be written with UV ink on an unharmful looking document.</p>
+            <p><b>Figure 3:</b> Something secret can be written with UV ink on an unharmful looking document</p>
         </div>
         <p>
             One of the first records of steganography is from 499BC. The ruler of Miletus, Histieaus, shaved the head of
@@ -102,8 +102,7 @@ function next() {
         <p>
             In the digital world, messages can be hidden within digital files as cover, like audio fragments, PDF files,
             images, and many more digital media. These files are represented by bits, and by adjusting or adding bits,
-            secret
-            messages can be embedded into these files.
+            secret messages can be embedded into these files.
         </p>
 
         <h2>Steganography vs cryptography</h2>
