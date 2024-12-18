@@ -122,8 +122,8 @@ function hasFinished() {
         <!-- TODO: make components for questions -->
         <!-- Question 1: Steganography vs cryptography -->
         <h3>
-            Which of the following pictures are an example of <u>steganography</u>? Select all that apply. Pictures may
-            contain both steganography and cryptography.
+            Which of the following pictures are an example of <u>steganography</u>? Select all that apply. Certain
+            pictures may contain both steganography and cryptography.
         </h3>
         <div class="image-container">
             <label for="q1.1" :class="{ 'selected-image': question1.includes('1') }" @click.prevent
@@ -192,8 +192,8 @@ function hasFinished() {
 
         <!-- Question 2: Steganography vs cryptography -->
         <h3>
-            Which of the following pictures are an example of <u>cryptography</u>? Select all that apply. Pictures may
-            contain both steganography and cryptography.
+            Which of the following pictures are an example of <u>cryptography</u>? Select all that apply. Certain
+            pictures may contain both steganography and cryptography.
         </h3>
         <div class="image-container">
             <label for="q2.1" :class="{ 'selected-image': question2.includes('1') }" @click.prevent
