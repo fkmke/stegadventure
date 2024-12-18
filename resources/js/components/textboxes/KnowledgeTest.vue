@@ -128,7 +128,7 @@ function hasFinished() {
         <div class="image-container">
             <label for="q1.1" :class="{ 'selected-image': question1.includes('1') }" @click.prevent
                 @click="question1.includes('1') ? question1.splice(question1.indexOf('1'), 1) : question1.push('1')"
-                style="min-height:330px;">
+                style="min-height:300px;">
                 <img :src="q11" />
                 <p>
                     <b>Picture 1</b>
@@ -136,7 +136,7 @@ function hasFinished() {
             </label>
             <label for="q1.2" :class="{ 'selected-image': question1.includes('2') }" @click.prevent
                 @click="question1.includes('2') ? question1.splice(question1.indexOf('2'), 1) : question1.push('2')"
-                style="min-height:330px;">
+                style="min-height:300px;">
                 <img :src="q12" />
                 <p>
                     <b>Picture 2</b>
@@ -198,7 +198,7 @@ function hasFinished() {
         <div class="image-container">
             <label for="q2.1" :class="{ 'selected-image': question2.includes('1') }" @click.prevent
                 @click="question2.includes('1') ? question2.splice(question2.indexOf('1'), 1) : question2.push('1')"
-                style="min-height:330px;">
+                style="min-height:300px;">
                 <img :src="q11" />
                 <p>
                     <b>Picture 1</b>
@@ -206,7 +206,7 @@ function hasFinished() {
             </label>
             <label for="q2.2" :class="{ 'selected-image': question2.includes('2') }" @click.prevent
                 @click="question2.includes('2') ? question2.splice(question2.indexOf('2'), 1) : question2.push('2')"
-                style="min-height:330px;">
+                style="min-height:300px;">
                 <img :src="q12" />
                 <p>
                     <b>Picture 2</b>
