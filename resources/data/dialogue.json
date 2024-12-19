@@ -94,7 +94,7 @@
         "id": 105,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "You don\u2019t remember my great invention the Pixinator?",
+        "content": "You don\u2019t remember my great invention, the Pixinator?",
         "background": "lab/in-pixinator",
         "emotion": "default",
         "next": 106
@@ -103,7 +103,7 @@
         "id": 106,
         "character": "HQ Security",
         "type": "TEXT",
-        "content": "ALERT ALERT ALERT!",
+        "content": "ALERT! ALERT! ALERT!",
         "background": "lab/alert",
         "emotion": "default",
         "next": 107
@@ -170,7 +170,7 @@
         "id": 131,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Then, my message is encrypted, and thus unreadable, even for myself. This is the cipher text, which I send over the network.",
+        "content": "This encrypted message is unreadable, even for myself. This is the cipher text, which I send over the network.",
         "background": "lab/explain/cryptography-2",
         "emotion": "default",
         "next": 132
@@ -188,7 +188,7 @@
         "id": 133,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "That is because you only have the private key that can decrypt this cipher text.",
+        "content": "That is because only you have the private key that can decrypt this cipher text.",
         "background": "lab/explain/cryptography-4",
         "emotion": "default",
         "next": 134
@@ -197,7 +197,7 @@
         "id": 134,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "That is at least assumed that the public key that you gave to me at first matches your private key\u2026",
+        "content": "This is, of course, assuming that the public key you shared with me belongs to your private key...",
         "background": "lab/explain/cryptography-5",
         "emotion": "default",
         "next": 135
@@ -233,7 +233,7 @@
         "id": 141,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "The how and what does not matter. What matters is that we are in big trouble now.",
+        "content": "The how and what don't matter. What matters is that we are in big trouble now.",
         "background": "control-room/default",
         "emotion": "default",
         "next": 142
@@ -242,7 +242,7 @@
         "id": 142,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "Our sources think that SilentSpectra has access to a super-fast computer which cracks our secret keys.",
+        "content": "Our sources think that SilentSpectra has access to a super fast computer capable of cracking our secret keys.",
         "background": "control-room/default",
         "emotion": "default",
         "next": 143
@@ -287,7 +287,7 @@
         "id": 146,
         "character": "Boss M.",
         "type": "QUESTION",
-        "content": "Their interactions on social media for example seem fairly normal.",
+        "content": "Their interactions on social media seem fairly normal, for example.",
         "background": "control-room/social-media",
         "emotion": "default",
         "choices": [
@@ -528,7 +528,7 @@
         "id": 221,
         "character": "player",
         "type": "TEXT",
-        "content": "I get called\u2026 Let\u2019s pick up the phone.",
+        "content": "I'm getting a call...",
         "background": "hideout/diagram",
         "emotion": "default",
         "next": 222
@@ -555,7 +555,7 @@
         "id": 224,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "So, you have trouble  understanding a diagram you found\u2026 Let me see\u2026",
+        "content": "So, you're having trouble understanding a diagram you found\u2026 Let me see\u2026",
         "background": "hideout/diagram",
         "emotion": "default",
         "next": 225
@@ -573,7 +573,7 @@
         "id": 226,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "I assume the carrier will be some kind of data object on a computer, such as PDF, MP3, or an image.",
+        "content": "I assume the carrier will be some kind of data object on a computer, such as a PDF, MP3, or an image.",
         "background": "hideout/diagram",
         "emotion": "default",
         "next": 227
@@ -591,7 +591,7 @@
         "id": 228,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "All this data seems to be combined into one object. I think that object will be send over a certain medium\u2026",
+        "content": "All this data seems to be combined into one object. I think that object will be sent over a certain medium\u2026",
         "background": "hideout/diagram",
         "emotion": "default",
         "next": 229
@@ -609,7 +609,7 @@
         "id": 230,
         "character": "player",
         "type": "TEXT",
-        "content": "There is also a newspaper article in the bin, showing there are images on eBay containing steganography.",
+        "content": "There is also a newspaper article in the bin, about images appearing on eBay containing steganography.",
         "background": "hideout/newspaper",
         "emotion": "default",
         "next": 231
@@ -627,7 +627,7 @@
         "id": 240,
         "character": "player",
         "type": "TEXT",
-        "content": "Agent P. has quite some books. Let\u2019s look into some books.",
+        "content": "Agent P. has quite some books. Let\u2019s look into them.",
         "background": "hideout/books",
         "emotion": "default",
         "next": 241
@@ -654,7 +654,7 @@
         "id": 243,
         "character": "player",
         "type": "TEXT",
-        "content": "Below that an example of a secret message using cryptography.",
+        "content": "Below that, an example of a secret message using cryptography.",
         "background": "hideout/book-1",
         "emotion": "default",
         "next": 244
@@ -810,7 +810,7 @@
         "id": 300,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Okay, I see you have brought the diagram from the bin. Let me take a look at it\u2026",
+        "content": "Okay, I see you have brought the diagram from the bin. Let me have a look\u2026",
         "background": "control-room/analyse/diagram",
         "emotion": "default",
         "next": 301
@@ -846,7 +846,7 @@
         "id": 304,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "All this data seems to be combined into one object. I think that object will be send over a certain medium\u2026",
+        "content": "All this data seems to be combined into one object. I think that object will be sent over a certain medium\u2026",
         "background": "control-room/analyse/diagram",
         "emotion": "default",
         "next": 305
@@ -855,7 +855,7 @@
         "id": 305,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "This shows that Agent P. is very interested in combining a hidden message with a carrier object.",
+        "content": "Agent P. seems to be very interested in combining a hidden message with a carrier object.",
         "background": "control-room/analyse/diagram",
         "emotion": "default",
         "next": 306
@@ -927,7 +927,7 @@
         "id": 315,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Agent P. seems to be very interested in this topic, but with this information I cannot proceed.",
+        "content": "Agent P. seems to be very interested in this topic, but with just this information I cannot proceed.",
         "background": "control-room/analyse/books",
         "emotion": "default",
         "next": 316
@@ -985,7 +985,7 @@
         "id": 325,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "The images are both BMP images. Also, the  creation date of both images are exactly the same. They seem duplicates.",
+        "content": "The images are both BMP images. Also, the creation date of both images are exactly the same. They seem duplicates.",
         "background": "control-room/analyse/images/metadata",
         "emotion": "default",
         "next": 326
@@ -1066,7 +1066,7 @@
         "id": 334,
         "character": "Dr. Glitchwell",
         "type": "QUESTION",
-        "content": "The most right bit is the least significant bit, since it adjusts its value minimally.",
+        "content": "The rightmost bit is the least significant bit, since it adjusts its value minimally.",
         "background": "control-room/analyse/images/explain/lsb-1",
         "emotion": "default",
         "choices": [
@@ -1129,7 +1129,7 @@
         "id": 345,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "When we put all the least significant bits of the images behind each other, characters can be read.",
+        "content": "When we line up each byte's least significant bit, I can see some characters",
         "background": "control-room/analyse/images/bits-highlighted-stream",
         "emotion": "default",
         "next": 346
@@ -1228,7 +1228,7 @@
         "id": 355,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "MAYBE WE ARE HACKED\u2026",
+        "content": "MAYBE WE'VE BEEN HACKED\u2026",
         "background": "control-room/analyse/images",
         "emotion": "default",
         "next": 356
@@ -1237,7 +1237,7 @@
         "id": 356,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "And they steal our private keys through a malicious code embedded within an image\u2026",
+        "content": "And they're stealing our private keys through a malicious code embedded within an image\u2026",
         "background": "control-room/explain/stolen-private-keys",
         "emotion": "default",
         "next": 357
@@ -1291,7 +1291,7 @@
         "id": 361,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "But if the activity is hidden within an image, our system does not detect that, yet.",
+        "content": "But if the activity is hidden within an image, our system does not detect that (yet).",
         "background": "control-room/explain/ids",
         "emotion": "default",
         "next": 362
@@ -1309,7 +1309,7 @@
         "id": 365,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "MAYBE WE ARE HACKED\u2026",
+        "content": "MAYBE WE'VE BEEN HACKED\u2026",
         "background": "control-room/analyse/images",
         "emotion": "default",
         "next": 366
@@ -1318,7 +1318,7 @@
         "id": 366,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "And they steal our private keys through a malicious code embedded within an image\u2026",
+        "content": "And they're stealing our private keys through a malicious code embedded within an image\u2026",
         "background": "control-room/explain/stolen-private-keys",
         "emotion": "default",
         "next": 367
@@ -1372,7 +1372,7 @@
         "id": 371,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "But if the activity is hidden within an image, our system does not detect that, yet.",
+        "content": "But if the activity is hidden within an image, our system does not detect that (yet).",
         "background": "control-room/explain/ids",
         "emotion": "default",
         "next": 372
@@ -1381,7 +1381,7 @@
         "id": 372,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "I need to do research on this topic to prevent attacks using steganography.",
+        "content": "I need to do research on this topic, to prevent these attacks using steganography.",
         "background": "control-room/analyse/images",
         "emotion": "default",
         "next": 373
@@ -1417,7 +1417,7 @@
         "id": 380,
         "character": "Boss M.",
         "type": "CUSTOM",
-        "content": "${name}, please find the hidden message of this part of the image, Dr. Glitchwell. You will do the other part.",
+        "content": "${name}, please find the hidden message of this part of the image. Dr. Glitchwell, you do the other part.",
         "background": "control-room/hidden-message",
         "emotion": "default",
         "next": 381
@@ -1482,7 +1482,7 @@
         "id": 384,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "That is where the secret message is stored, which our systems did not detect.",
+        "content": "That is where the undetectable secret message is stored.",
         "background": "control-room/analyse/images",
         "emotion": "default",
         "next": 385
@@ -1518,7 +1518,7 @@
         "id": 400,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Good morning\u2026 I worked all night, but I found out that SilentSpectra is indeed using Facebook for communication.",
+        "content": "Good morning\u2026 I worked all night, and I found out that SilentSpectra is indeed using Facebook to communicate.",
         "background": "control-room/default",
         "emotion": "tired",
         "next": 401
@@ -1527,7 +1527,7 @@
         "id": 401,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "We have seen their public messages on social media before of course, but we weren\u2019t aware that they integrated their secret message within the attached files.",
+        "content": "We have seen their public messages on social media before of course, but we weren\u2019t aware that they integrated any secret messages within the attached files.",
         "background": "control-room/default",
         "emotion": "default",
         "next": 402
@@ -1567,7 +1567,7 @@
         "id": 404,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Well\u2026 we haven\u2019t located their main hideout yet, so that will be useless.",
+        "content": "Uhhh... we haven\u2019t located their main hideout yet, so that will be useless.",
         "background": "control-room/default",
         "emotion": "default",
         "next": 405
@@ -1585,7 +1585,7 @@
         "id": 406,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "I am suggesting we use spear phishing to send an email to Agent T, and hope he will open the attachment in which we will hide Stegware.",
+        "content": "I suggest we use spear phishing to send an email to Agent T, and hope he will open the attachment in which we will hide Stegware.",
         "background": "control-room/default",
         "emotion": "default",
         "next": 410
@@ -1657,7 +1657,7 @@
         "id": 415,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "In addition, I want to be fully able to control their system, so that I can shut it down when needed.",
+        "content": "Additionally, I want to be able to have full control over their system, so that I can shut it down when needed.",
         "background": "control-room/default",
         "emotion": "default",
         "next": 416
@@ -1684,7 +1684,7 @@
         "id": 418,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "The tests went alright; I can successfully transfer you into the computer world! Let\u2019s move to my lab.",
+        "content": "The tests went alright; I can successfully transfer you to the computer world! Let\u2019s move to my lab.",
         "background": "control-room/default",
         "emotion": "default",
         "next": 419
@@ -1747,7 +1747,7 @@
         "id": 425,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "Just like stealing a treasure from a museum, you first need to get in and out undetected.",
+        "content": "In the first place, just like stealing treasure from a museum, you need to get in and out undetected.",
         "background": "lab/plan/phase-1",
         "emotion": "default",
         "next": 426
@@ -1756,7 +1756,7 @@
         "id": 426,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "To get in, you will need to bypass their security system that scans for malware. ",
+        "content": "To get in, you will need to bypass their security system scanning for malware. ",
         "background": "lab/plan/phase-1",
         "emotion": "default",
         "next": 427
@@ -1774,7 +1774,7 @@
         "id": 428,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "The best strategy is to hide yourself completely and have only a small script called the bootstrap that is going to extract you from the object you are hiding in. ",
+        "content": "The best strategy is to hide yourself completely and have only a small script called a bootstrap that is going to extract you from the object you are hiding in. ",
         "background": "lab/plan/phase-1",
         "emotion": "default",
         "next": 429
@@ -1810,7 +1810,7 @@
         "id": 432,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "At last, you should get out of the system safely so that you can come back to the real world. Please take some sensitive information with you. ",
+        "content": "Lastly, you should get out of the system safely so you can come back to the real world. Please take some sensitive information with you. ",
         "background": "lab/plan/phase-3",
         "emotion": "default",
         "next": 433
@@ -1819,7 +1819,7 @@
         "id": 433,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "We will not be able to communicate with you once you are in. So you will be on your own now. ",
+        "content": "We will not be able to communicate with you once you are in, so you will be on your own. ",
         "background": "lab/plan/phase-3",
         "emotion": "default",
         "next": 434
@@ -1859,7 +1859,7 @@
         "id": 436,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "Keep focused!",
+        "content": "Stay focused!",
         "background": "lab/default",
         "emotion": "default",
         "next": 437
@@ -2173,7 +2173,7 @@
         "id": 543,
         "character": "player",
         "type": "TEXT",
-        "content": "Hmm\u2026 putting a data object at the very start or end is very suspicious.",
+        "content": "Hmm\u2026 putting a data object at the very start or end would be very suspicious.",
         "background": "pc-world/aegis/hide-at-start-or-end-quarantine",
         "emotion": "default",
         "next": 544
@@ -2273,7 +2273,7 @@
         "id": 558,
         "character": "player",
         "type": "TEXT",
-        "content": "Pfeww! I am through, but I could have better hidden in the least significant bits of the image\u2026",
+        "content": "Phew! I'm through, but it would have been better to hide in the least significant bits of the image\u2026",
         "background": "network/stuck-in-image",
         "emotion": "default",
         "next": 559
@@ -2282,7 +2282,7 @@
         "id": 559,
         "character": "player",
         "type": "TEXT",
-        "content": "That way, the colours are not altered much.",
+        "content": "That way, the colours are (seemingly) not altered as much.",
         "background": "network/stuck-in-image",
         "emotion": "default",
         "next": 560
@@ -2421,7 +2421,7 @@
         "content": "That way, the colours are not altered much.",
         "background": "pc-world/aegis/hidden-msb",
         "emotion": "default",
-        "next": 606
+        "next": 596
     },
     {
         "id": 580,
@@ -2621,7 +2621,7 @@
         "id": 602,
         "character": "player",
         "type": "TEXT",
-        "content": "No, it can\u2019t be. It doesn\u2019t even mean anything.",
+        "content": "No, it can\u2019t be. That doesn\u2019t even mean anything.",
         "background": "network/default",
         "emotion": "default",
         "next": 601
@@ -2716,7 +2716,7 @@
                 "destination_id": 620
             },
             {
-                "text": "Use cryptography to hide that I am having sensitive files with me",
+                "text": "Use cryptography to hide the sensitive files I'm carrying",
                 "destination_id": 630
             }
         ]
@@ -2807,7 +2807,7 @@
         "id": 635,
         "character": "player",
         "type": "TEXT",
-        "content": "Hm\u2026 I need to outsmart Velos the Data Leakage Protection.",
+        "content": "Hm\u2026 I need to outsmart Velos, the Data Leakage Protection.",
         "background": "game-over/quarantined",
         "emotion": "default",
         "next": 511
