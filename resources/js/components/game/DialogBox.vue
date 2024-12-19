@@ -51,7 +51,7 @@ function getBackgroundImage() {
 
 // Image path for the character
 function getCharacterImage() {
-    return `/characters/${props.node.character}/${props.node.emotion}.png`;
+    return `/characters/${props.node.character}/${props.node.emotion}.webp`;
 }
 
 // Update the background and font sizes dynamically
@@ -141,8 +141,8 @@ onBeforeUnmount(() => {
 
 .character-image {
     position: absolute;
-    width: auto;
-    height: 40%;
+    width: 100%;
+    height: 100%;
     left: 0;
     bottom: 0;
 }

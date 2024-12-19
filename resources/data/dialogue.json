@@ -5,7 +5,7 @@
         "type": "TEXT",
         "content": "Good morning!!! Are you okay?",
         "background": "lab/blurry",
-        "emotion": "enthusiastic",
+        "emotion": "happy",
         "next": 101
     },
     {
@@ -60,7 +60,7 @@
         "type": "TEXT",
         "content": "Amazing! Welcome back to the real world ${name}. The tests went fine. ",
         "background": "lab/in-pixinator",
-        "emotion": "default",
+        "emotion": "happy",
         "next": 103
     },
     {
@@ -69,7 +69,7 @@
         "type": "QUESTION",
         "content": "I am glad you are back alive.",
         "background": "lab/in-pixinator",
-        "emotion": "default",
+        "emotion": "happy",
         "choices": [
             {
                 "text": "Yeah, that\u2019s great!",
@@ -87,7 +87,7 @@
         "type": "TEXT",
         "content": "Yes, I know! I am the amazing inventor of the Pixinator!",
         "background": "lab/in-pixinator",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 106
     },
     {
@@ -96,7 +96,7 @@
         "type": "TEXT",
         "content": "You don\u2019t remember my great invention, the Pixinator?",
         "background": "lab/in-pixinator",
-        "emotion": "default",
+        "emotion": "shocked",
         "next": 106
     },
     {
@@ -114,7 +114,7 @@
         "type": "TEXT",
         "content": "Bad news. We have evidence that our enemy SilentSpectra has decrypted our data again.",
         "background": "lab/alert",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 108
     },
     {
@@ -123,7 +123,7 @@
         "type": "QUESTION",
         "content": "No way! I even made our encryption algorithm more complex! ",
         "background": "lab/alert",
-        "emotion": "default",
+        "emotion": "shocked",
         "choices": [
             {
                 "text": "How does cryptography work again?",
@@ -145,7 +145,7 @@
         "type": "TEXT",
         "content": "Good for you.",
         "background": "lab/alert",
-        "emotion": "default",
+        "emotion": "tired",
         "next": 139
     },
     {
@@ -154,7 +154,7 @@
         "type": "TEXT",
         "content": "Let me cry in the corner for a second\u2026",
         "background": "lab/alert",
-        "emotion": "default",
+        "emotion": "tired",
         "next": 139
     },
     {
@@ -172,7 +172,7 @@
         "type": "TEXT",
         "content": "This encrypted message is unreadable, even for myself. This is the cipher text, which I send over the network.",
         "background": "lab/explain/cryptography-2",
-        "emotion": "default",
+        "emotion": "happy",
         "next": 132
     },
     {
@@ -181,7 +181,7 @@
         "type": "TEXT",
         "content": "When you receive my message, you are the only one who can decrypt the message.",
         "background": "lab/explain/cryptography-3",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 133
     },
     {
@@ -190,7 +190,7 @@
         "type": "TEXT",
         "content": "That is because only you have the private key that can decrypt this cipher text.",
         "background": "lab/explain/cryptography-4",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 134
     },
     {
@@ -217,7 +217,7 @@
         "type": "TEXT",
         "content": "Let\u2019s move to the control room to discuss this matter.",
         "background": "lab/default",
-        "emotion": "default",
+        "emotion": "confident",
         "next": 140
     },
     {
@@ -226,7 +226,7 @@
         "type": "TEXT",
         "content": "Okay, back to the topic my people.",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "confident",
         "next": 141
     },
     {
@@ -244,7 +244,7 @@
         "type": "TEXT",
         "content": "Our sources think that SilentSpectra has access to a super fast computer capable of cracking our secret keys.",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 143
     },
     {
@@ -253,7 +253,7 @@
         "type": "TEXT",
         "content": "You mean a quantum computer?",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "shocked",
         "next": 144
     },
     {
@@ -262,7 +262,7 @@
         "type": "QUESTION",
         "content": "I don\u2019t know.",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "angry",
         "choices": [
             {
                 "text": "Why can\u2019t we decrypt their communication?",
@@ -307,7 +307,7 @@
         "type": "TEXT",
         "content": "The good news is that we have tracked down and detained Agent P., who seems to be working for SilentSpectra.",
         "background": "control-room/tracked",
-        "emotion": "default",
+        "emotion": "confident",
         "next": 148
     },
     {
@@ -316,7 +316,7 @@
         "type": "TEXT",
         "content": "We have secured his hideout too. I will interrogate him to see whether he has some information.",
         "background": "control-room/tracked",
-        "emotion": "default",
+        "emotion": "confident",
         "next": 149
     },
     {
@@ -343,7 +343,7 @@
         "type": "QUESTION",
         "content": "Yes ma\u2019am!",
         "background": "control-room/tracked",
-        "emotion": "default",
+        "emotion": "happy",
         "choices": [
             {
                 "text": "Let\u2019s investigate!",
@@ -361,7 +361,7 @@
         "type": "QUESTION",
         "content": "What do you want to wait for?",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "angry",
         "choices": [
             {
                 "text": "I need to go to the toilet",
@@ -383,7 +383,7 @@
         "type": "TEXT",
         "content": "I did not want to hear that.",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 190
     },
     {
@@ -401,7 +401,7 @@
         "type": "TEXT",
         "content": "\u2026",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 190
     },
     {
@@ -410,7 +410,7 @@
         "type": "TEXT",
         "content": "You know I pay you well enough to just do your job!",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 190
     },
     {
@@ -539,7 +539,7 @@
         "type": "TEXT",
         "content": "Hello ${name}! You haven\u2019t called me yet, so I got worried. What\u2019s up?",
         "background": "hideout/diagram",
-        "emotion": "default",
+        "emotion": "calling-happy",
         "next": 223
     },
     {
@@ -548,7 +548,7 @@
         "type": "TEXT",
         "content": "\u2026",
         "background": "hideout/diagram",
-        "emotion": "default",
+        "emotion": "calling-default",
         "next": 224
     },
     {
@@ -557,7 +557,7 @@
         "type": "TEXT",
         "content": "So, you're having trouble understanding a diagram you found\u2026 Let me see\u2026",
         "background": "hideout/diagram",
-        "emotion": "default",
+        "emotion": "calling-interesting",
         "next": 225
     },
     {
@@ -566,7 +566,7 @@
         "type": "TEXT",
         "content": "This diagram shows that a hidden message can be combined with a carrier and a stego key.",
         "background": "hideout/diagram",
-        "emotion": "default",
+        "emotion": "calling-default",
         "next": 226
     },
     {
@@ -575,7 +575,7 @@
         "type": "TEXT",
         "content": "I assume the carrier will be some kind of data object on a computer, such as a PDF, MP3, or an image.",
         "background": "hideout/diagram",
-        "emotion": "default",
+        "emotion": "calling-default",
         "next": 227
     },
     {
@@ -584,7 +584,7 @@
         "type": "TEXT",
         "content": "The key will probably be used so that others cannot uncover the secret message easily.",
         "background": "hideout/diagram",
-        "emotion": "default",
+        "emotion": "calling-interesting",
         "next": 228
     },
     {
@@ -593,7 +593,7 @@
         "type": "TEXT",
         "content": "All this data seems to be combined into one object. I think that object will be sent over a certain medium\u2026",
         "background": "hideout/diagram",
-        "emotion": "default",
+        "emotion": "calling-interesting",
         "next": 229
     },
     {
@@ -602,7 +602,7 @@
         "type": "TEXT",
         "content": "Welp, I need to go! Boss M. calls me.",
         "background": "hideout/diagram",
-        "emotion": "default",
+        "emotion": "calling-shocked",
         "next": 230
     },
     {
@@ -701,7 +701,7 @@
         "type": "QUESTION",
         "content": "Hello ${name}! I am so relieved to hear from you. Are you done investigating?",
         "background": "hideout/default",
-        "emotion": "default",
+        "emotion": "calling-happy",
         "choices": [
             {
                 "text": "Yes",
@@ -719,7 +719,7 @@
         "type": "QUESTION",
         "content": "What have you found?",
         "background": "hideout/default",
-        "emotion": "default",
+        "emotion": "calling-interesting",
         "choices": [
             {
                 "text": "A mess",
@@ -745,7 +745,7 @@
         "type": "TEXT",
         "content": "Then I would like you to clean your room for once!",
         "background": "hideout/default",
-        "emotion": "default",
+        "emotion": "calling-tired",
         "next": 281
     },
     {
@@ -754,7 +754,7 @@
         "type": "TEXT",
         "content": "Yes! Agent P. seems to be particularly interested in steganography.",
         "background": "hideout/default",
-        "emotion": "default",
+        "emotion": "calling-default",
         "next": 290
     },
     {
@@ -763,7 +763,7 @@
         "type": "TEXT",
         "content": "There must be more than solely cryptography\u2026",
         "background": "hideout/default",
-        "emotion": "default",
+        "emotion": "calling-interesting",
         "next": 281
     },
     {
@@ -772,7 +772,7 @@
         "type": "TEXT",
         "content": "I like the wall decoration too!",
         "background": "hideout/default",
-        "emotion": "default",
+        "emotion": "calling-happy",
         "next": 281
     },
     {
@@ -781,7 +781,7 @@
         "type": "TEXT",
         "content": "Bring something I can analyse. I can only analyse one item, otherwise we will not be able to take action in time. Bye!",
         "background": "hideout/default",
-        "emotion": "default",
+        "emotion": "calling-interesting",
         "next": 291
     },
     {
@@ -812,7 +812,7 @@
         "type": "TEXT",
         "content": "Okay, I see you have brought the diagram from the bin. Let me have a look\u2026",
         "background": "control-room/analyse/diagram",
-        "emotion": "default",
+        "emotion": "happy",
         "next": 301
     },
     {
@@ -830,7 +830,7 @@
         "type": "TEXT",
         "content": "I assume the carrier will be some kind of data object on a computer, such as PDF, MP3, or an image.",
         "background": "control-room/analyse/diagram",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 303
     },
     {
@@ -839,7 +839,7 @@
         "type": "TEXT",
         "content": "The key will probably be used so that others cannot uncover the secret message easily.",
         "background": "control-room/analyse/diagram",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 304
     },
     {
@@ -848,7 +848,7 @@
         "type": "TEXT",
         "content": "All this data seems to be combined into one object. I think that object will be sent over a certain medium\u2026",
         "background": "control-room/analyse/diagram",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 305
     },
     {
@@ -857,7 +857,7 @@
         "type": "TEXT",
         "content": "Agent P. seems to be very interested in combining a hidden message with a carrier object.",
         "background": "control-room/analyse/diagram",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 306
     },
     {
@@ -866,7 +866,7 @@
         "type": "TEXT",
         "content": "This must be called steganography! They seem to be using it, but how?",
         "background": "control-room/analyse/diagram",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 307
     },
     {
@@ -884,7 +884,7 @@
         "type": "TEXT",
         "content": "Okay, I see you have brought the books from the shelf. That must be heavy! Let me take a look at it\u2026",
         "background": "control-room/analyse/books",
-        "emotion": "default",
+        "emotion": "happy",
         "next": 311
     },
     {
@@ -911,7 +911,7 @@
         "type": "TEXT",
         "content": "It seems it has had its uses in a non-digital world as well.",
         "background": "control-room/analyse/books",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 314
     },
     {
@@ -920,7 +920,7 @@
         "type": "TEXT",
         "content": "But also, it has been part of a major history event.",
         "background": "control-room/analyse/books",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 315
     },
     {
@@ -929,7 +929,7 @@
         "type": "TEXT",
         "content": "Agent P. seems to be very interested in this topic, but with just this information I cannot proceed.",
         "background": "control-room/analyse/books",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 316
     },
     {
@@ -947,7 +947,7 @@
         "type": "QUESTION",
         "content": "Okay, I see you have brought the two images from the computer. What would you like me to analyse?",
         "background": "control-room/analyse/images",
-        "emotion": "default",
+        "emotion": "interesting",
         "choices": [
             {
                 "text": "The file size",
@@ -987,7 +987,7 @@
         "type": "TEXT",
         "content": "The images are both BMP images. Also, the creation date of both images are exactly the same. They seem duplicates.",
         "background": "control-room/analyse/images/metadata",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 326
     },
     {
@@ -996,7 +996,7 @@
         "type": "TEXT",
         "content": "BMP images store each pixel within the RGBA model (Red, Green, Blue, Alpha).",
         "background": "control-room/analyse/images/metadata",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 327
     },
     {
@@ -1005,7 +1005,7 @@
         "type": "TEXT",
         "content": "Alpha is the opacity value. All RGBA values will be combined into one colour pixel.",
         "background": "control-room/analyse/images/metadata",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 328
     },
     {
@@ -1014,7 +1014,7 @@
         "type": "TEXT",
         "content": "Is this relevant for steganography?",
         "background": "control-room/analyse/images/metadata",
-        "emotion": "default",
+        "emotion": "happy",
         "next": 320
     },
     {
@@ -1023,7 +1023,7 @@
         "type": "TEXT",
         "content": "Let me take a look at the individual bits for both images\u2026",
         "background": "control-room/analyse/images/bits",
-        "emotion": "default",
+        "emotion": "happy",
         "next": 331
     },
     {
@@ -1032,7 +1032,7 @@
         "type": "TEXT",
         "content": "WOAH!!!",
         "background": "control-room/analyse/images/bits",
-        "emotion": "default",
+        "emotion": "shocked",
         "next": 332
     },
     {
@@ -1041,7 +1041,7 @@
         "type": "QUESTION",
         "content": "The least significant bits seem to differ!",
         "background": "control-room/analyse/images/bits-highlighted",
-        "emotion": "default",
+        "emotion": "shocked",
         "choices": [
             {
                 "text": "What are least significant bits?",
@@ -1059,7 +1059,7 @@
         "type": "TEXT",
         "content": "Bits are presented as either 0 or 1. A group of eight bits form a byte, which can represent a decimal value between 0 and 255.",
         "background": "control-room/analyse/images/explain/lsb-1",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 334
     },
     {
@@ -1068,7 +1068,7 @@
         "type": "QUESTION",
         "content": "The rightmost bit is the least significant bit, since it adjusts its value minimally.",
         "background": "control-room/analyse/images/explain/lsb-1",
-        "emotion": "default",
+        "emotion": "interesting",
         "choices": [
             {
                 "text": "Could you give some examples?",
@@ -1086,7 +1086,7 @@
         "type": "TEXT",
         "content": "The byte 10001000 has a decimal value of 136. Let\u2019s change the least significant bit.",
         "background": "control-room/analyse/images/explain/lsb-2",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 336
     },
     {
@@ -1095,7 +1095,7 @@
         "type": "TEXT",
         "content": "10001000 changed to 10001001, because the most right bit is the least significant bit.",
         "background": "control-room/analyse/images/explain/lsb-3",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 337
     },
     {
@@ -1104,7 +1104,7 @@
         "type": "TEXT",
         "content": "The value of 10001001 is 137, so if this byte represented the colour red, we have only changed its value slightly.",
         "background": "control-room/analyse/images/explain/lsb-4",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 338
     },
     {
@@ -1113,7 +1113,7 @@
         "type": "TEXT",
         "content": "In contrast: if we would have adjusted 10001000 to 00001000, its value would have been 8.",
         "background": "control-room/analyse/images/explain/lsb-5",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 339
     },
     {
@@ -1122,7 +1122,7 @@
         "type": "TEXT",
         "content": "If this byte represented the red colour, the colour would have drastically changed!",
         "background": "control-room/analyse/images/explain/lsb-5",
-        "emotion": "default",
+        "emotion": "shocked",
         "next": 345
     },
     {
@@ -1149,7 +1149,7 @@
         "type": "TEXT",
         "content": "I assume this is the simple protocol that Agent P. came up with.",
         "background": "control-room/analyse/images/bits-highlighted-stream-letters",
-        "emotion": "default",
+        "emotion": "happy",
         "next": 348
     },
     {
@@ -1158,7 +1158,7 @@
         "type": "TEXT",
         "content": "If he used a stego key to randomize which least significant bits are used, we would not be able to have read this message.",
         "background": "control-room/analyse/images/bits-highlighted-stream-letters",
-        "emotion": "default",
+        "emotion": "happy",
         "next": 349
     },
     {
@@ -1203,7 +1203,7 @@
         "type": "TEXT",
         "content": "Good observation! That may also explain why we haven\u2019t seen SilentSpectra communicating yet.",
         "background": "control-room/social-media",
-        "emotion": "default",
+        "emotion": "shocked",
         "next": 353
     },
     {
@@ -1212,7 +1212,7 @@
         "type": "TEXT",
         "content": "Maybe they hide their secret messages within their images on social media!",
         "background": "control-room/social-media",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 354
     },
     {
@@ -1221,7 +1221,7 @@
         "type": "TEXT",
         "content": "But maybe they embed malicious code within the images too.",
         "background": "control-room/analyse/images",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 355
     },
     {
@@ -1230,7 +1230,7 @@
         "type": "TEXT",
         "content": "MAYBE WE'VE BEEN HACKED\u2026",
         "background": "control-room/analyse/images",
-        "emotion": "default",
+        "emotion": "shocked",
         "next": 356
     },
     {
@@ -1239,7 +1239,7 @@
         "type": "TEXT",
         "content": "And they're stealing our private keys through a malicious code embedded within an image\u2026",
         "background": "control-room/explain/stolen-private-keys",
-        "emotion": "default",
+        "emotion": "shocked",
         "next": 357
     },
     {
@@ -1248,7 +1248,7 @@
         "type": "TEXT",
         "content": "And then they use images to send our stolen private keys back to them.",
         "background": "control-room/explain/stolen-private-keys",
-        "emotion": "default",
+        "emotion": "shocked",
         "next": 358
     },
     {
@@ -1257,7 +1257,7 @@
         "type": "TEXT",
         "content": "They never needed a quantum computer to decrypt our messages over and over again\u2026",
         "background": "control-room/analyse/images",
-        "emotion": "default",
+        "emotion": "shocked",
         "next": 359
     },
     {
@@ -1266,7 +1266,7 @@
         "type": "QUESTION",
         "content": "Our Intrusion Detection System would have never suspected an image to contain our private keys\u2026",
         "background": "control-room/analyse/images",
-        "emotion": "default",
+        "emotion": "shocked",
         "choices": [
             {
                 "text": "What is an Intrusion Detection System?",
@@ -1284,7 +1284,7 @@
         "type": "TEXT",
         "content": "Our Intrusion Detection System scans our network traffic for malicious activity.",
         "background": "control-room/explain/ids",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 361
     },
     {
@@ -1293,7 +1293,7 @@
         "type": "TEXT",
         "content": "But if the activity is hidden within an image, our system does not detect that (yet).",
         "background": "control-room/explain/ids",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 362
     },
     {
@@ -1311,7 +1311,7 @@
         "type": "TEXT",
         "content": "MAYBE WE'VE BEEN HACKED\u2026",
         "background": "control-room/analyse/images",
-        "emotion": "default",
+        "emotion": "shocked",
         "next": 366
     },
     {
@@ -1320,7 +1320,7 @@
         "type": "TEXT",
         "content": "And they're stealing our private keys through a malicious code embedded within an image\u2026",
         "background": "control-room/explain/stolen-private-keys",
-        "emotion": "default",
+        "emotion": "shocked",
         "next": 367
     },
     {
@@ -1329,7 +1329,7 @@
         "type": "TEXT",
         "content": "And then they use images to send our stolen private keys back to them.",
         "background": "control-room/explain/stolen-private-keys",
-        "emotion": "default",
+        "emotion": "shocked",
         "next": 368
     },
     {
@@ -1338,7 +1338,7 @@
         "type": "TEXT",
         "content": "They never needed a quantum computer to decrypt our messages over and over again\u2026",
         "background": "control-room/analyse/images",
-        "emotion": "default",
+        "emotion": "shocked",
         "next": 369
     },
     {
@@ -1347,7 +1347,7 @@
         "type": "QUESTION",
         "content": "Our Intrusion Detection System would have never suspected an image to contain our private keys\u2026",
         "background": "control-room/analyse/images",
-        "emotion": "default",
+        "emotion": "shocked",
         "choices": [
             {
                 "text": "What is an Intrusion Detection System?",
@@ -1365,7 +1365,7 @@
         "type": "TEXT",
         "content": "Our Intrusion Detection System scans our network traffic for malicious activity.",
         "background": "control-room/explain/ids",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 371
     },
     {
@@ -1374,7 +1374,7 @@
         "type": "TEXT",
         "content": "But if the activity is hidden within an image, our system does not detect that (yet).",
         "background": "control-room/explain/ids",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 372
     },
     {
@@ -1392,7 +1392,7 @@
         "type": "TEXT",
         "content": "That reminds me\u2026 ",
         "background": "control-room/analyse/images",
-        "emotion": "default",
+        "emotion": "happy",
         "next": 374
     },
     {
@@ -1410,13 +1410,13 @@
         "type": "TEXT",
         "content": "That may also explain why we haven\u2019t seen SilentSpectra communicating yet.",
         "background": "control-room/social-media",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 380
     },
     {
         "id": 380,
         "character": "Boss M.",
-        "type": "CUSTOM",
+        "type": "TEXT",
         "content": "${name}, please find the hidden message of this part of the image. Dr. Glitchwell, you do the other part.",
         "background": "control-room/hidden-message",
         "emotion": "default",
@@ -1428,7 +1428,7 @@
         "type": "QUESTION",
         "content": "What word did you find?",
         "background": "control-room/hidden-message",
-        "emotion": "default",
+        "emotion": "confident",
         "choices": [
             {
                 "text": "Fire",
@@ -1466,7 +1466,7 @@
         "type": "TEXT",
         "content": "There is no way that correlates with my finding.",
         "background": "control-room/analyse/images",
-        "emotion": "default",
+        "emotion": "shocked",
         "next": 383
     },
     {
@@ -1475,7 +1475,7 @@
         "type": "TEXT",
         "content": "Make sure to concatenate all the least significant bits.",
         "background": "control-room/analyse/images",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 384
     },
     {
@@ -1502,7 +1502,7 @@
         "type": "TEXT",
         "content": "I found \u2018book\u2019. I guess they are using Facebook for their communication!",
         "background": "control-room/analyse/images",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 391
     },
     {
@@ -1511,7 +1511,7 @@
         "type": "TEXT",
         "content": "Let\u2019s call it a day for now and come up with a plan to deal with this issue tomorrow.",
         "background": "control-room/analyse/images",
-        "emotion": "default",
+        "emotion": "confident",
         "next": 400
     },
     {
@@ -1529,7 +1529,7 @@
         "type": "TEXT",
         "content": "We have seen their public messages on social media before of course, but we weren\u2019t aware that they integrated any secret messages within the attached files.",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 402
     },
     {
@@ -1538,7 +1538,7 @@
         "type": "QUESTION",
         "content": "Indeed. I also found out that Agent T., who is working for SilentSpectra is using the email adress tom@covinco.com actively.",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "tired",
         "choices": [
             {
                 "text": "We can perform a DDoS attack",
@@ -1560,7 +1560,7 @@
         "type": "TEXT",
         "content": "Well\u2026 we haven\u2019t located their servers yet, so that is not possible.",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "tired",
         "next": 405
     },
     {
@@ -1569,7 +1569,7 @@
         "type": "TEXT",
         "content": "Uhhh... we haven\u2019t located their main hideout yet, so that will be useless.",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "tired",
         "next": 405
     },
     {
@@ -1587,7 +1587,7 @@
         "type": "TEXT",
         "content": "I suggest we use spear phishing to send an email to Agent T, and hope he will open the attachment in which we will hide Stegware.",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 410
     },
     {
@@ -1596,7 +1596,7 @@
         "type": "TEXT",
         "content": "Indeed. We can apply Stegware within the attachment of our spear phishing email.",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 410
     },
     {
@@ -1614,7 +1614,7 @@
         "type": "TEXT",
         "content": "Yes, the name for malicious software which makes use of steganography.",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "happy",
         "next": 412
     },
     {
@@ -1623,7 +1623,7 @@
         "type": "QUESTION",
         "content": "SilentSpectra hacked us in the end. We should\u2026",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "angry",
         "choices": [
             {
                 "text": "Take revenge!",
@@ -1641,7 +1641,7 @@
         "type": "TEXT",
         "content": "I was just about to say that!",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "confident",
         "next": 414
     },
     {
@@ -1650,7 +1650,7 @@
         "type": "TEXT",
         "content": "To do that we need to get into their system and steal their private keys and steganography research.",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "confident",
         "next": 415
     },
     {
@@ -1659,7 +1659,7 @@
         "type": "TEXT",
         "content": "Additionally, I want to be able to have full control over their system, so that I can shut it down when needed.",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 416
     },
     {
@@ -1677,16 +1677,16 @@
         "type": "TEXT",
         "content": "We will use ${name} and my new invention the Pixinator. You remember waking up earlier from it?",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "happy",
         "next": 418
     },
     {
         "id": 418,
-        "character": "Boss M.",
+        "character": "Dr. Glitchwell",
         "type": "TEXT",
         "content": "The tests went alright; I can successfully transfer you to the computer world! Let\u2019s move to my lab.",
         "background": "control-room/default",
-        "emotion": "default",
+        "emotion": "happy",
         "next": 419
     },
     {
@@ -1695,7 +1695,7 @@
         "type": "TEXT",
         "content": "${name}, you will transfer into the computer world and hack into SilentSpectra\u2019s network.",
         "background": "lab/default",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 420
     },
     {
@@ -1704,7 +1704,7 @@
         "type": "TEXT",
         "content": "You will literally be the Stegware!",
         "background": "lab/default",
-        "emotion": "default",
+        "emotion": "confident",
         "next": 421
     },
     {
@@ -1731,7 +1731,7 @@
         "type": "TEXT",
         "content": "According to my research, it is very commonly used to get into systems unnoticed. But you will need to do it right. ",
         "background": "lab/default",
-        "emotion": "default",
+        "emotion": "happy",
         "next": 424
     },
     {
@@ -1740,7 +1740,7 @@
         "type": "TEXT",
         "content": "Listen carefully\u2026 The plan is as follows\u2026",
         "background": "lab/default",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 425
     },
     {
@@ -1767,7 +1767,7 @@
         "type": "TEXT",
         "content": "Use steganography to hide yourself, but not fully. Remember, you ARE the malware, meaning that if a part of you is not visible, you will be stuck hidden forever, because you will never be executed.",
         "background": "lab/plan/phase-1",
-        "emotion": "default",
+        "emotion": "confident",
         "next": 428
     },
     {
@@ -1803,7 +1803,7 @@
         "type": "TEXT",
         "content": "Here is the seed for the plant. Take good care of it.",
         "background": "lab/plan/phase-2-seed",
-        "emotion": "default",
+        "emotion": "happy",
         "next": 432
     },
     {
@@ -1812,7 +1812,7 @@
         "type": "TEXT",
         "content": "Lastly, you should get out of the system safely so you can come back to the real world. Please take some sensitive information with you. ",
         "background": "lab/plan/phase-3",
-        "emotion": "default",
+        "emotion": "confident",
         "next": 433
     },
     {
@@ -1830,7 +1830,7 @@
         "type": "QUESTION",
         "content": "A beautiful plan isn\u2019t it?",
         "background": "lab/default",
-        "emotion": "default",
+        "emotion": "confident",
         "choices": [
             {
                 "text": "Yes ma\u2019am!",
@@ -1852,7 +1852,7 @@
         "type": "TEXT",
         "content": "Didn\u2019t you pay attention? Well, here is a recap.",
         "background": "lab/default",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 424
     },
     {
@@ -1861,7 +1861,7 @@
         "type": "TEXT",
         "content": "Stay focused!",
         "background": "lab/default",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 437
     },
     {
@@ -1870,7 +1870,7 @@
         "type": "TEXT",
         "content": "Dr. Glitchwell, prepare the Pixinator and transfer ${name} to the computer world.",
         "background": "lab/default",
-        "emotion": "default",
+        "emotion": "confident",
         "next": 500
     },
     {
@@ -2882,7 +2882,7 @@
         "type": "TEXT",
         "content": "Have you found ${name} already?",
         "background": "lab/looking-at-screen",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 702
     },
     {
@@ -2891,7 +2891,7 @@
         "type": "TEXT",
         "content": "No, I haven\u2019t. It seems that ${name} is stuck in the system. I cannot get them out.",
         "background": "lab/looking-at-screen",
-        "emotion": "default",
+        "emotion": "shocked",
         "next": 703
     },
     {
@@ -2900,7 +2900,7 @@
         "type": "TEXT",
         "content": "He will not wake up now from by Pixinator.",
         "background": "lab/looking-at-screen",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 704
     },
     {
@@ -2928,7 +2928,7 @@
         "type": "TEXT",
         "content": "Amazing! I have found ${name} on the internet. I will transfer him back to life now.",
         "background": "lab/looking-at-screen",
-        "emotion": "default",
+        "emotion": "shocked",
         "next": 752
     },
     {
@@ -2937,7 +2937,7 @@
         "type": "TEXT",
         "content": "Congratulations! You have made it back alive.",
         "background": "lab/blurry",
-        "emotion": "default",
+        "emotion": "confident",
         "next": 753
     },
     {
@@ -2955,7 +2955,7 @@
         "type": "TEXT",
         "content": "We will now be able to fully control SilentSpectra.",
         "background": "lab/in-pixinator",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 755
     },
     {
@@ -2964,7 +2964,7 @@
         "type": "TEXT",
         "content": "Yep, and I have upgraded our system security with strong StegAnalysis and steganography prevention tools.",
         "background": "lab/party",
-        "emotion": "default",
+        "emotion": "interesting",
         "next": 756
     },
     {
@@ -2973,7 +2973,7 @@
         "type": "TEXT",
         "content": "We will also not open a suspicious attachment of an email anymore.",
         "background": "lab/party",
-        "emotion": "default",
+        "emotion": "happy",
         "next": 757
     },
     {
@@ -2982,7 +2982,7 @@
         "type": "TEXT",
         "content": "You are a real steganography master!",
         "background": "lab/party",
-        "emotion": "default",
+        "emotion": "confident",
         "points": 30,
         "next": 760
     },

@@ -24,7 +24,7 @@ const routes = [
         component: Game,
         props: {
             experimentState: 0,
-            participantId: 0,
+            participantId: "0",
             saveResults: false,
         },
     },

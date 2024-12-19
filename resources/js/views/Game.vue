@@ -101,6 +101,7 @@ function saveNode(id, choice) {
     </div>
     <!-- Type CUSTOM -->
     <div v-if="node.type === 'CUSTOM'">
+        <!-- TODO fix this for node 380 -->
         <!-- Skip for now -->
         {{ handleQuestionOnClick({
             "text": "Face",
