@@ -2,7 +2,7 @@
 import TextTemplate from '../TextTemplate.vue';
 import Button from '../Button.vue';
 import axios from 'axios';
-import { ref } from 'vue';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 // Pictures
 import q11 from '../../../img/test/q1-1.webp';
 import q12 from '../../../img/test/q1-2.webp';
@@ -34,8 +34,18 @@ const question7 = ref([]); // checkbox
 const question8 = ref(null); // radio button
 const question9 = ref(null); // radio button
 
-// TODO Time spent
+// Time spent
 const timeSinceStart = ref(0);
+let interval = null;
+onMounted(() => {
+    interval = setInterval(() => {
+        timeSinceStart.value += 1;
+    }, 1000);
+});
+
+onBeforeUnmount(() => {
+    clearInterval(interval);
+});
 
 const emit = defineEmits(['update:experimentState', 'update:testScore']);
 
