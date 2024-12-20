@@ -2,6 +2,7 @@
 import TextTemplate from '../components/TextTemplate.vue';
 import Button from '../components/Button.vue';
 import axios from 'axios';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 // Images
 import encryptionScheme from '../../img/text/Asymmetric_encryption_scheme.png';
 import caesarCipher from '../../img/text/Caesar_Shift_Cipher_Wheel.png';
@@ -12,12 +13,25 @@ const props = defineProps({
     participantId: String,
 });
 
+// Time spent
+const timeSinceStart = ref(0);
+let interval = null;
+onMounted(() => {
+    interval = setInterval(() => {
+        timeSinceStart.value += 1;
+    }, 1000);
+});
+
+onBeforeUnmount(() => {
+    clearInterval(interval);
+});
+
 const emit = defineEmits(['update:experimentState']);
 function next() {
-    // TODO send time in seconds since start of reading
+    // Send time in seconds since start of reading
     const read = {
         participant_id: props.participantId,
-        time_since_start: 0,
+        time_since_start: timeSinceStart.value,
     }
     axios.post('/api/reading/add', read)
         .then((response) => {
