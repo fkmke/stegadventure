@@ -170,22 +170,32 @@ function launchFullScreen(element) {
 
             <!-- Question 4: Gaming level -->
             <h3>How much experience do you have in playing games?</h3>
-            <div class="form-item align-self">
-                <label for="None">
-                    None
-                </label>
+            <div class="form-item">
                 <input type="radio" id="None" value="None" v-model="gaming" />
-                <input type="radio" id="A bit" value="A bit" v-model="gaming" />
-                <input type="radio" id="Average" value="Average" v-model="gaming" />
-                <input type="radio" id="More than average" value="More than average" v-model="gaming" />
-                <input type="radio" id="A lot" value="A lot" v-model="gaming" />
-                <label for="A lot">
-                    A lot
-                </label>
+                <label for="None">I have never played a game</label>
             </div>
+            <div class="form-item">
+                <input type="radio" id="A bit" value="A bit" v-model="gaming" />
+                <label for="A bit">I have watched others play, but I never played a game myself</label>
+            </div>
+            <div class="form-item">
+                <input type="radio" id="Average" value="Average" v-model="gaming" />
+                <label for="Average">I play a game occasionaly, but not regularly</label>
+            </div>
+            <div class="form-item">
+                <input type="radio" id="More than average" value="More than average" v-model="gaming" />
+                <label for="More than average">I play a game at least once a month</label>
+            </div>
+            <div class="form-item">
+                <input type="radio" id="A lot" value="A lot" v-model="gaming" />
+                <label for="A lot">I play a game weekly or more frequently</label>
+            </div>
+
 
             <!-- Question 5: Cybersecurity level -->
             <h3>What is your level of technical knowledge on <u>cybersecurity</u>?</h3>
+            <p style="margin-bottom: 10px;">The center is approximately the average of the population in the
+                Netherlands.</p>
             <div class="form-item align-self">
                 <label for="Very Low">
                     Very Low
@@ -202,6 +212,8 @@ function launchFullScreen(element) {
 
             <!-- Question 6: Steganography level -->
             <h3>What is your level of technical knowledge on <u>steganography</u>?</h3>
+            <p style="margin-bottom: 10px;">The center is approximately the average of the population in the
+                Netherlands.</p>
             <div class="form-item align-self">
                 <label for="Very Low">
                     Very Low
