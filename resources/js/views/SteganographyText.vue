@@ -153,17 +153,22 @@ function next() {
         </p>
         <p>
             When we flip the least significant bit of each colour value, we get <span class="color-2">1111111<b>0</b>
-                0110010<b>0</b> 1100001<b>1</b></span>. The change
-            in colour is present, but barely visible with the human eye in an image with lots of noise.
+                0110010<b>0</b> 1100001<b>1</b></span>. Note how the most-right bit of each group of 8 bits (a byte) is
+            changed. The change in colour is present, but barely visible with the human eye in an image with lots of
+            noise.
         </p>
         <p>
-            Since changing this last bit does not influence the image very much we can use those bits to hide a
-            message! Let's say our protocol is that each letter of the alphabet is the number in the alphabet (e.g. 'a'
-            is 1, and 'y' is 25). Then we can represent 'y' as 0110001 in binary. We can then change each of the least
-            significant bits of the image to put the letter 'y' hidden inside the image, like so:<br />
+            Since changing this last bit does not influence the pixel colour, and thus the image very much we can use
+            those bits to hide a message! Let's say our protocol is that each letter of the alphabet is the number in
+            the alphabet (e.g. 'a' is 1, and 'y' is 25). Then we can represent 'y' as 011001 in binary. We can then
+            change each of the least significant bits of the image to put the letter 'y' hidden inside the image, like
+            so:<br />
             <span class="color-3">1100111<b>0</b> 1111110<b>1</b> 0001010<b>1</b></span>
             <br />
             <span class="color-4">1101000<b>0</b> 1010101<b>0</b> 0000101<b>1</b></span>
+            These are just random example pixel colours. Notice how the fat numbers make up the letter 'y' in binary:
+            011001. Adjusting bits will create slight colour changes, but these slight color changes are barely visible
+            with the human eye and have minimal impact in images with lots of colour changes.
         </p>
         <p>
             This is a way of embedding a message within an image. There are also other ways that do not use the least
