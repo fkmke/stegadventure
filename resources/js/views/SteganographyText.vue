@@ -182,7 +182,8 @@ function next() {
             suspect its existence. Therefore, a stego key can be introduced. A stego key will randomize which bits are
             used for the message. Then only people who have access to this stego key can extract the secret message.
             Randomization of which bits are used for steganography may also make it harder for StegAnalysis tools to see
-            whether the image contains steganography or not.
+            whether the image contains steganography or not. So, the best stego file has a hidden message, a good cover
+            file and a strong stego key.
         </p>
 
         <h2>StegWare</h2>
