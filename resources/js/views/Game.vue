@@ -1,8 +1,8 @@
 <script setup>
 import DialogBox from '../components/game/DialogBox.vue';
-import { ref } from 'vue';
 import nodes from '../../data/dialogue.json';
 import axios from 'axios';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 const props = defineProps({
     experimentState: Number,
@@ -19,6 +19,19 @@ let node = ref(nodes[0]);
 let name = ref("Player");
 let score = ref(0); // TODO implement score
 // TODO implement chapter titles and locations
+
+// Time spent
+const timeSinceStart = ref(0);
+let interval = null;
+onMounted(() => {
+    interval = setInterval(() => {
+        timeSinceStart.value += 1;
+    }, 1000);
+});
+
+onBeforeUnmount(() => {
+    clearInterval(interval);
+});
 
 // Binary search the nodes array
 function binarySearchById(targetId) {
@@ -75,7 +88,7 @@ function saveNode(id, choice) {
     const node = {
         participant_id: props.participantId,
         node: id,
-        time_since_start: 0,
+        time_since_start: timeSinceStart.value,
     }
     if (choice) {
         node.choice = choice;
