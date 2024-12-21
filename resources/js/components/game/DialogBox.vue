@@ -47,7 +47,7 @@ function getContent() {
 
 // Image path for the background
 function getBackgroundImage() {
-    return `/backgrounds/${props.node.background}.png`;
+    return `/backgrounds/${props.node.background}.jpeg`;
 }
 
 // Image path for the character
