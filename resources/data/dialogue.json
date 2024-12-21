@@ -1942,7 +1942,7 @@
         "type": "TEXT",
         "content": "You must bypass me to gain access.",
         "background": "pc-world/aegis/encrypted-email",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 506
     },
     {
@@ -1969,7 +1969,7 @@
         "type": "TEXT",
         "content": "Therefore you will be quarantined!",
         "background": "pc-world/aegis/encrypted-email-quarantine",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 509
     },
     {
@@ -2129,7 +2129,7 @@
         "type": "TEXT",
         "content": "You must bypass me to gain access.",
         "background": "pc-world/aegis/hide-at-start-or-end",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 538
     },
     {
@@ -2165,7 +2165,7 @@
         "type": "TEXT",
         "content": "You will be quarantined!",
         "background": "pc-world/aegis/hide-at-start-or-end-quarantine",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 542
     },
     {
@@ -2239,7 +2239,7 @@
         "type": "TEXT",
         "content": "You must bypass me to gain access.",
         "background": "pc-world/aegis/hidden-msb",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 554
     },
     {
@@ -2275,7 +2275,7 @@
         "type": "TEXT",
         "content": "You are lucky! I will let you through this time.",
         "background": "pc-world/aegis/hidden-msb",
-        "emotion": "default",
+        "emotion": "broken",
         "next": 558
     },
     {
@@ -2375,7 +2375,7 @@
         "type": "TEXT",
         "content": "You must bypass me to gain access.",
         "background": "pc-world/aegis/hidden-msb",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 572
     },
     {
@@ -2411,7 +2411,7 @@
         "type": "TEXT",
         "content": "You are lucky! I will let you through this time.",
         "background": "pc-world/aegis/hidden-msb",
-        "emotion": "default",
+        "emotion": "broken",
         "next": 576
     },
     {
@@ -2475,7 +2475,7 @@
         "type": "TEXT",
         "content": "You must bypass me to gain access.",
         "background": "pc-world/aegis/hidden-lsb",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 584
     },
     {
@@ -2493,7 +2493,7 @@
         "type": "TEXT",
         "content": "I do not see anything suspicious, you may pass through.",
         "background": "pc-world/aegis/hidden-lsb",
-        "emotion": "default",
+        "emotion": "broken",
         "next": 586
     },
     {
@@ -2529,7 +2529,7 @@
         "type": "TEXT",
         "content": "You must bypass me to gain access.",
         "background": "pc-world/aegis/hidden-lsb",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 593
     },
     {
@@ -2547,7 +2547,7 @@
         "type": "TEXT",
         "content": "I do not see anything suspicious, you may pass through.",
         "background": "pc-world/aegis/hidden-lsb",
-        "emotion": "default",
+        "emotion": "broken",
         "next": 595
     },
     {

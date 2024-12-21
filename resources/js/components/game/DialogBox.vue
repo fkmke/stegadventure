@@ -72,13 +72,12 @@ function handleBackgroundImageError(event) {
 
 // Return fallback image if image not found
 function handleCharacterImageError(event) {
-    event.target.src = '/characters/fallback.png';
+    event.target.src = '/characters/fallback.webp';
 }
 
 // Return fallback image if image not found
 function handleTextCloudImageError(event) {
-    // TODO create fallback text cloud
-    event.target.src = '/backgrounds/fallback.png';
+    event.target.src = '/characters/fallback-text.webp';
 }
 
 onMounted(() => {
@@ -104,7 +103,7 @@ onBeforeUnmount(() => {
             <img class="character-image" :src="getTextCloudImage()" @error="handleTextCloudImageError" />
 
             <!-- Type TEXT & Type QUESTION -->
-            <p class="text" :style="{ fontSize: fontSizeText }">
+            <p :class="props.node.character === 'player' ? 'text-player' : 'text'" :style="{ fontSize: fontSizeText }">
                 {{ getContent() }}
             </p>
             <!-- Type QUESTION -->
@@ -167,7 +166,16 @@ onBeforeUnmount(() => {
     top: 74.5%;
     left: 33%;
     display: block;
-    max-width: 54%;
+    width: 54%;
+}
+
+.text-player {
+    color: white;
+    position: absolute;
+    top: 74.5%;
+    left: 17%;
+    display: block;
+    width: 52%;
 }
 
 .choices {
