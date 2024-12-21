@@ -2745,7 +2745,7 @@
         "type": "TEXT",
         "content": "I scan for sensitive data patterns, like credit card numbers and other sensitive data.",
         "background": "network/velos/no-protection",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 622
     },
     {
@@ -2763,7 +2763,7 @@
         "type": "TEXT",
         "content": "Therefore, you may not leave this system!",
         "background": "network/velos/no-protection",
-        "emotion": "default",
+        "emotion": "stop",
         "next": 634
     },
     {
@@ -2781,7 +2781,7 @@
         "type": "TEXT",
         "content": "I scan for sensitive data patterns, like credit card numbers and other sensitive data.",
         "background": "network/velos/encrypted",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 632
     },
     {
@@ -2799,7 +2799,7 @@
         "type": "TEXT",
         "content": "So, you may not leave this system!",
         "background": "network/velos/encrypted",
-        "emotion": "default",
+        "emotion": "stop",
         "next": 634
     },
     {
@@ -2836,7 +2836,7 @@
         "type": "TEXT",
         "content": "I scan for sensitive data patterns, like credit card numbers and other sensitive data.",
         "background": "network/velos/hidden",
-        "emotion": "default",
+        "emotion": "angry",
         "next": 642
     },
     {
@@ -2863,7 +2863,7 @@
         "type": "TEXT",
         "content": "I will let you through.",
         "background": "network/velos/hidden",
-        "emotion": "default",
+        "emotion": "through",
         "next": 645
     },
     {
