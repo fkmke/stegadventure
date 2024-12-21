@@ -13,7 +13,6 @@ const hasRead = ref(false);
 // Styling
 const backgroundContainer = ref(null);
 const backgroundImage = ref(null);
-const textCloud = ref(null);
 const fontSizeText = ref('28px');
 const fontSizeChoice = ref('20px');
 
@@ -29,8 +28,8 @@ function handleOnClick() {
 
 // Function used to handle answer choice selection
 function handleOnClickAnswer(choice) {
-    props.onClick(choice);
     hasRead.value = false;
+    props.onClick(choice);
 }
 
 // Function to replace placeholders in text
