@@ -1765,7 +1765,7 @@
         "id": 427,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "Use steganography to hide yourself, but not fully. Remember, you ARE the malware, meaning that if a part of you is not visible, you will be stuck hidden forever, because you will never be executed.",
+        "content": "Use steganography to hide yourself, but not fully. ",
         "background": "lab/plan/phase-1",
         "emotion": "confident",
         "next": 428
@@ -1774,25 +1774,25 @@
         "id": 428,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "The best strategy is to hide yourself completely and have only a small script called a bootstrap that is going to extract you from the object you are hiding in. ",
+        "content": "Remember, you ARE the malware, meaning that if a part of you is not visible, you will be stuck hidden forever, because you will never be executed.",
         "background": "lab/plan/phase-1",
-        "emotion": "default",
+        "emotion": "confident",
         "next": 429
     },
     {
         "id": 429,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "Next up is planting a code that polls for images on our account on X.",
-        "background": "lab/plan/phase-2",
+        "content": "The best strategy is to hide yourself completely and have only a small script called a bootstrap that is going to extract you from the object you are hiding in. ",
+        "background": "lab/plan/phase-1",
         "emotion": "default",
         "next": 430
     },
     {
         "id": 430,
-        "character": "Dr. Glitchwell",
+        "character": "Boss M.",
         "type": "TEXT",
-        "content": "Indeed. I will post images containing scripts on X. That way, we can control the system from outside.",
+        "content": "Next up is planting a code that polls for images on our account on X.",
         "background": "lab/plan/phase-2",
         "emotion": "default",
         "next": 431
@@ -1801,31 +1801,40 @@
         "id": 431,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Here is the seed for the plant. Take good care of it.",
-        "background": "lab/plan/phase-2-seed",
-        "emotion": "happy",
+        "content": "Indeed. I will post images containing scripts on X. That way, we can control the system from outside.",
+        "background": "lab/plan/phase-2",
+        "emotion": "default",
         "next": 432
     },
     {
         "id": 432,
-        "character": "Boss M.",
+        "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Lastly, you should get out of the system safely so you can come back to the real world. Please take some sensitive information with you. ",
-        "background": "lab/plan/phase-3",
-        "emotion": "confident",
+        "content": "Here is the seed for the plant. Take good care of it.",
+        "background": "lab/plan/phase-2-seed",
+        "emotion": "happy",
         "next": 433
     },
     {
         "id": 433,
         "character": "Boss M.",
         "type": "TEXT",
-        "content": "We will not be able to communicate with you once you are in, so you will be on your own. ",
+        "content": "Lastly, you should get out of the system safely so you can come back to the real world. Please take some sensitive information with you. ",
         "background": "lab/plan/phase-3",
-        "emotion": "default",
+        "emotion": "confident",
         "next": 434
     },
     {
         "id": 434,
+        "character": "Boss M.",
+        "type": "TEXT",
+        "content": "We will not be able to communicate with you once you are in, so you will be on your own. ",
+        "background": "lab/plan/phase-3",
+        "emotion": "default",
+        "next": 435
+    },
+    {
+        "id": 435,
         "character": "Boss M.",
         "type": "QUESTION",
         "content": "A beautiful plan isn\u2019t it?",
@@ -1834,20 +1843,20 @@
         "choices": [
             {
                 "text": "Yes ma\u2019am!",
-                "destination_id": 437
+                "destination_id": 438
             },
             {
                 "text": "Please repeat the plan",
-                "destination_id": 435
+                "destination_id": 436
             },
             {
                 "text": "Just as beautiful as you <3",
-                "destination_id": 436
+                "destination_id": 437
             }
         ]
     },
     {
-        "id": 435,
+        "id": 436,
         "character": "Boss M.",
         "type": "TEXT",
         "content": "Didn\u2019t you pay attention? Well, here is a recap.",
@@ -1856,16 +1865,16 @@
         "next": 424
     },
     {
-        "id": 436,
+        "id": 437,
         "character": "Boss M.",
         "type": "TEXT",
         "content": "Stay focused!",
         "background": "lab/default",
         "emotion": "angry",
-        "next": 437
+        "next": 438
     },
     {
-        "id": 437,
+        "id": 438,
         "character": "Boss M.",
         "type": "TEXT",
         "content": "Dr. Glitchwell, prepare the Pixinator and transfer ${name} to the computer world.",

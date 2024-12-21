@@ -13,6 +13,7 @@ const hasRead = ref(false);
 // Styling
 const backgroundContainer = ref(null);
 const backgroundImage = ref(null);
+const textCloud = ref(null);
 const fontSizeText = ref('28px');
 const fontSizeChoice = ref('20px');
 
@@ -54,6 +55,11 @@ function getCharacterImage() {
     return `/characters/${props.node.character}/${props.node.emotion}.webp`;
 }
 
+// Image path for the text cloud
+function getTextCloudImage() {
+    return `/characters/${props.node.character}/text.webp`;
+}
+
 // Update the background and font sizes dynamically
 function updateSizes() {
     updateContainerSize(backgroundImage, backgroundContainer, fontSizeText, fontSizeChoice);
@@ -67,6 +73,12 @@ function handleBackgroundImageError(event) {
 // Return fallback image if image not found
 function handleCharacterImageError(event) {
     event.target.src = '/characters/fallback.png';
+}
+
+// Return fallback image if image not found
+function handleTextCloudImageError(event) {
+    // TODO create fallback text cloud
+    event.target.src = '/backgrounds/fallback.png';
 }
 
 onMounted(() => {
@@ -88,10 +100,12 @@ onBeforeUnmount(() => {
                 @error="handleBackgroundImageError" />
             <!-- Character -->
             <img class="character-image" :src="getCharacterImage()" @error="handleCharacterImageError" />
+            <!-- Text Cloud -->
+            <img class="character-image" :src="getTextCloudImage()" @error="handleTextCloudImageError" />
 
             <!-- Type TEXT & Type QUESTION -->
             <p class="text" :style="{ fontSize: fontSizeText }">
-                <b>{{ node.character }}:</b> {{ getContent() }}
+                {{ getContent() }}
             </p>
             <!-- Type QUESTION -->
             <div v-if="hasRead" class="choices"
@@ -150,16 +164,16 @@ onBeforeUnmount(() => {
 .text {
     color: white;
     position: absolute;
-    top: 80%;
-    left: 35%;
+    top: 74.5%;
+    left: 33%;
     display: block;
-    max-width: 56%;
+    max-width: 54%;
 }
 
 .choices {
     display: grid;
     position: absolute;
-    bottom: 22.5%;
+    bottom: 38%;
     right: 5%;
     gap: 10px;
     max-width: 40%;
