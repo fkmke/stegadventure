@@ -1138,7 +1138,7 @@
         "id": 346,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "Let\u2019s say the number 0 is \u2018a\u2019, and the number 25 is \u2018z\u2019, then we can read a word in the right picture!",
+        "content": "Let\u2019s say the number 1 is \u2018a\u2019, and the number 26 is \u2018z\u2019, then we can read a word in the right picture!",
         "background": "control-room/analyse/images/bits-highlighted-stream-letters",
         "emotion": "default",
         "next": 347
