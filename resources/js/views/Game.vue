@@ -84,7 +84,6 @@ function saveNode(id, choice) {
     }
 
     // Send results to server
-    // TODO send time in seconds since start of playing game
     const node = {
         participant_id: props.participantId,
         node: id,

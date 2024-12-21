@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\GameController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ReadingController;
@@ -15,6 +16,7 @@ Route::post('/api/game/node/add', [GameController::class, 'addGameNode']);
 Route::post('/api/reading/add', [ReadingController::class, 'addReading']);
 Route::post('/api/ues/create', [UESController::class, 'create']);
 Route::post('/api/test/create', [TestController::class, 'create']);
+Route::post('/api/feedback/create', [FeedbackController::class, 'create']);
 
 // Use Vue router in resources/js/plugins/router.js
 Route::get('{any?}', fn() => view('app'))
