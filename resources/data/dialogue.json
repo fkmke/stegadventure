@@ -474,7 +474,7 @@
                 "destination_id": 212
             },
             {
-                "text": "Agent P. really likes beaches",
+                "text": "Agent P. really likes sun rises",
                 "destination_id": 213
             }
         ]
@@ -654,8 +654,8 @@
         "id": 243,
         "character": "player",
         "type": "TEXT",
-        "content": "Below that, an example of a secret message using cryptography.",
-        "background": "hideout/book-1",
+        "content": "On the next page, an example of a secret message using cryptography.",
+        "background": "hideout/book-1-next",
         "emotion": "default",
         "next": 244
     },
