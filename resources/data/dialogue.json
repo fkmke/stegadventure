@@ -2068,7 +2068,16 @@
         "background": "pc-world/images/selected-3",
         "emotion": "default",
         "points": 5,
-        "next": 522
+        "next": 525
+    },
+    {
+        "id": 525,
+        "character": "player",
+        "type": "TEXT",
+        "content": "But I will try this image anyway.",
+        "background": "pc-world/images/selected-3",
+        "emotion": "default",
+        "next": 530
     },
     {
         "id": 530,
@@ -2437,7 +2446,7 @@
         "character": "player",
         "type": "QUESTION",
         "content": "How will I hide myself within these least significant bits?",
-        "background": "pc-world/aegis/hidden-lsb",
+        "background": "pc-world/images/prepared",
         "emotion": "default",
         "points": 10,
         "choices": [
