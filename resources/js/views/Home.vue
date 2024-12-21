@@ -36,7 +36,7 @@ const inGameGroup = Boolean(Math.floor(Math.random() * 2));
 const testScore = ref(0);
 
 // Scroll to top when changing between pages
-watch([readStudyInformation, hasGivenConsent], async (newValues, oldValues) => {
+watch([readStudyInformation, hasGivenConsent], async () => {
     await nextTick();
     scrollToTop();
 
@@ -55,6 +55,11 @@ watch([readStudyInformation, hasGivenConsent], async (newValues, oldValues) => {
                 console.error('Error creating participant:', error.response?.data.message);
             });
     }
+});
+
+watch([experimentState], async () => {
+    await nextTick();
+    scrollToTop();
 });
 
 onMounted(leavePageWarning);
