@@ -1129,7 +1129,7 @@
         "id": 345,
         "character": "Dr. Glitchwell",
         "type": "TEXT",
-        "content": "When we line up each byte's least significant bit, I can see some characters",
+        "content": "When we line up each byte's least significant bit, I can see some characters.",
         "background": "control-room/analyse/images/bits-highlighted-stream",
         "emotion": "default",
         "next": 346
