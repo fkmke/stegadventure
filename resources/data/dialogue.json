@@ -946,7 +946,7 @@
         "character": "Dr. Glitchwell",
         "type": "QUESTION",
         "content": "Okay, I see you have brought the two images from the computer. What would you like me to analyse?",
-        "background": "control-room/analyse/images",
+        "background": "control-room/analyse/images-question",
         "emotion": "interesting",
         "choices": [
             {
