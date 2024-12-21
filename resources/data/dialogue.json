@@ -501,7 +501,7 @@
         "id": 213,
         "character": "player",
         "type": "TEXT",
-        "content": "How lovely, I like beaches too!",
+        "content": "How lovely, I like sun rises too!",
         "background": "hideout/images",
         "emotion": "default",
         "next": 201
