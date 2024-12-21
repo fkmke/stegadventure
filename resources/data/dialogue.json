@@ -1465,7 +1465,7 @@
         "character": "Dr. Glitchwell",
         "type": "TEXT",
         "content": "There is no way that correlates with my finding.",
-        "background": "control-room/analyse/images",
+        "background": "control-room/hidden-message",
         "emotion": "shocked",
         "next": 383
     },
@@ -1474,7 +1474,7 @@
         "character": "Dr. Glitchwell",
         "type": "TEXT",
         "content": "Make sure to concatenate all the least significant bits.",
-        "background": "control-room/analyse/images",
+        "background": "control-room/hidden-message-lsb",
         "emotion": "interesting",
         "next": 384
     },
@@ -1483,7 +1483,7 @@
         "character": "Dr. Glitchwell",
         "type": "TEXT",
         "content": "That is where the undetectable secret message is stored.",
-        "background": "control-room/analyse/images",
+        "background": "control-room/hidden-message-lsb",
         "emotion": "default",
         "next": 385
     },
@@ -1492,7 +1492,7 @@
         "character": "Dr. Glitchwell",
         "type": "TEXT",
         "content": "Please try again.",
-        "background": "control-room/analyse/images",
+        "background": "control-room/hidden-message-lsb",
         "emotion": "default",
         "next": 381
     },
