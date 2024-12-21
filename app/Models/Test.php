@@ -23,6 +23,15 @@ class Test extends Model
             'question9',
             'time_since_start',
             'score',
+            'question1_points',
+            'question2_points',
+            'question3_points',
+            'question4_points',
+            'question5_points',
+            'question6_points',
+            'question7_points',
+            'question8_points',
+            'question9_points',
         ];
 
     protected $casts = [

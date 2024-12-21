@@ -12,6 +12,7 @@ return new class extends Migration {
     {
         Schema::create('tests', function (Blueprint $table) {
             $table->foreignUuid('participant_id')->constrained()->primary();
+            // Answers
             $table->json('question1');
             $table->json('question2');
             $table->json('question3');
@@ -21,8 +22,19 @@ return new class extends Migration {
             $table->json('question7');
             $table->integer('question8');
             $table->integer('question9');
+            // Meta data
             $table->integer('time_since_start');
-            $table->float('score');
+            $table->integer('score');
+            // Score per question
+            $table->integer('question1_points');
+            $table->integer('question2_points');
+            $table->integer('question3_points');
+            $table->integer('question4_points');
+            $table->integer('question5_points');
+            $table->integer('question6_points');
+            $table->integer('question7_points');
+            $table->integer('question8_points');
+            $table->integer('question9_points');
         });
     }
 

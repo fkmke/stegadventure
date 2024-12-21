@@ -20,6 +20,17 @@ class TestController extends Controller
         $this->calculateScore($answers);
         $answers['score'] = $this->score;
 
+        // Add points per question
+        $answers['question1_points'] = $this->pointsPerQuestion['question1'];
+        $answers['question2_points'] = $this->pointsPerQuestion['question2'];
+        $answers['question3_points'] = $this->pointsPerQuestion['question3'];
+        $answers['question4_points'] = $this->pointsPerQuestion['question4'];
+        $answers['question5_points'] = $this->pointsPerQuestion['question5'];
+        $answers['question6_points'] = $this->pointsPerQuestion['question6'];
+        $answers['question7_points'] = $this->pointsPerQuestion['question7'];
+        $answers['question8_points'] = $this->pointsPerQuestion['question8'];
+        $answers['question9_points'] = $this->pointsPerQuestion['question9'];
+
         // Send to model
         Test::create($answers);
 
@@ -33,6 +44,7 @@ class TestController extends Controller
         );
     }
 
+    // Correct answers in the test
     private $correctAnswers = [
         'question1' => ["1", "2", "3"],
         'question2' => ["2", "3", "4"],
@@ -59,6 +71,19 @@ class TestController extends Controller
         'question9' => 6,
     ];
 
+    // Points that the participant got for each question
+    private $pointsPerQuestion = [
+        'question1' => 0,
+        'question2' => 0,
+        'question3' => 0,
+        'question4' => 0,
+        'question5' => 0,
+        'question6' => 0,
+        'question7' => 0,
+        'question8' => 0,
+        'question9' => 0,
+    ];
+
     private function calculateScore(array $answers): void
     {
         // Score calculation logic
@@ -80,9 +105,15 @@ class TestController extends Controller
             return;
         }
         if ($this->correctAnswers[$question] === $answers[$question]) {
+            // Add points to final score
             $this->score += $this->pointsCorrectOrIncorrectAnswers[$question];
+            // Add points to this question
+            $this->pointsPerQuestion[$question] = $this->pointsCorrectOrIncorrectAnswers[$question];
         } else {
+            // Remove points from final score
             $this->score -= $this->pointsCorrectOrIncorrectAnswers[$question];
+            // Save points for this question
+            $this->pointsPerQuestion[$question] = -1 * $this->pointsCorrectOrIncorrectAnswers[$question];
         }
     }
 
@@ -92,15 +123,20 @@ class TestController extends Controller
             // Don't do anything if student does not know the answer
             return;
         }
+        $score = 0;
         foreach ($answers[$question] as $answer) {
             // Check if answer is in the correct answers
             if (in_array($answer, $this->correctAnswers[$question])) {
                 $this->score += $this->pointsCorrectOrIncorrectAnswers[$question][0];
+                $score += $this->pointsCorrectOrIncorrectAnswers[$question][0];
                 continue;
             } else {
                 $this->score -= $this->pointsCorrectOrIncorrectAnswers[$question][1];
+                $score -= $this->pointsCorrectOrIncorrectAnswers[$question][1];
                 continue;
             }
         }
+        // Save the points for this individual question
+        $this->pointsPerQuestion[$question] = $score;
     }
 }
