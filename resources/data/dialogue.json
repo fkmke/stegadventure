@@ -1996,7 +1996,7 @@
         "character": "GAME",
         "type": "QUESTION",
         "content": "Do you want to try again from phase 1 of the final mission?",
-        "background": "game-over/quarantined",
+        "background": "game-over/black-screen",
         "emotion": "default",
         "choices": [
             {
