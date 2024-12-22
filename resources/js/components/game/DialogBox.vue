@@ -99,10 +99,12 @@ onBeforeUnmount(() => {
             <!-- Character -->
             <img class="character-image" :src="getCharacterImage()" @error="handleCharacterImageError" />
             <!-- Text Cloud -->
-            <img class="character-image" :src="getTextCloudImage()" @error="handleTextCloudImageError" />
+            <img v-if="props.node.id !== 760" class="character-image" :src="getTextCloudImage()"
+                @error="handleTextCloudImageError" />
 
             <!-- Type TEXT & Type QUESTION -->
-            <p :class="props.node.character === 'player' ? 'text-player' : 'text'" :style="{ fontSize: fontSizeText }">
+            <p v-if="props.node.id !== 760" :class="props.node.character === 'player' ? 'text-player' : 'text'"
+                :style="{ fontSize: fontSizeText }">
                 {{ getContent() }}
             </p>
             <!-- Type QUESTION -->
