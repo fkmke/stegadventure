@@ -149,7 +149,7 @@ function hasFinished() {
                 style="min-height:320px;">
                 <img :src="q12" />
                 <p>
-                    <b>Picture 2:</b> An unreadable text is encoded into an image
+                    <b>Picture 2:</b> An unreadable text is going to be encoded into an image
                 </p>
             </label>
             <label for="q1.3" :class="{ 'selected-image': question1.includes('3') }" @click.prevent
@@ -220,7 +220,7 @@ function hasFinished() {
                 style="min-height:320px;">
                 <img :src="q12" />
                 <p>
-                    <b>Picture 2:</b> An unreadable text is encoded into an image
+                    <b>Picture 2:</b> An unreadable text is going to be encoded into an image
                 </p>
             </label>
             <label for="q2.3" :class="{ 'selected-image': question2.includes('3') }" @click.prevent

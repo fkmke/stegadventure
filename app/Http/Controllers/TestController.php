@@ -47,7 +47,7 @@ class TestController extends Controller
     // Correct answers in the test
     private $correctAnswers = [
         'question1' => ["1", "2", "3"],
-        'question2' => ["2", "3", "4"],
+        'question2' => ["2", "4"],
         'question3' => ["1", "4"],
         'question4' => "4",
         'question5' => "2",

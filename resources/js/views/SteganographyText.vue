@@ -180,6 +180,7 @@ function next() {
             <span class="color-3">1100111<b>0</b> 1111110<b>1</b> 0001010<b>1</b></span>
             <br />
             <span class="color-4">1101000<b>0</b> 1010101<b>0</b> 0000101<b>1</b></span>
+            <br />
             These are just random example pixel colours. Notice how the fat numbers make up the letter 'y' in binary:
             011001. Adjusting bits will create slight colour changes, but these slight color changes are barely visible
             with the human eye and have minimal impact in images with lots of colour changes.
