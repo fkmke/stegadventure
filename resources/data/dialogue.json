@@ -2816,7 +2816,7 @@
         "character": "GAME",
         "type": "TEXT",
         "content": "GAME OVER",
-        "background": "game-over/quarantined",
+        "background": "game-over/quarantined-network",
         "emotion": "default",
         "points": -10,
         "next": 635
@@ -2826,7 +2826,7 @@
         "character": "player",
         "type": "TEXT",
         "content": "Hm\u2026 I need to outsmart Velos, the Data Leakage Protection.",
-        "background": "game-over/quarantined",
+        "background": "game-over/quarantined-network",
         "emotion": "default",
         "next": 511
     },
