@@ -7,7 +7,7 @@ import TextTemplate from '../TextTemplate.vue';
         <h2>Thank you for participating!</h2>
         <p>
             Please ask other people to participate in this study as well. That would be
-            really helpfull! They can simply visit <a href="https://game.femkew.nl">game.femkew.nl</a> to participate.
+            really helpful! They can simply visit <a href="https://game.femkew.nl">game.femkew.nl</a> to participate.
         </p>
         <!--
         <p>

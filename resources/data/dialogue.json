@@ -474,7 +474,7 @@
                 "destination_id": 212
             },
             {
-                "text": "Agent P. really likes sun rises",
+                "text": "Agent P. really likes sunrises",
                 "destination_id": 213
             }
         ]
@@ -501,7 +501,7 @@
         "id": 213,
         "character": "player",
         "type": "TEXT",
-        "content": "How lovely, I like sun rises too!",
+        "content": "How lovely, I like sunrises too!",
         "background": "hideout/images",
         "emotion": "default",
         "next": 201
