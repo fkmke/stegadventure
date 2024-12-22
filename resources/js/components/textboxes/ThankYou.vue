@@ -1,5 +1,10 @@
 <script setup>
+import { onMounted } from 'vue';
 import TextTemplate from '../TextTemplate.vue';
+import { removeLeavePageWarning } from '../leavePageWarning';
+
+onMounted(removeLeavePageWarning);
+
 </script>
 
 <template>
