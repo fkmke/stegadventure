@@ -61,7 +61,7 @@ class TestController extends Controller
     // Max points: 6. When checkbox: points are divided amongst amount of correct and incorrect boxes.
     private $pointsCorrectOrIncorrectAnswers = [
         'question1' => [2, 6],
-        'question2' => [2, 6],
+        'question2' => [3, 3],
         'question3' => [3, 2],
         'question4' => 6,
         'question5' => 6,
