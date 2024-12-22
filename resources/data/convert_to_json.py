@@ -47,6 +47,9 @@ def convert_to_json(df):
         else:
              entry["emotion"] = "default"
 
+        if "Location" in df.columns and pd.notna(row["Location"]):
+            entry["location"] = row["Location"]
+
         dialogue_list.append(entry)
 
     return dialogue_list

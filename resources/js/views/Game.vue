@@ -18,7 +18,6 @@ let node = ref(nodes[0]);
 // Game states
 let name = ref("Player");
 let score = ref(0); // TODO implement score
-// TODO implement chapter titles and locations
 
 // Time spent
 const timeSinceStart = ref(0);

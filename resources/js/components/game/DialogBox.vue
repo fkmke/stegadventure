@@ -59,6 +59,31 @@ function getTextCloudImage() {
     return `/characters/${props.node.character}/text.webp`;
 }
 
+// Chapter number
+function getChapterNumber() {
+    const startWith = String(props.node.id).charAt(0);
+    if (startWith === "1") {
+        return "1: Big Trouble"
+    }
+    if (startWith === "2") {
+        return "2: The Investigation"
+    }
+    if (startWith === "3") {
+        return "3: Hidden in Plain Sight"
+    }
+    if (startWith === "4") {
+        return "4: The Plan"
+    }
+    // Chapter 6 and 5 are chapter 5
+    if (startWith === "5" || startWith === "6") {
+        return "5: The Execution";
+    }
+    if (startWith === "7") {
+        return "6: The Result"
+    }
+    return startWith;
+}
+
 // Update the background and font sizes dynamically
 function updateSizes() {
     updateContainerSize(backgroundImage, backgroundContainer, fontSizeText, fontSizeChoice);
@@ -101,6 +126,12 @@ onBeforeUnmount(() => {
             <!-- Text Cloud -->
             <img v-if="props.node.id !== 760" class="character-image" :src="getTextCloudImage()"
                 @error="handleTextCloudImageError" />
+            <!-- Story Info -->
+            <div class="story-info">
+                <b>Chapter: {{ getChapterNumber() }}</b>
+                <br />
+                <i class="fa-solid fa-location-dot" />&nbsp;{{ props.node.location }}
+            </div>
 
             <!-- Type TEXT & Type QUESTION -->
             <p v-if="props.node.id !== 760" :class="props.node.character === 'player' ? 'text-player' : 'text'"
@@ -202,5 +233,20 @@ onBeforeUnmount(() => {
     background-color: #00000090;
     cursor: pointer;
     text-align: right;
+}
+
+.story-info {
+    min-width: fit-content;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0.2vh white solid;
+    border-radius: 10px;
+    color: white;
+    background-color: #00000090;
 }
 </style>
