@@ -28,21 +28,21 @@ const routes = [
             saveResults: false,
         },
     },
-    {
-        path: "/text",
-        name: "Text",
-        component: SteganographyText,
-    },
-    {
-        path: "/test",
-        name: "Test",
-        component: KnowledgeTest,
-    },
-    {
-        path: "/extra-info",
-        name: "Extra Information",
-        component: ExtraInfo,
-    },
+    // {
+    //     path: "/text",
+    //     name: "Text",
+    //     component: SteganographyText,
+    // },
+    // {
+    //     path: "/test",
+    //     name: "Test",
+    //     component: KnowledgeTest,
+    // },
+    // {
+    //     path: "/extra-info",
+    //     name: "Extra Information",
+    //     component: ExtraInfo,
+    // },
     {
         path: "/:pathMatch(.*)*",
         name: "404 - Page not found",
