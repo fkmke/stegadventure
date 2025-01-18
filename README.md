@@ -1,6 +1,6 @@
 # StegAdventure
 
-This is a project for a serious game on the topic of steganography, which will be tested and evaluated for my bachelor thesis.
+This is a project for a serious game on the topic of steganography.
 
 ### Maintainers
 
@@ -8,7 +8,11 @@ This is a project for a serious game on the topic of steganography, which will b
 
 ## About this project
 
-This project has a Vue frontend and a Laravel backend.
+This project has a Vue frontend and a Laravel backend. The text in the game can be adjusted in `resources/data/dialogue.xlsx` and then `python convert_to_json.py` must be run in the same folder.
+
+The backgrounds used in the game can be found in `public/backgrounds`. They are named as called in the `dialogue.xlsx` file. The characters and their text boxes can be found in `public/characters`.
+
+The game itself can be found in `resources/js/views/Game.vue`.
 
 ### Prerequisites
 
@@ -58,16 +62,7 @@ sudo apt install mysql-server
 sudo systemctl start mysql.service
 ```
 
-Use `php artisan migrate` to generate your own database. Select 'yes' to create it. Create a user with all permissions for the database in the `mysql` interface. You can do that by using `sudo mysql`.
-
-```
-mysql>  CREATE USER 'myuser'@'%' IDENTIFIED BY 'password';
-
-mysql>  GRANT ALL PRIVILEGES
-        ON *.*
-        TO 'myuser'@'%'
-        WITH GRANT OPTION;
-```
+Use `php artisan migrate` to generate your own database. Select 'yes' to create it. Create a user with enough permissions for the database in the `mysql` interface.
 
 Also, update the username and password of that in the `.env`.
 
@@ -98,13 +93,9 @@ The visible webpages can be found under `resources/js/views`. The name correspon
 
 Most components have scoped CSS in them, that only holds for that specific component.
 
-### Data and images
-
-Some `json` files can be found in `resources/data`. These are created for modularity. In a case of change of data, only these files need to be adjusted, and not the webpage itself.
-
-The images for pages can be found in `resources/img`. There are subfolders for every page with a picture.
-
 ### Database
+
+Data is send to the mySQL database.
 
 ## Frameworks used
 
