@@ -14,6 +14,16 @@ The backgrounds used in the game can be found in `public/backgrounds`. They are 
 
 The game itself can be found in `resources/js/views/Game.vue`.
 
+The data send to the mySQL database can be analysed with the Jupyter Notebook `data_analysis.ipynb`. Most of this code is created by ChatGPT.
+
+### AI statement
+
+During the preparation of this work, I used ChatGPT to generate code or find bugs in my code while creating the experiment environment and the graphs for data analysis. ChatGPT never received any participant data.
+
+Additionally, I used Adobe Firefly to generate background images for the game to improve aesthetics. Other images used in the experiment, are either licensed to be able to used in this project, or have been drawn by myself.
+
+After using these services, I thoroughly reviewed and edited the content as needed, taking full responsibility for the final outcome.
+
 ### Prerequisites
 
 The installation commands are for Linux. Consider downloading [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) if you use Windows. You can then type `wsl` in cmd to use it.
