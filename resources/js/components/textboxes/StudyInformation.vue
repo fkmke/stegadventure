@@ -16,6 +16,9 @@ function next() {
 <template>
     <TextTemplate>
         <h2>Study Information</h2>
+        <p style="color: var(--error);">
+            * Please note that the research has ended.
+        </p>
         <h3>Purpose of the research</h3>
         <p>
             In this research, you will be learning about steganography, either by reading a text, or by playing a game.
@@ -53,13 +56,10 @@ function next() {
             data
             gathered during this study.
         </p>
-        <p>
-            All data collected will be deleted before December 31, 2025.
-        </p>
 
         <h3>Contact information</h3>
         <p>
-            Researcher: Femke Weijsenfeld
+            Researcher: F.G.J. Weijsenfeld
             (<a href="mailto:f.g.j.weijsenfeld@student.utwente.nl">f.g.j.weijsenfeld@student.utwente.nl</a>)
         </p>
         <p>

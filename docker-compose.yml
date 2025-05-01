@@ -14,29 +14,29 @@ services:
     #Nginx
     webserver:
         image: nginx:alpine
-        container_name: webserver
+        container_name: webserver_stegadventure
         restart: unless-stopped
         ports:
-            - "8989:80"
-            - "8990:443"
+            - "9797:80"
+            - "9898:443"
         volumes:
             - ./:/var/www
             - ./nginx/:/etc/nginx/conf.d/
         networks:
             - app-network
     # MySQL
-    db:
+    db_stegadventure:
         image: mysql:5.7.22
-        container_name: db
+        container_name: db_stegadventure
         restart: unless-stopped
         tty: true
         ports:
-            - "3307:3306"
+            - "9333:3306"
         environment:
-            MYSQL_DATABASE: database
-            MYSQL_USER: femke
-            MYSQL_PASSWORD: password
-            MYSQL_ROOT_PASSWORD: password
+            MYSQL_DATABASE: stegadventure
+            MYSQL_USER: noon
+            MYSQL_PASSWORD: sunrise
+            MYSQL_ROOT_PASSWORD: fall
             SERVICE_TAGS: dev
             SERVICE_NAME: mysql
         volumes:
