@@ -64,7 +64,7 @@ sudo apt install mysql-server
 sudo systemctl start mysql.service
 ```
 
-Use `php artisan migrate` to generate your own database. Select 'yes' to create it. Create a user with enough permissions for the database in the `mysql` interface.
+Use `php artisan migrate` to generate your own database. Select 'yes' to create it. Create a user with enough permissions for the database in the `mysql`/`mariadb` interface.
 
 Also, update the username and password of that in the `.env`.
 
