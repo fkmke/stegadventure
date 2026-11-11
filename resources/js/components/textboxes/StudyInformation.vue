@@ -59,8 +59,8 @@ function next() {
 
         <h3>Contact information</h3>
         <p>
-            Researcher: REDACTED
-            (<a href="mailto:redacted">REDACTED</a>)
+            Researcher: Femke Weijsenfeld
+            (<a href="mailto:f.g.j.weijsenfeld@student.utwente.nl">f.g.j.weijsenfeld@student.utwente.nl</a>)
         </p>
         <p>
             If you have questions about your rights as a research participant, or wish to obtain information, ask
