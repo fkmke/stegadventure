@@ -91,6 +91,12 @@ docker compose -f docker-compose.yml up --build
 
 When running for the first time, the database still needs its migrations. Use `docker ps` to find the app container name (probably `stegadventure-app-1`) and then use `docker exec -it <container-name> php artisan migrate`. This project has not been optimised for the use of docker.
 
+For production, make sure you have the following in your `.env`:
+```
+APP_ENV=production
+APP_DEBUG=false
+```
+
 ## Changing the story
 
 To change the story, you can adjust `resources/data/dialogue.xlsx`. In this document, each row should have a unique, self-defined integer id. The character name who says the sentence should be mentioned in the second column. The system will fetch the `text.webp` in the folder of the character in `/public/characters/<character-name>`. The system will also use the drawing of the mentioned character, which is in the same folder as `text.webp`. The `default.webp` picture will be taken by default, but by specifying the emotion in `dialogue.xlsx` (column 3) another drawing can be taken (e.g. 'happy' takes `happy.webp`). Using these features, characters can be changed.
